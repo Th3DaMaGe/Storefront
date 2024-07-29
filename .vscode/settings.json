@@ -1,0 +1,19 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "storefront2",
+            "name": "StorefrontConnection",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}
