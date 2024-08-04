@@ -7,12 +7,9 @@ class TaggedItemManager(models.Manager):
     def get_tags_for(self, obj_type, obj_id):
         content_type = ContentType.objects.get_for_model(obj_type)
 
-        return TaggedItem.objects \
-            .select_related('tag') \
-            .filter(
-                content_type=content_type,
-                object_id=obj_id
-            )
+        return TaggedItem.objects.select_related("tag").filter(
+            content_type=content_type, object_id=obj_id
+        )
 
 
 class Tag(models.Model):
@@ -23,6 +20,11 @@ class Tag(models.Model):
 
 
 class TaggedItem(models.Model):
+    """ Determines which tag is related to which object. Notice that product = models.ForeignKey(Product) was not used as this would require the import -> from store.models import Product. This would make the tag app dependent on the Product model, this reduces code reuse as the code would have to be modified for any other implmentation ie. E commerce, music, video, food etc
+    
+    
+    Instead we use type (video, product, article) and id. Use the ContentTypes app which is part of the Django. Works with object_id with integer ids not UUIDS.
+    """
     objects = TaggedItemManager()
     tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
