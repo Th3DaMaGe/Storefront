@@ -12,6 +12,8 @@ drf-nested-routers = "*"
 django-filter = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
+django-cors-headers = "*"
+pillow = "*"
 
 [dev-packages]
 
