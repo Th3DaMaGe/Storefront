@@ -2,6 +2,8 @@ from rest_framework.test import APIClient
 from django.contrib.auth.models import User
 from rest_framework import status
 import pytest
+from model_bakery import baker
+from store.models import Product
 
 
 class TestCreateProduct:
@@ -53,10 +55,9 @@ class TestCreateProduct:
         assert response.data["title"] is not None
 
     @pytest.mark.django_db
-    def test_if_product_data_is_valid_returns_201(self):
-        client = APIClient()
-        client.force_authenticate(user=User(is_staff=True))
-        response = client.post(
+    def test_if_product_data_is_valid_returns_201(self, api_client, authenticate):
+        authenticate(is_staff=True)
+        response = api_client.post(
             "/store/products/",
             {
                 "title": "A",
@@ -69,4 +70,15 @@ class TestCreateProduct:
         )
 
         assert response.status_code == status.HTTP_201_CREATED
-        assert response.data['id'] > 0
+        assert response.data["id"] > 0
+
+
+@pytest.mark.django_db
+class TestRetrieveProduct:
+    def test_if_product_exists_returns_200(self, api_client):
+        product = baker.make(Product)
+    
+        response = api_client.get(f'/store/products/{product.id}/')
+
+        assert response.status_code == status.HTTP_200_OK
+        # assert response.data == { 'id': product.id, "title": product.title, "description": product.description, "slug": product.slug, "inventory": product.inventory, "last_update": product.last_update, "unit_price" : product.unit_price, "collection":product.collection, "images": product.images, "price_with_tax": 0 }
