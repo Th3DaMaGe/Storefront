@@ -42,7 +42,7 @@ class TestCreateProduct:
         response = client.post(
             "/store/products/",
             {
-                "title": "A",
+                "title": "",
                 "description": "test description",
                 "inventory": 10,
                 "unit_price": 10,
@@ -52,6 +52,7 @@ class TestCreateProduct:
         assert response.status_code == status.HTTP_400_BAD_REQUEST
         assert response.data["title"] is not None
 
+    @pytest.mark.django_db
     def test_if_product_data_is_valid_returns_201(self):
         client = APIClient()
         client.force_authenticate(user=User(is_staff=True))
@@ -63,7 +64,7 @@ class TestCreateProduct:
                 "inventory": 10,
                 "unit_price": 10.00,
                 "collection": "test collection",
-                "last_update": "2013-22-18 00:00:00",
+                "last_update": "2013-10-18 00:00:00",
             },
         )
 

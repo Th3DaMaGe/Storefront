@@ -19,10 +19,11 @@ class TestCreateOrders:
 
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
 
+    @pytest.mark.django_db
     def test_if_order_data_is_valid_returns_201(self):
         """Test if valid order data has been provided."""
         client = APIClient()
-        client.force_authenticate(user=User(is_staff=True))
+        client.force_authenticate(user={})
         response = client.post(
             "/store/orders/",
             {

@@ -38,7 +38,7 @@ class TestCreateCollection:
 
     def test_if_data_is_valid_returns_201(self, api_client):
         api_client.force_authenticate(user=User(is_staff=True))
-        response = create_collection({"title": "a"})
+        response = api_client.post("/store/collections/", {"title": "A"})
 
         assert response.status_code == status.HTTP_201_CREATED
         assert response.data["id"] > 0
