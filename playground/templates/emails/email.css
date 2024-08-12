@@ -1,0 +1,17 @@
+.email-body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .email-body h1 {
+    color: #4CAF50;
+  }
+  
+  .email-body .item-name {
+    font-weight: bold;
+  }
+  
+  .email-body .total-price {
+    font-weight: bold;
+  }
+  

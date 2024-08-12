@@ -14,8 +14,15 @@ djoser = "*"
 djangorestframework-simplejwt = "*"
 django-cors-headers = "*"
 pillow = "*"
+django-templated-mail = "*"
+django-inlinecss = "*"
+redis = "*"
+pytest = "*"
 
 [dev-packages]
+pytest = "*"
+pytest-django = "*"
+pytest-watch = "*"
 
 [requires]
 python_version = "3.9"
