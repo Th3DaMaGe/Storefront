@@ -24,6 +24,7 @@ admin.site.site_header = "Perihelion Storefront"
 admin.site.index_title = "Welcome to The Perihelion Storefront"
 
 urlpatterns = [
+    path("", include("core.urls")),
     path("admin/", admin.site.urls),
     path("playground/", include("playground.urls")),
     path("store/", include("store.urls")),
@@ -33,5 +34,5 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += [path("silk/", include("silk.urls", namespace="silk"))]

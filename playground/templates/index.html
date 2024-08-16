@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+  <body>
+    {% if name %}
+      <h1>Hello {{ name }}</h1>
+      <img src="{% static 'media/1.jpg' %}" width="300px" />
+      {% lorem 6 p random %}
+    {% else %}
+      <h1>Hello World</h1>
+    {% endif %}
+  </body>
+</html>
