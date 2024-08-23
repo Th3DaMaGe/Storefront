@@ -139,3 +139,2309 @@ django.template.exceptions.TemplateDoesNotExist: about.html
 2024-08-16 16:44:27,493 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\playground\views.py changed, reloading.
 2024-08-16 16:44:28,806 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-08-16 16:44:29,299 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-16 16:45:04,952 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-17 14:00:15,620 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-17 14:00:16,288 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-17 14:10:51,163 (WARNING) - django.request - Not Found: /{% static 'core/styles.css'}
+2024-08-17 14:10:51,432 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-17 14:11:57,699 (WARNING) - django.request - Not Found: /{% static 'core/styles.css'}
+2024-08-17 14:12:12,432 (WARNING) - django.request - Not Found: /{% static 'core/styles.css'}
+2024-08-17 14:14:58,736 (WARNING) - django.request - Not Found: /{% static 'core/styles1.css'}
+2024-08-17 14:15:28,744 (WARNING) - django.request - Not Found: /{% static 'core/styles21.css'}
+2024-08-17 14:16:01,304 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-17 14:16:02,021 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-17 14:16:05,011 (WARNING) - django.request - Not Found: /{% static 'core/styles21.css'}
+2024-08-17 14:17:39,518 (WARNING) - django.request - Not Found: /{% static 'styles1.css'}
+2024-08-17 15:06:27,569 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-17 15:06:28,678 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-17 15:10:45,520 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-17 15:10:45,736 (WARNING) - django.request - Not Found: /current_datetime/
+2024-08-23 10:28:44,380 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 10:28:44,993 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 10:30:03,303 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-23 10:31:33,874 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\urls.py changed, reloading.
+2024-08-23 10:31:35,357 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 10:31:35,893 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:38:11,771 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:38:20,224 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:38:32,553 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:38:33,093 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:39:21,903 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-23 12:39:29,878 (WARNING) - django.request - Not Found: /generate/1
+2024-08-23 12:39:42,086 (ERROR) - django.request - Internal Server Error: /generator/generate/1/
+2024-08-23 12:40:02,262 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:40:03,398 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:40:04,614 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:40:09,310 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:40:10,461 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:40:11,039 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:40:13,001 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:40:14,366 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:40:14,835 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:40:16,015 (ERROR) - django.request - Internal Server Error: /generator/generate/1/
+2024-08-23 12:40:26,376 (ERROR) - django.request - Internal Server Error: /generator/generate/2/
+2024-08-23 12:41:15,817 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\models.py changed, reloading.
+2024-08-23 12:41:16,913 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:41:17,477 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:41:19,559 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\models.py changed, reloading.
+2024-08-23 12:41:20,609 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:41:21,060 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:41:33,599 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:42:44,702 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:43:17,290 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:43:24,861 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:43:48,042 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:43:57,436 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:43:57,903 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:44:00,021 (ERROR) - django.request - Internal Server Error: /generator/generate/2/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: generate_barcode() got an unexpected keyword argument 'product'
+2024-08-23 12:45:02,673 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:45:03,945 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:45:04,611 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:45:05,513 (ERROR) - django.request - Internal Server Error: /generator/generate/2/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: generate_barcode() got an unexpected keyword argument 'product'
+2024-08-23 12:45:26,314 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\urls.py changed, reloading.
+2024-08-23 12:45:27,813 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:45:28,365 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:45:29,087 (ERROR) - django.request - Internal Server Error: /generator/generate/2/
+2024-08-23 12:46:25,342 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:46:26,526 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:46:27,164 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:46:31,392 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:46:32,769 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:46:33,326 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:46:36,442 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:46:37,962 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:46:38,482 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:46:40,612 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\views.py changed, reloading.
+2024-08-23 12:46:41,819 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:46:42,497 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:46:46,436 (ERROR) - django.request - Internal Server Error: /generator/generate/2/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:48:34,264 (ERROR) - django.request - Internal Server Error: /generator/generate/1/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:50:27,597 (ERROR) - django.request - Internal Server Error: /generator/generate/14564/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:50:37,051 (ERROR) - django.request - Internal Server Error: /generator/generate/14564/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:51:46,346 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:54:41,364 (ERROR) - django.request - Internal Server Error: /generator/generate/0/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:55:32,796 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\urls.py changed, reloading.
+2024-08-23 12:55:34,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:55:35,318 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:55:36,873 (ERROR) - django.request - Internal Server Error: /generator/generate/0/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:55:47,243 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\urls.py changed, reloading.
+2024-08-23 12:55:48,795 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:55:49,607 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:55:52,238 (ERROR) - django.request - Internal Server Error: /generator/generate/0/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:56:00,750 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:56:24,107 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\urls.py changed, reloading.
+2024-08-23 12:56:25,418 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:56:26,046 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:56:28,324 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:56:35,289 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\urls.py changed, reloading.
+2024-08-23 12:56:36,523 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:56:37,047 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:56:39,095 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:56:45,517 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:56:52,900 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:56:57,702 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:57:02,523 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 12:57:02,931 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:57:06,732 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:58:16,295 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'barcode_gen_generatedbarcode.code' in 'field list'")
+2024-08-23 12:59:22,421 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:59:28,449 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:59:49,551 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 12:59:56,911 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:00:06,482 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:00:12,283 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:00:12,799 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:00:17,533 (ERROR) - django.request - Internal Server Error: /generator/generate/123456/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:00:27,557 (ERROR) - django.request - Internal Server Error: /generator/generate/12346/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:00:35,382 (ERROR) - django.request - Internal Server Error: /generator/generate/1/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:00:42,407 (ERROR) - django.request - Internal Server Error: /generator/generate/er/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:00:59,611 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:01:37,737 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:01:38,195 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:01:39,927 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:14:24,513 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:14:32,885 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:14:42,373 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:14:43,102 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:14:44,338 (WARNING) - django.request - Not Found: /scanner/scan/
+2024-08-23 13:14:44,998 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-23 13:14:58,320 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\urls.py changed, reloading.
+2024-08-23 13:15:00,126 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:15:01,073 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:15:53,991 (ERROR) - django.request - Internal Server Error: /generator/generate/14/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:16:47,476 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:17:59,209 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\models.py changed, reloading.
+2024-08-23 13:18:00,615 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:18:01,325 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:18:03,336 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_gen\models.py changed, reloading.
+2024-08-23 13:18:04,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:18:05,297 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:19:20,811 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:19:30,062 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:19:36,004 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:19:36,522 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:19:40,636 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_gen\views.py", line 14, in generate_barcode
+    barcode_obj, created = GeneratedBarCode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_gen_generatedbarcode' doesn't exist")
+2024-08-23 13:20:31,124 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:20:33,639 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:21:09,722 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:21:10,215 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:24:16,483 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:25:42,182 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:00,510 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:26:02,040 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:03,419 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:26:05,014 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:11,149 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:26:12,586 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:19,391 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:26:20,765 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:34,634 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\barcode_scanner\views.py changed, reloading.
+2024-08-23 13:26:37,192 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:26:38,119 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:29:49,334 (ERROR) - django.request - Internal Server Error: /generator/generate/12345/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'storefront2.barcode_generator_generatedbarcode' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\barcode_generator\views.py", line 13, in generate_barcode
+    barcode_obj, created = GeneratedBarcode.objects.get_or_create(code=code)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'storefront2.barcode_generator_generatedbarcode' doesn't exist")
+2024-08-23 13:32:41,962 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:32:43,190 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:33:00,584 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 13:33:01,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:33:02,201 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:48:49,353 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:48:49,774 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:48:57,484 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:49:08,988 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:49:13,687 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:49:14,139 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:49:49,360 (WARNING) - django.request - Not Found: /media/store/images/spicy-pork-ramen_cRW3sBv.jpg
+2024-08-23 13:50:24,805 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1797, in _changeform_view
+    if all_valid(formsets) and form_validated:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in all_valid
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in <listcomp>
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 384, in is_valid
+    self.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 366, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 429, in full_clean
+    form_errors = form.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 486, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1470, in full_clean
+    self.clean_fields(exclude=exclude)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1522, in clean_fields
+    setattr(self, f.attname, f.clean(raw_value, self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 778, in clean
+    self.run_validators(value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 730, in run_validators
+    v(value)
+  File "C:\Users\namel\Code\Storefront2\store\validators.py", line 6, in validate_file_size
+    if file.size > max_size_kb * 1024:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\files.py", line 74, in size
+    return self.storage.size(self.name)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\files\storage\filesystem.py", line 182, in size
+    return os.path.getsize(self.path(name))
+  File "C:\Users\namel\anaconda3\lib\genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\namel\\Code\\Storefront2\\media\\store\\images\\spicy-pork-ramen_cRW3sBv.jpg'
+2024-08-23 13:50:29,109 (WARNING) - django.request - Not Found: /media/store/images/spicy-pork-ramen_cRW3sBv.jpg
+2024-08-23 13:50:35,264 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1797, in _changeform_view
+    if all_valid(formsets) and form_validated:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in all_valid
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in <listcomp>
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 384, in is_valid
+    self.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 366, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 429, in full_clean
+    form_errors = form.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 486, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1470, in full_clean
+    self.clean_fields(exclude=exclude)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1522, in clean_fields
+    setattr(self, f.attname, f.clean(raw_value, self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 778, in clean
+    self.run_validators(value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 730, in run_validators
+    v(value)
+  File "C:\Users\namel\Code\Storefront2\store\validators.py", line 6, in validate_file_size
+    if file.size > max_size_kb * 1024:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\files.py", line 74, in size
+    return self.storage.size(self.name)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\files\storage\filesystem.py", line 182, in size
+    return os.path.getsize(self.path(name))
+  File "C:\Users\namel\anaconda3\lib\genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\namel\\Code\\Storefront2\\media\\store\\images\\spicy-pork-ramen_cRW3sBv.jpg'
+2024-08-23 13:50:39,125 (WARNING) - django.request - Not Found: /media/store/images/spicy-pork-ramen_cRW3sBv.jpg
+2024-08-23 13:50:50,225 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_648.png'
+2024-08-23 13:51:15,217 (WARNING) - django.request - Not Found: /media/store/images/spicy-pork-ramen_cRW3sBv.jpg
+2024-08-23 13:51:23,017 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1797, in _changeform_view
+    if all_valid(formsets) and form_validated:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in all_valid
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in <listcomp>
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 384, in is_valid
+    self.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 366, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 429, in full_clean
+    form_errors = form.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 486, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1470, in full_clean
+    self.clean_fields(exclude=exclude)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1522, in clean_fields
+    setattr(self, f.attname, f.clean(raw_value, self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 778, in clean
+    self.run_validators(value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 730, in run_validators
+    v(value)
+  File "C:\Users\namel\Code\Storefront2\store\validators.py", line 6, in validate_file_size
+    if file.size > max_size_kb * 1024:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\files.py", line 74, in size
+    return self.storage.size(self.name)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\files\storage\filesystem.py", line 182, in size
+    return os.path.getsize(self.path(name))
+  File "C:\Users\namel\anaconda3\lib\genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\namel\\Code\\Storefront2\\media\\store\\images\\spicy-pork-ramen_cRW3sBv.jpg'
+2024-08-23 13:53:12,869 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1797, in _changeform_view
+    if all_valid(formsets) and form_validated:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in all_valid
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 579, in <listcomp>
+    return all([formset.is_valid() for formset in formsets])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 384, in is_valid
+    self.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 366, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 429, in full_clean
+    form_errors = form.errors
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\forms.py", line 435, in full_clean
+    self._post_clean()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 486, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1470, in full_clean
+    self.clean_fields(exclude=exclude)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1522, in clean_fields
+    setattr(self, f.attname, f.clean(raw_value, self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 778, in clean
+    self.run_validators(value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 730, in run_validators
+    v(value)
+  File "C:\Users\namel\Code\Storefront2\store\validators.py", line 6, in validate_file_size
+    if file.size > max_size_kb * 1024:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\files.py", line 74, in size
+    return self.storage.size(self.name)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\files\storage\filesystem.py", line 182, in size
+    return os.path.getsize(self.path(name))
+  File "C:\Users\namel\anaconda3\lib\genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\namel\\Code\\Storefront2\\media\\store\\images\\spicy-pork-ramen_cRW3sBv.jpg'
+2024-08-23 13:53:20,734 (WARNING) - django.request - Not Found: /media/store/images/spicy-pork-ramen_cRW3sBv.jpg
+2024-08-23 13:53:56,997 (ERROR) - django.request - Internal Server Error: /admin/store/product/648/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_648.png'
+2024-08-23 13:54:29,667 (ERROR) - django.request - Internal Server Error: /admin/store/product/905/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_905.png'
+2024-08-23 13:55:56,285 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 13:55:57,868 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 13:55:58,310 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 13:56:01,033 (ERROR) - django.request - Internal Server Error: /admin/store/product/905/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_905'
+2024-08-23 13:56:14,254 (ERROR) - django.request - Internal Server Error: /admin/store/product/905/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_905'
+2024-08-23 13:56:28,111 (ERROR) - django.request - Internal Server Error: /admin/store/product/905/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 53, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 66, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_905'
+2024-08-23 14:06:31,971 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:06:34,494 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:06:35,386 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:06:41,828 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:06:43,090 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:06:43,785 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:06:48,441 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:06:49,934 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:06:50,460 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:07:09,522 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 68, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_288.png'
+2024-08-23 14:11:16,964 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:11:18,518 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:11:19,140 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:11:51,329 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 68, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_288'
+2024-08-23 14:11:56,240 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 68, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_288'
+2024-08-23 14:12:03,951 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:12:05,577 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:12:11,432 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:12:12,858 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:12:33,470 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:12:35,470 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:12:36,176 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:12:38,697 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:12:40,135 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:12:40,654 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:12:47,184 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:12:52,566 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:12:57,709 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:12:58,137 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:13:06,505 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 65, in generate_barcode
+    barcode = Code128({barcode_value}.png, writer=ImageWriter())
+AttributeError: 'set' object has no attribute 'png'
+2024-08-23 14:13:30,829 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:13:32,638 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:13:33,406 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:13:41,383 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:13:43,149 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:13:43,747 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:13:50,422 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:13:51,594 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:13:56,302 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:13:57,589 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:13:58,066 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:14:06,056 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:14:07,946 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:14:08,501 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:14:14,679 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 68, in generate_barcode
+    with open(f"{barcode_path.png}", "rb") as f:
+AttributeError: 'str' object has no attribute 'png'
+2024-08-23 14:14:18,834 (ERROR) - django.request - Internal Server Error: /admin/store/product/288/change/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 55, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 68, in generate_barcode
+    with open(f"{barcode_path.png}", "rb") as f:
+AttributeError: 'str' object has no attribute 'png'
+2024-08-23 14:15:09,548 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:15:11,675 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:15:12,203 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:15:18,877 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:15:20,660 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:15:21,229 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 14:15:24,894 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:15:26,175 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:15:27,607 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-08-23 14:15:28,972 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 14:15:29,580 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.

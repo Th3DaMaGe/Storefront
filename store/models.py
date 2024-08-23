@@ -4,6 +4,10 @@ from uuid import uuid4
 from django.conf import settings
 from django.contrib import admin
 from store.validators import validate_file_size
+from django.core.files import File
+from barcode import Code128
+from barcode.writer import ImageWriter
+import os
 
 
 class Promotion(models.Model):
@@ -31,19 +35,39 @@ class Product(models.Model):
     description = models.TextField(null=True, blank=True)
     unit_price = models.DecimalField(
         max_digits=6, decimal_places=2, validators=[MinValueValidator(1)]
-    )    
+    )
     inventory = models.IntegerField(validators=[MinValueValidator(0)])
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(
         Collection, on_delete=models.PROTECT, related_name="products"
     )
     promotions = models.ManyToManyField(Promotion, blank=True)
+    barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
 
     def __str__(self) -> str:
         return self.title
 
     class Meta:
         ordering = ["title"]
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        self.generate_barcode()
+
+    def generate_barcode(self):
+        barcode_value = str(self.id)  # Use the product ID or any unique value
+        barcode_filename = f"barcode_{self.id}"
+        barcode_path = os.path.join(settings.MEDIA_ROOT, "barcodes", barcode_filename)
+
+        if not os.path.exists(os.path.dirname(barcode_path)):
+            os.makedirs(os.path.dirname(barcode_path))
+
+        barcode = Code128(barcode_value, writer=ImageWriter())
+        barcode.save(barcode_path)
+
+        with open(f"{barcode_path}.png", "rb") as f:
+            self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
+        super().save(update_fields=["barcode"])
 
 
 class ProductImage(models.Model):

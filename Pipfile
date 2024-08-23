@@ -21,6 +21,8 @@ pytest = "*"
 twilio = "*"
 python-decouple = "*"
 whitenoise = "*"
+pyzbar = "*"
+python-barcode = {extras = ["images"], version = "*"}
 
 [dev-packages]
 pytest = "*"
