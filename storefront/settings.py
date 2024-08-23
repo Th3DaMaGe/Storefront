@@ -14,6 +14,8 @@ import os
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
+from ip_address import get_ip_address
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,19 +30,12 @@ SECRET_KEY = "django-insecure-hs6j037urx6iav+7#10%-vu4l4f5@@-1_zo)oft4g7$vf2$jmp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "192.168.0.2",
-    "127.0.0.1",
-    "http://localhost:8000",
-    "http://localhost:8089",
-    "http://localhost",
-    "localhost:8089",
-    "http://localhost:8089",
-    "localhost:8000",
-    "http://localhost:8000",
-    "http://localhost",
-    "localhost",
-]
+ALLOWED_HOSTS = [get_ip_address(), "127.0.0.1", "http://192.168.0.114"]
+CSRF_TRUSTED_ORIGINS = [f"http://{get_ip_address()}"]
+
+sys.stdout.write(
+    f"http://{get_ip_address()}\n"
+)  # get the ip address from the command lin
 
 
 # Application definition
@@ -83,6 +78,7 @@ MIDDLEWARE = [
 
 INTERNAL_IPS = [
     # ...
+    "127.0.0.1:8000",
     "127.0.0.1",
     "http://localhost:8000",
     "http://localhost:8089" "localhost:8089",
@@ -94,6 +90,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
     "http://localhost:8089",
     "http://127.0.0.1:8089",
+    "http://0.0.0.0:8000",
 ]
 
 

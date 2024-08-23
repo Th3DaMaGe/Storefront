@@ -23,6 +23,7 @@ python-decouple = "*"
 whitenoise = "*"
 pyzbar = "*"
 python-barcode = {extras = ["images"], version = "*"}
+django-imagekit = "*"
 
 [dev-packages]
 pytest = "*"

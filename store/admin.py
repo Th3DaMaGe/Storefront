@@ -34,7 +34,13 @@ class ProductAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ["title"]}
     actions = ["clear_inventory"]
     inlines = [ProductImageInline]
-    list_display = ["title", "unit_price", "inventory_status", "collection_title"]
+    list_display = [
+        "title",
+        "unit_price",
+        "inventory_status",
+        "collection_title",
+        "barcode",
+    ]
     list_editable = ["unit_price"]
     list_filter = ["collection", "last_update", InventoryFilter]
     list_per_page = 10
@@ -43,6 +49,15 @@ class ProductAdmin(admin.ModelAdmin):
 
     def collection_title(self, product):
         return product.collection.title
+
+    def barcode_thumbnail_tag(self, obj):
+        if obj.barcode:
+            return format_html(
+                '<img src="{}" width="100" height="50" />', obj.barcode_thumbnail.url
+            )
+        return "No barcode. 🥺"
+
+    barcode_thumbnail_tag.short_description = "Bar Code Thumbnail"
 
     @admin.display(ordering="inventory")
     def inventory_status(self, product):

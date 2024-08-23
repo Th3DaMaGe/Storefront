@@ -8,6 +8,8 @@ from django.core.files import File
 from barcode import Code128
 from barcode.writer import ImageWriter
 import os
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFill
 
 
 class Promotion(models.Model):
@@ -43,6 +45,12 @@ class Product(models.Model):
     )
     promotions = models.ManyToManyField(Promotion, blank=True)
     barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
+    barcode_thumbnail = ImageSpecField(
+        source="barcode",
+        processors=[ResizeToFill],
+        format="PNG",
+        options={"quality": 60},
+    )
 
     def __str__(self) -> str:
         return self.title
@@ -168,3 +176,15 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
+
+
+class Location(models.Model):
+    barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
+    rank = models.IntegerField()
+    shelf = models.IntegerField()
+    tray = models.CharField(max_length=255)
+    pass
+
+
+class Venue(models.Model):
+    pass
