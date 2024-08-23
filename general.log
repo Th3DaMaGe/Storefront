@@ -3842,3 +3842,404 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-08-23 15:31:38,055 (WARNING) - django.request - Not Found: /favicon.ico
 2024-08-23 15:33:41,198 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-08-23 15:33:41,587 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:35:03,197 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:35:03,731 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:35:23,356 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:35:23,715 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:35:24,252 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:35:24,352 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:36:03,979 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:36:05,289 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:36:05,969 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:36:19,714 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:36:19,783 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:36:20,332 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:36:20,421 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:36:53,376 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:36:54,848 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:36:55,509 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:37:06,031 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:37:06,085 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:37:06,529 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:37:06,583 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:37:27,185 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:37:33,938 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:37:34,377 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:37:57,843 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:37:57,913 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:37:58,356 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:37:58,431 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:38:07,878 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:38:09,504 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:38:10,125 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:38:30,848 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:38:30,960 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:38:31,617 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.0.114:8000'. You may need to add '192.168.0.114' to ALLOWED_HOSTS.
+2024-08-23 21:38:31,724 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:38:46,037 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:38:46,477 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:38:49,222 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:38:49,457 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:38:49,954 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:38:50,088 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:38:58,280 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:39:00,236 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:39:00,886 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:39:03,480 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:39:03,623 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:39:04,255 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:39:04,404 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:39:11,688 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:39:13,778 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:39:14,555 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:39:17,243 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:39:56,574 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:39:56,992 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:39:59,332 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:39:59,547 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:40:00,131 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:00,362 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:40:20,355 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:40:22,010 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:40:22,630 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:40:24,727 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:40:25,978 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:40:26,675 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:40:28,314 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:28,534 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:40:29,079 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:29,246 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:40:32,942 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:40:34,682 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:40:35,299 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:40:37,972 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:38,125 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:40:38,461 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:38,733 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:40:45,356 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:40:45,923 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:40:48,117 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:48,406 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:40:49,046 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:40:49,240 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:41:12,351 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-08-23 21:41:14,750 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:41:15,386 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:41:17,935 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:41:18,131 (WARNING) - django.request - Bad Request: /
+2024-08-23 21:41:18,651 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-08-23 21:41:18,799 (WARNING) - django.request - Bad Request: /favicon.ico
+2024-08-23 21:41:25,478 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:41:25,952 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:41:28,569 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-23 21:54:34,506 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:54:36,383 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:54:44,001 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:54:46,009 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:54:53,749 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:54:55,121 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:54:55,555 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:54:59,075 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:55:00,413 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:55:01,004 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:55:03,436 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:55:05,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:55:05,603 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:55:08,774 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:55:10,371 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:55:11,014 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:55:21,570 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:55:24,327 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:55:30,779 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:55:32,535 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:55:33,228 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:58:26,212 (ERROR) - django.request - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 41, in profile_view
+    return render(request, "core/profile.html", context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' is not a valid view function or pattern name.
+2024-08-23 21:58:39,495 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-08-23 21:58:41,008 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:58:41,792 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:58:48,784 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-08-23 21:58:50,300 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:58:50,816 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:58:55,371 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-08-23 21:58:56,992 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:59:01,728 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-08-23 21:59:03,514 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:59:07,618 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-08-23 21:59:08,862 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:59:09,433 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:59:16,587 (WARNING) - django.request - Not Found: /logout/login/
+2024-08-23 21:59:37,866 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 21:59:39,563 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 21:59:40,293 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
