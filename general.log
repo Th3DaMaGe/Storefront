@@ -4243,3 +4243,4 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' 
 2024-08-23 21:59:37,866 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
 2024-08-23 21:59:39,563 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-08-23 21:59:40,293 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 21:59:42,342 (WARNING) - django.request - Not Found: /logout/login/
