@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 from django.urls import path
 from .views import login_view, profile_view, logout_view
+from . import views
 
 # URLConf
 urlpatterns = [
@@ -8,4 +9,5 @@ urlpatterns = [
     path("login/", login_view, name="login"),
     path("profile/", profile_view, name="profile"),
     path("logout/", logout_view, name="logout"),
+    path("product/<int:pk>", views.ProductDetailView.as_view(), name="product-detail"),
 ]

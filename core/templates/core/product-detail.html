@@ -1,0 +1,72 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>Title: {{ product.title }}</h1>
+
+  <p>
+    <strong>Product:</strong> <a href="">{{ book.title }}</a>
+  </p>
+  <!-- author detail link not yet defined -->
+  <p>
+    <strong>Quantity:</strong> {{ product.quantity }}
+  </p>
+  <p>
+    <strong>Unit Price:</strong> {{ product.unit_price }}
+  </p>
+  <p>
+    <strong>Last Update:</strong> {{ product.last_update }}
+  </p>
+  <p>
+    <strong>Description:</strong> {{ product.description }}
+  </p>
+
+  {% comment %} <div style="margin-left:20px;margin-top:20px">
+    <h4>Instances/Spares/Copies</h4>
+
+    {% for copy in book.bookinstance_set.all %}
+      <hr />
+      <p class="{% if copy.status == 'a' %}
+          
+          
+          
+          
+          text-success
+
+
+
+
+        {% elif copy.status == 'm' %}
+          
+          
+          
+          
+          text-danger
+
+
+
+
+        {% else %}
+          
+          
+          
+          
+          text-warning
+
+
+
+
+        {% endif %}">{{ copy.get_status_display }}</p>
+      {% if copy.status != 'a' %}
+        <p>
+          <strong>Due to be returned:</strong> {{ copy.due_back }}
+        </p>
+      {% endif %}
+      <p>
+        <strong>Imprint:</strong> {{ copy.imprint }}
+      </p>
+      <p class="text-muted">
+        <strong>Id:</strong> {{ copy.id }}
+      </p>
+    {% endfor %}
+  </div> {% endcomment %}
+{% endblock %}

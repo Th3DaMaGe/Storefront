@@ -4244,3 +4244,214 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' 
 2024-08-23 21:59:39,563 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-08-23 21:59:40,293 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
 2024-08-23 21:59:42,342 (WARNING) - django.request - Not Found: /logout/login/
+2024-08-23 22:03:53,142 (WARNING) - django.request - Bad Request: /login/
+2024-08-23 22:13:06,017 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:08,321 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:13,502 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:15,092 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:15,740 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:13:26,604 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:28,771 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:35,405 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:36,949 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:41,642 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:43,298 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:53,918 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:13:55,458 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:13:56,029 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:15:03,751 (ERROR) - django.request - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 40, in profile_view
+    "fullname": f"{user.fullname} {user.last_name}",
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'fullname'
+2024-08-23 22:15:31,466 (ERROR) - django.request - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 40, in profile_view
+    "fullname": f"{user.fullname} {user.last_name}",
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'fullname'
+2024-08-23 22:15:45,592 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:15:47,348 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:15:48,124 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:21:00,821 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:21:02,123 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:21:02,678 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:01,745 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:03,585 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:09,587 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:10,930 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:11,509 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:17,589 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:19,591 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:20,460 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:24,529 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:26,468 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:27,339 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:31,348 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:33,769 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:34,604 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:40,703 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:42,393 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:46,080 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:47,644 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:48,219 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:51,574 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:22:53,823 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:22:54,765 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:22:57,367 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:00,001 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:01,308 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:05,469 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:07,313 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:08,010 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:14,787 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:16,327 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:17,004 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:19,879 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:21,879 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:22,698 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:24,966 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:26,920 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:36,535 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:38,048 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:38,835 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:44,199 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:46,326 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:23:46,953 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:23:54,901 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:23:56,489 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:00,423 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:02,390 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:03,096 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:24:14,272 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:15,833 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:16,389 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:24:19,956 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:21,761 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:22,398 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:24:34,262 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:37,222 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:37,880 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:24:43,802 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:45,974 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:46,739 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:24:51,582 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:24:53,835 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:24:54,589 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:25:29,772 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-08-23 22:25:30,013 (WARNING) - django.request - Bad Request: /store/product/
+2024-08-23 22:25:59,752 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:26:02,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:26:02,724 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:26:05,853 (WARNING) - django.request - Not Found: /store/product/
+2024-08-23 22:26:25,449 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:26:26,836 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:26:27,461 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:50:21,460 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:50:22,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:50:26,278 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:50:28,079 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:50:28,806 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:50:33,657 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:50:35,198 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:50:36,024 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:50:38,493 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:50:39,663 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:50:40,146 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:50:51,363 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:50:52,943 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:50:53,499 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:50:59,392 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:51:00,947 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:51:01,919 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:51:04,525 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:51:05,985 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:51:06,730 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:51:12,279 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:51:14,872 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:51:15,437 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:51:18,092 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:51:19,929 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:51:21,220 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:57:30,995 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:57:32,568 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:57:33,171 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:57:54,194 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:57:55,575 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:57:56,091 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:58:09,192 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:58:10,859 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:58:11,526 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:59:03,409 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:59:04,811 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:59:05,466 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:59:09,941 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:59:11,441 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:59:11,936 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:59:20,957 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:59:22,523 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:59:23,230 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 22:59:44,159 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:59:45,905 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:59:54,123 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 22:59:55,522 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 22:59:56,330 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:00:10,387 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:00:11,807 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:00:12,374 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:01:58,682 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:02:00,157 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:02:00,976 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:02:25,140 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:02:27,346 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:02:27,965 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:02:35,027 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:02:36,718 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:02:37,343 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:03:07,995 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:03:10,447 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:03:11,215 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-23 23:03:16,372 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-23 23:03:18,564 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-23 23:03:19,199 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-26 09:10:22,637 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-26 09:10:23,366 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-26 09:10:28,118 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-26 09:41:55,588 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-08-26 09:41:57,352 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-26 11:01:35,065 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-26 11:01:35,545 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-26 11:01:40,664 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-26 11:20:16,933 (WARNING) - django.request - Not Found: /profile/logout/
+2024-08-26 15:28:59,835 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-08-26 15:29:01,376 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-08-26 15:29:10,026 (WARNING) - django.request - Not Found: /favicon.ico
+2024-08-26 15:44:59,457 (WARNING) - django.request - Not Found: /path/to/watchdog.svg
+2024-08-26 15:45:39,202 (WARNING) - django.request - Not Found: /path/to/watchdog.svg
+2024-08-26 15:46:00,535 (WARNING) - django.request - Not Found: /path/to/watchdog.svg
+2024-08-26 15:46:24,816 (WARNING) - django.request - Not Found: /path/to/watchdog.svg

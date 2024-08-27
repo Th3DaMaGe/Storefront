@@ -5,12 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perihelion IMS Protoytype</title>
-    <link rel="stylesheet" href="{% static 'styles1.css' %}" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #b3e5fc; /* Light blue background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <div class="home-page">
-      {% lorem 5 p random %}
-      <img src="{% static 'core/logo.jpeg' %}" />
+    <div class="text-center mb-4">
+      <h1 class="text-3xl font-bold">Perihelion IMS</h1>
+    </div>
+    <div class="text-center">
+      <button onclick="window.location.href='{% url 'login' %}'" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Sign In</button>
+    </div>
+    <div class="absolute bottom-0 right-0 p-4">
+      <img src="data:image/png;base64,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" alt="Watchdog" class="w-16 h-16" />
     </div>
   </body>
 </html>

@@ -3,6 +3,7 @@ from django.db import models
 from uuid import uuid4
 from django.conf import settings
 from django.contrib import admin
+from django.urls import reverse
 from store.validators import validate_file_size
 from django.core.files import File
 from barcode import Code128
@@ -51,6 +52,11 @@ class Product(models.Model):
         format="PNG",
         options={"quality": 60},
     )
+
+    def get_absolute_url(self):
+        return reverse("product-detail", kwargs={"pk": self.pk})
+
+    # args=[str(self.id)]
 
     def __str__(self) -> str:
         return self.title
