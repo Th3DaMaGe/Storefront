@@ -1,0 +1,31 @@
+<!-- store/templates/store/restock_products.html -->
+
+{% extends 'core/base_generic.html' %}
+
+{% block content %}
+  <h1>Products to Restock</h1>
+  {% if products %}
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Inventory</th>
+          <th>Restock Value</th>
+          <th>Unit Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in products %}
+          <tr>
+            <td>{{ product.title }}</td>
+            <td>{{ product.inventory }}</td>
+            <td>{{ product.restock_value }}</td>
+            <td>{{ product.unit_price }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No products need restocking.</p>
+  {% endif %}
+{% endblock %}

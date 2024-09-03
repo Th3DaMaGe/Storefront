@@ -1,17 +1,83 @@
-{% extends 'base_generic.html' %}
+{% extends 'core/base_generic.html' %}
 
 {% block content %}
-  <h1>Book List</h1>
-  {% if book_list %}
-    <ul>
-      {% for book in book_list %}
-        <li>
-          <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
-          ({{ book.author }})
-        </li>
-      {% endfor %}
-    </ul>
+  <h1>Inventory List</h1>
+
+  <form method="get" action="">
+    <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" />
+    <button type="submit">Search</button>
+  </form>
+
+  {% if product_list %}
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <a href="?sort=title{% if query %}
+                &q={{ query }}
+              {% endif %}">
+              Title
+            </a>
+          </th>
+          <th>
+            <a href="?sort=inventory{% if query %}
+                &q={{ query }}
+              {% endif %}">
+              Inventory
+            </a>
+          </th>
+          <th>Last Update</th>
+          <th>Collection</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in product_list %}
+          <tr>
+            <td>
+              <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+            </td>
+            <td>{{ product.inventory }}</td>
+            <td>{{ product.last_update }}</td>
+            <td>{{ product.collection }}</td>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div id="pagination-controls">
+      {% if product_list.has_previous %}
+        <a href="?page=1{% if query %}
+            &q={{ query }}
+          {% endif %}">
+          First
+        </a>
+        <a href="?page={{ product_list.previous_page_number }}{% if query %}
+            &q={{ query }}
+          {% endif %}">
+          Previous
+        </a>
+      {% endif %}
+      <span>Page {{ product_list.number }} of {{ product_list.paginator.num_pages }}</span>
+      {% if product_list.has_next %}
+        <a href="?page={{ product_list.next_page_number }}{% if query %}
+            &q={{ query }}
+          {% endif %}">
+          Next
+        </a>
+        <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
+            &q={{ query }}
+          {% endif %}">
+          Last
+        </a>
+      {% endif %}
+    </div>
+
+    <form method="get" action="">
+      <label for="page">Go to page:</label>
+      <input type="number" id="page" name="page" min="1" max="{{ product_list.paginator.num_pages }}" required />
+      <input type="hidden" name="q" value="{{ query|default:'' }}" />
+      <button type="submit">Go</button>
+    </form>
   {% else %}
-    <p>There are no books in the library.</p>
+    <p>There are no products in the inventory.</p>
   {% endif %}
 {% endblock %}

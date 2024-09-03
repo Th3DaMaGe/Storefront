@@ -1,14 +1,11 @@
-{% extends 'base_generic.html' %}
+{% extends 'core/base_generic.html' %}
 
 {% block content %}
+  <a href="javascript:history.go(-1)">Back</a>
   <h1>Title: {{ product.title }}</h1>
 
   <p>
-    <strong>Product:</strong> <a href="">{{ book.title }}</a>
-  </p>
-  <!-- author detail link not yet defined -->
-  <p>
-    <strong>Quantity:</strong> {{ product.quantity }}
+    <strong>Quantity:</strong> {{ product.inventory }}
   </p>
   <p>
     <strong>Unit Price:</strong> {{ product.unit_price }}
@@ -30,7 +27,13 @@
           
           
           
+          
+          
+          
           text-success
+
+
+
 
 
 
@@ -40,7 +43,13 @@
           
           
           
+          
+          
+          
           text-danger
+
+
+
 
 
 
@@ -50,7 +59,13 @@
           
           
           
+          
+          
+          
           text-warning
+
+
+
 
 
 

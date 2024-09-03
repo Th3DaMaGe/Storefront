@@ -6,9 +6,12 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.core.paginator import Paginator
-from .models import Product
+from store.models import Product
 from django.views import generic
 from django.http import Http404
+import requests
+from django.views.generic import ListView
+from django.db.models import F
 
 
 @csrf_exempt
@@ -26,7 +29,7 @@ def login_view(request):
                     "access": str(refresh.access_token),
                 }
             )
-            response["Location"] = "/profile/"  # Redirect to profile page
+            response["Location"] = "/dashboard/"  # Redirect to profile page
             response.status_code = 302
             return response
         else:
@@ -38,7 +41,7 @@ def login_view(request):
 def profile_view(request):
     user = request.user
     page = request.GET.get("page", 1)
-    products_data = fetch_all_products()
+    products_data = fetch_products()
 
     if products_data:
         products = products_data["results"]
@@ -66,18 +69,12 @@ def logout_view(request):
     return redirect("/")
 
 
-import requests
-
-
-def fetch_products():
-    url = "http://127.0.0.1:8000/store/products/"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    return None
-
-
-import requests
+# def fetch_products():
+#     url = "http://127.0.0.1:8000/store/products/"
+#     response = requests.get(url)
+#     if response.status_code == 200:
+#         return response.json()
+#     return None
 
 
 def fetch_all_products():
@@ -103,11 +100,101 @@ def fetch_all_products():
 
 class ProductDetailView(generic.DetailView):
     model = Product
+    template_name = "core/product-detail.html"
 
     def product_detail_view(request, primary_key):
         try:
             product = Product.objects.get(pk=primary_key)
         except Product.DoesNotExist:
-            raise Http404("Product not in warehouses/strore rooms")
+            raise Http404("Product not in warehouses/store rooms")
 
-        return render(request, "product-detail.html", context={"product": product})
+        return render(request, "core/product-detail.html", context={"product": product})
+
+
+def haploid(request):
+    return render(request, "core/haploid.html")
+
+
+def dashboard(request):
+    query = request.GET.get("q")
+    sort = request.GET.get("sort", "title")  # Default sort by title
+
+    if query:
+        products = Product.objects.filter(title__icontains=query).order_by(sort)
+    else:
+        products = Product.objects.all().order_by(sort)
+
+    paginator = Paginator(products, 10)  # Show 10 products per page
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "product_list": page_obj,
+        "count": paginator.count,
+        "num_pages": paginator.num_pages,
+        "current_page": page_obj.number,
+        "next": page_obj.has_next(),
+        "previous": page_obj.has_previous(),
+        "query": query,
+        "sort": sort,
+    }
+    return render(request, "core/dashboard.html", context)
+
+
+def product_list(request):
+    query = request.GET.get("q")
+    sort = request.GET.get("sort", "title")  # Default sort by title
+
+    if query:
+        products = Product.objects.filter(title__icontains=query).order_by(sort)
+    else:
+        products = Product.objects.all().order_by(sort)
+
+    paginator = Paginator(products, 10)  # Show 10 products per page
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "product_list": page_obj,
+        "count": paginator.count,
+        "num_pages": paginator.num_pages,
+        "current_page": page_obj.number,
+        "next": page_obj.has_next(),
+        "previous": page_obj.has_previous(),
+        "query": query,
+        "sort": sort,
+    }
+    return render(request, "core/product-list.html", context)
+
+
+def fetch_products(page=1):
+    url = "http://127.0.0.1:8000/store/products/"
+    response = requests.get(url, params={"page": page})
+    if response.status_code == 200:
+        return response.json()
+    return None
+
+
+def product_list_view(request):
+    products = Product.objects.all()
+    paginator = Paginator(products, 10)  # Show 10 products per page
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, "core/product_list.html", {"products": page_obj})
+
+
+def index(request):
+    return render(request, "core/index.html")
+
+
+class RestockProducts(ListView):
+    model = Product
+    template_name = "core/restock-products.html"
+    context_object_name = "products"
+
+    def get_queryset(self):
+        return Product.objects.filter(inventory__lt=F("restock_value"))

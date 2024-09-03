@@ -40,10 +40,12 @@ class Product(models.Model):
         max_digits=6, decimal_places=2, validators=[MinValueValidator(1)]
     )
     inventory = models.IntegerField(validators=[MinValueValidator(0)])
+    # serial_number = models.IntegerField(validators=[MinValueValidator(6)])
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(
         Collection, on_delete=models.PROTECT, related_name="products"
     )
+    restock_value = models.IntegerField(default=20)
     promotions = models.ManyToManyField(Promotion, blank=True)
     barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
     barcode_thumbnail = ImageSpecField(
@@ -52,6 +54,8 @@ class Product(models.Model):
         format="PNG",
         options={"quality": 60},
     )
+    serial_number = models.CharField(max_length=30, unique=True, null=True, blank=True)
+    model_number = models.CharField(max_length=30, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
@@ -146,7 +150,7 @@ class Order(models.Model):
 
 
 class OrderItem(models.Model):
-    order = models.ForeignKey(Order, on_delete=models.PROTECT, related_name="items")
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="items")
     product = models.ForeignKey(
         Product, on_delete=models.PROTECT, related_name="orderitems"
     )

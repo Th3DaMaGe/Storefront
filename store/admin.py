@@ -11,11 +11,11 @@ class InventoryFilter(admin.SimpleListFilter):
     parameter_name = "inventory"
 
     def lookups(self, request, model_admin):
-        return [("<10", "Low")]
+        return [("<20", "Low < 20")]
 
     def queryset(self, request, queryset: QuerySet):
-        if self.value() == "<10":
-            return queryset.filter(inventory__lt=10)
+        if self.value() == "<20":
+            return queryset.filter(inventory__lt=20)
 
 
 class ProductImageInline(admin.TabularInline):
@@ -40,10 +40,11 @@ class ProductAdmin(admin.ModelAdmin):
         "inventory_status",
         "collection_title",
         "barcode",
+        "restock_value",
     ]
-    list_editable = ["unit_price"]
+    list_editable = ["unit_price", "restock_value"]
     list_filter = ["collection", "last_update", InventoryFilter]
-    list_per_page = 10
+    list_per_page = 20
     list_select_related = ["collection"]
     search_fields = ["title"]
 
@@ -65,7 +66,7 @@ class ProductAdmin(admin.ModelAdmin):
             return "Less Than 10 Units Left"
         elif product.inventory < 50:
             return product.inventory
-        return "OK"
+        return "OK Inventory > 50 Units Left"
 
     @admin.action(description="Clear inventory")
     def clear_inventory(self, request, queryset):

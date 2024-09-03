@@ -1,0 +1,22 @@
+<!-- myapp/templates/myapp/image_grid.html -->
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+{% extends 'core/base_generic.html' %}
+{% load static %}
+
+{% comment %} <link rel="stylesheet" href="{% static 'images/img-grid.css' %}" /> {% endcomment %}
+{% block content %}
+<div class="flex justify-center items-center h-screen">
+  <div class="grid grid-cols-5 gap-4">
+      <!-- Replace these placeholders with actual image URLs -->
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 1" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 2" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 3" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 4" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 5" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 6" class="w-full h-auto" />
+      <img src="{% static 'images/5bean.jpg' %}" alt="Image 7" class="w-full h-auto" />
+  </div>
+</div>
+
+{% endblock %}
