@@ -24,6 +24,7 @@ whitenoise = "*"
 pyzbar = "*"
 python-barcode = {extras = ["images"], version = "*"}
 django-imagekit = "*"
+fontawesomefree = "*"
 
 [dev-packages]
 pytest = "*"

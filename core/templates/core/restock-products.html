@@ -1,31 +1,34 @@
-<!-- store/templates/store/restock_products.html -->
-
 {% extends 'core/base_generic.html' %}
-
+{% block title %}Products to Restock{% endblock %}
 {% block content %}
-  <h1>Products to Restock</h1>
+  <h1 class="text-2xl font-bold mb-4">Products to Restock</h1>
+
   {% if products %}
-    <table>
+    <table class="w-full border-collapse border border-slate-500">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Inventory</th>
-          <th>Restock Value</th>
-          <th>Unit Price</th>
+          <th class="border border-slate-600 py-2">Title</th>
+          <th class="border border-slate-600 py-2">Inventory</th>
+          <th class="border border-slate-600 py-2">Restock Value</th>
+          <th class="border border-slate-600 py-2">Unit Price</th>
         </tr>
       </thead>
       <tbody>
         {% for product in products %}
           <tr>
-            <td>{{ product.title }}</td>
-            <td>{{ product.inventory }}</td>
-            <td>{{ product.restock_value }}</td>
-            <td>{{ product.unit_price }}</td>
+            <td class="py-2">{{ product.title }}</td>
+            <td class="py-2">{{ product.inventory }}</td>
+            <td class="py-2">{{ product.restock_value }}</td>
+            <td class="py-2">{{ product.unit_price }}</td>
+            <td class="py-2">
+              <img src="
+              {{ product.barcode }}" />
+            </td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
   {% else %}
-    <p>No products need restocking.</p>
+    <p class="mt-4">No products need restocking.</p>
   {% endif %}
 {% endblock %}

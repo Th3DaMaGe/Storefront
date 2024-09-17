@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     "django_filters",
     "rest_framework",
     "djoser",
-    
     "silk",
     "corsheaders",
     "playground",
@@ -67,6 +66,7 @@ INSTALLED_APPS = [
     "tags",
     "likes",
     "core",
+    
 ]
 
 MIDDLEWARE = [
@@ -115,7 +115,7 @@ TEMPLATES = [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
-                "django.contrib.messages.context_processors.messages",
+                "django.contrib.messages.context_processors.messages", 
             ],
         },
     },
@@ -181,6 +181,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
+# settings.py
+LOGIN_URL = "/login/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

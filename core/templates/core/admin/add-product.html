@@ -1,0 +1,67 @@
+{% extends 'core/base_generic.html' %}
+{% block content %}
+  <div class="bg-gray-100 p-4">
+    <h2 class="text-xl font-semibold mb-4">Add Product</h2>
+  </div>
+
+  <div class="p-4">
+    <!-- Title -->
+    <label for="title" class="block mb-2">Title:</label>
+    <input type="text" id="title" name="title" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+
+    <!-- Slug -->
+    <label for="slug" class="block mb-2">Slug:</label>
+    <input type="text" id="slug" name="slug" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+
+    <!-- Description -->
+    <label for="description" class="block mb-2">Description:</label>
+    <textarea id="description" name="description" rows="4" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4"></textarea>
+
+    <!-- Unit Price -->
+    <label for="unitPrice" class="block mb-2">Unit Price:</label>
+    <input type="number" id="unitPrice" name="unitPrice" step="0.01" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+
+    <!-- Inventory Toggle -->
+    <label class="block mb-2">Inventory:</label>
+    <div class="flex items-center space-x-2">
+      <span>Off</span>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+      <span>On</span>
+    </div>
+
+    <!-- Restock Value -->
+    <label for="restockValue" class="block mb-2">Restock Value:</label>
+    <input type="number" id="restockValue" name="restockValue" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-lg font-semibold mb-4">Promotions</h3>
+    <!-- Add Promotion Button -->
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">Add Promotion</button>
+    <!-- Dynamic Promotion Fields (if applicable) -->
+    <!-- ... -->
+  </div>
+
+  <div class="p-4">
+    <!-- Barcode -->
+    <label for="barcode" class="block mb-2">Barcode:</label>
+    <input type="text" id="barcode" name="barcode" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+
+    <!-- Serial Number -->
+    <label for="serialNumber" class="block mb-2">Serial Number:</label>
+    <input type="text" id="serialNumber" name="serialNumber" class="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring focus:border-blue-500 mb-4" />
+  </div>
+
+  <div class="p-4">
+    <!-- Image Upload -->
+    <label class="block mb-2">Upload Image: (optional) </label>
+    <div class="flex items-center space-x-2">
+      <input type="file" id="imageUpload" name="imageUpload" class="hidden" />
+      <label for="imageUpload" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md cursor-pointer">Choose File</label>
+      <span id="selectedFileName">No file chosen</span>
+    </div>
+  </div>
+{% endblock %}

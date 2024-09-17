@@ -32,6 +32,47 @@ class Collection(models.Model):
         ordering = ["title"]
 
 
+class Location(models.Model):
+    WAREHOUSE_1 = "W1"
+    WAREHOUSE_2 = "W2"
+    STORAGE_AREA_1 = "S1"
+    STORAGE_AREA_2 = "S2"
+    STORAGE_AREA_3 = "S3"
+    OFFICE_1 = "O1"
+    OFFICE_2 = "O2"
+    OFFICE_3 = "O3"
+
+    VENUE_CHOICES = [
+        (WAREHOUSE_1, "Warehouse 1"),
+        (WAREHOUSE_2, "Warehouse 2"),
+        (STORAGE_AREA_1, "Storage Room 1"),
+        (STORAGE_AREA_2, "Storage Room 2"),
+        (STORAGE_AREA_3, "Storage Room 3"),
+        (OFFICE_1, "Office 1"),
+        (OFFICE_2, "Office 2"),
+        (OFFICE_3, "Office 3"),
+    ]
+    rank = models.CharField(max_length=5, default=1)
+    shelf = models.CharField(max_length=5, default=1)
+    tray = models.CharField(max_length=5, default=1)
+    venue1 = models.CharField(max_length=2, choices=VENUE_CHOICES, default=WAREHOUSE_1)
+
+    def __str__(self) -> str:
+        """
+        Returns a string representation of the Location object.
+
+        This method is intended to provide a human-readable representation of the object,
+        typically used for debugging and logging purposes.
+
+        Returns:
+            str: A string combining rank, shelf, and tray.
+        """
+        return f"Venue: {self.venue}, Rank: {self.rank}, Shelf: {self.shelf}, Tray: {self.tray}"
+
+    class Meta:
+        ordering = ["rank", "shelf", "tray"]
+
+
 class Product(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
@@ -56,6 +97,7 @@ class Product(models.Model):
     )
     serial_number = models.CharField(max_length=30, unique=True, null=True, blank=True)
     model_number = models.CharField(max_length=30, null=True, blank=True)
+
 
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
@@ -187,14 +229,3 @@ class Review(models.Model):
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
 
-
-class Location(models.Model):
-    barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
-    rank = models.IntegerField()
-    shelf = models.IntegerField()
-    tray = models.CharField(max_length=255)
-    pass
-
-
-class Venue(models.Model):
-    pass

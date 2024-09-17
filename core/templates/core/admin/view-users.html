@@ -1,0 +1,101 @@
+{% extends 'core/base_generic.html' %}
+{% block title %}
+  View Users
+{% endblock %}
+{% block content %}
+  <h2 class="text-xl font-semibold mb-4">View Users</h2>
+
+  <!-- Add button to add users -->
+  <div class="flex justify-end">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">Add User</button>
+    <a href="{% url 'add-user' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">
+      <i class="bi bi-person"></i>Add User
+    </a>
+ 
+  </div>
+
+  <form method="get" action="{% url 'view-users' %}">
+    <label for="filter_by_staff">Filter by Staff Status:</label>
+    <select name="filter_by_staff" id="filter_by_staff" class="form-select">
+      <option value="">All Users</option>
+      <option value="staff" {% if filter_by_staff == 'is_staff' %}selected{% endif %}>Staff</option>
+      <option value="regular" {% if filter_by_staff == 'regular' %}selected{% endif %}>Regular Users</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Filter</button>
+  </form>
+  <!-- Form for actions -->
+  <form method="post" action="{% url 'view-users' %}">
+    {% csrf_token %}
+    <!-- Dropdown menu and Go button -->
+    <div class="flex align-right space-x-4 mb-4">
+      <span>Action:</span>
+      <select name="action" class="border rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-500">
+        <option value="">Select an option</option>
+        <option value="delete">Delete selected users</option>
+      </select>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Go</button>
+    </div>
+
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <input type="checkbox" id="selectAllUsers" class="form-checkbox" />
+          </th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Username</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Privileges</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date Joined</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Login</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Admin</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Active</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        {% for user in users %}
+          <tr>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <input type="checkbox" name="user_ids" value="{{ user.id }}" class="form-checkbox" />
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ user.username }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ user.is_staff|yesno:'Staff,Regular User' }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ user.date_joined }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ user.last_login }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{ user.is_active }}</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <span class="inline-block w-4 h-4 rounded-full">{{ user.is_staff }}</span>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </form>
+
+  <!-- Sidebar for filtering -->
+  <div class="mt-8">
+    <h3 class="text-lg font-semibold mb-4">FILTER</h3>
+    <!-- Add filter options here (staff status, superuser status, active status, groups) -->
+    <!-- Example: -->
+    <label class="block mb-2">
+      is_Staff Status:<select class="border rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-500">
+        <option value="all">All</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <!-- ... (other filter options) ... -->
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const selectAllCheckbox = document.getElementById('selectAllUsers')
+      const userCheckboxes = document.querySelectorAll("tbody input[type='checkbox']")
+    
+      selectAllCheckbox.addEventListener('change', function () {
+        const isChecked = selectAllCheckbox.checked
+        userCheckboxes.forEach((checkbox) => {
+          checkbox.checked = isChecked
+        })
+      })
+    })
+  </script>
+{% endblock %}

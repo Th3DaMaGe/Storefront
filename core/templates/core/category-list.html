@@ -1,8 +1,5 @@
 {% extends 'core/base_generic.html' %}
-{% block title %}
-  Inventory
-{% endblock %}
-
+{% block title %}Browse Categories{{username }} {% endblock %}
 {% block content %}
   <h1 class="text-2xl font-bold mb-4">Inventory List</h1>
   {{ user.get_username }}
@@ -12,7 +9,7 @@
   </form>
 
   {% if product_list %}
-    <table class="min-w-full divide-y divide-gray-200">
+    <table class="w-full border-separate border border-blue-900">
       <thead>
         <tr>
           <th class="py-2">
@@ -20,12 +17,7 @@
                 
                 
                 
-                
-                
-                
-                
-                
-                &q={{ query }}
+    &q={{ query }}
               {% endif %}"
               class="text-blue-500 hover:underline">
               Title
@@ -35,13 +27,7 @@
             <a href="?sort=inventory{% if query %}
                 
                 
-                
-                
-                
-                
-                
-                
-                &q={{ query }}
+            &q={{ query }}
               {% endif %}"
               class="text-blue-500 hover:underline">
               Inventory
@@ -49,7 +35,7 @@
           </th>
           <th class="py-2">Last Update</th>
           <th class="py-2">Collection</th>
-          {% if not is_staff %}
+          {% if is_staff %}
             <th>Request</th>
           {% endif %}
         </tr>
@@ -63,7 +49,7 @@
             <td class="py-2">{{ product.inventory }}</td>
             <td class="py-2">{{ product.last_update }}</td>
             <td class="py-2">{{ product.collection }}</td>
-            {% if not is_staff %}
+            {% if is_staff %}
               <td>Request</td>
             {% endif %}
           </tr>
@@ -75,7 +61,50 @@
       {% if product_list.has_previous %}
         <a href="?page=1{% if query %}
             
-
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline">
@@ -84,8 +113,50 @@
         <a href="?page={{ product_list.previous_page_number }}{% if query %}
             
             
-
-   &q={{ query }}
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
           Previous
@@ -96,6 +167,49 @@
         <a href="?page={{ product_list.next_page_number }}{% if query %}
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
@@ -103,7 +217,51 @@
         </a>
         <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
             
-             &q={{ query }}
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
           Last

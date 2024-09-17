@@ -60,7 +60,7 @@ class TestCreateProduct:
         response = api_client.post(
             "/store/products/",
             {
-                "title": "A",
+                "title": "Al",
                 "description": "test description",
                 "inventory": 10,
                 "unit_price": 10.00,
@@ -75,10 +75,25 @@ class TestCreateProduct:
 
 @pytest.mark.django_db
 class TestRetrieveProduct:
+    """
+    Test to ensure that a GET request to the product detail endpoint returns a 200 status code
+    when the product exists.
+
+    Args:
+        self: The instance of the test case.
+        api_client: The API client used to make requests.
+
+    Steps:
+        1. Create a product instance using the baker library.
+        2. Make a GET request to the product detail endpoint using the product's ID.
+        3. Assert that the response status code is 200 OK.
+        # 4. Optionally, assert that the response data matches the product's attributes.
+    """
+
     def test_if_product_exists_returns_200(self, api_client):
         product = baker.make(Product)
-    
-        response = api_client.get(f'/store/products/{product.id}/')
+
+        response = api_client.get(f"/store/products/{product.id}/")
 
         assert response.status_code == status.HTTP_200_OK
         # assert response.data == { 'id': product.id, "title": product.title, "description": product.description, "slug": product.slug, "inventory": product.inventory, "last_update": product.last_update, "unit_price" : product.unit_price, "collection":product.collection, "images": product.images, "price_with_tax": 0 }
