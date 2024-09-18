@@ -14408,3 +14408,9 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2024-09-17 16:20:31,221 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
 2024-09-17 16:20:32,559 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-09-17 16:20:33,200 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-17 17:26:17,681 (INFO) - django.utils.autoreload - C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\Lib\site-packages\urllib3\util\request.py changed, reloading.
+2024-09-17 17:26:20,756 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-17 17:26:21,664 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-17 17:26:27,391 (INFO) - django.utils.autoreload - C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\Lib\site-packages\idna\package_data.py changed, reloading.
+2024-09-17 17:26:31,529 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-17 17:26:32,352 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.

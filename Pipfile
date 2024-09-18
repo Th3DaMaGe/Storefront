@@ -25,6 +25,7 @@ pyzbar = "*"
 python-barcode = {extras = ["images"], version = "*"}
 django-imagekit = "*"
 fontawesomefree = "*"
+tailwind = "*"
 
 [dev-packages]
 pytest = "*"
