@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseForbidden, JsonResponse
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from store.models import Product
+from store.models import Product, Cart, CartItem
 from django.views import generic
 from django.http import Http404
 import requests
@@ -274,20 +274,22 @@ def is_superuser(user):
 @user_passes_test(is_superuser)
 def view_users(request):
     if request.method == "POST":
-        action = request.POST.get('action')
-        user_ids = request.POST.getlist('user_ids')
-        
-        if action == 'delete':
+        action = request.POST.get("action")
+        user_ids = request.POST.getlist("user_ids")
+
+        if action == "delete":
             # and request.user.is_superuser:
             User.objects.filter(id__in=user_ids).delete()
-            return redirect('view-users')
+            return redirect("view-users")
         else:
-            return HttpResponseForbidden("You are not authorized to perform this action.")
-    
-    filter_by_staff = request.GET.get('filter_by_staff')
-    if filter_by_staff == 'staff':
+            return HttpResponseForbidden(
+                "You are not authorized to perform this action."
+            )
+
+    filter_by_staff = request.GET.get("filter_by_staff")
+    if filter_by_staff == "staff":
         users = User.objects.filter(is_staff=True)
-    elif filter_by_staff == 'regular':
+    elif filter_by_staff == "regular":
         users = User.objects.filter(is_staff=False)
     else:
         users = User.objects.all()
@@ -319,8 +321,20 @@ def notifications_view(request):
 def users_crud_view(request):
     return render(request, "core/users.html")
 
+
 def add_user(request):
-    return render (request, "core/admin/add-user.html")
+    return render(request, "core/admin/add-user.html")
+
 
 def add_product(request):
-    return render (request, "core/admin/add-product.html")
+    return render(request, "core/admin/add-product.html")
+
+
+def add_to_cart(request, product_id):
+    # product = get_object_or_404(Product, id=product_id)
+    # cart = Cart.objects.get_or_create(user=request.user, is_active=True)
+    # cart_item = CartItem.objects.get_or_create(cart=cart, product=product)
+    # cart_item.quantity += 1
+    # cart_item.save()
+    # return redirect("core:product_list")
+    pass
