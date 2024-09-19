@@ -98,7 +98,6 @@ class Product(models.Model):
     serial_number = models.CharField(max_length=30, unique=True, null=True, blank=True)
     model_number = models.CharField(max_length=30, null=True, blank=True)
 
-
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
 
@@ -228,4 +227,3 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
-

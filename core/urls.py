@@ -14,12 +14,12 @@ from .views import (
     users_crud_view,
     add_user,
     add_product,
-    add_to_cart,
     product_list_view,
 )
 from .views import dashboard, ProductDetailView, RestockProducts
 
 # URLConf
+# This code defines views and functions for a Django web application, handling user authentication, product browsing, cart management, and administrative tasks.
 urlpatterns = [
     path("", index, name="index"),
     path("login/", login_view, name="login"),
@@ -38,6 +38,5 @@ urlpatterns = [
     path("users/", users_crud_view, name="users-crud-view"),
     path("zacl-admin/add-user/", add_user, name="add-user"),
     path("zacl-admin/add-product/", add_product, name="add-product"),
-    path("add-to-cart/<int:product_id>", add_to_cart, name="add-to-cart"),
-    path("products/", product_list_view, name="products"),
+    # Other URL patterns
 ]

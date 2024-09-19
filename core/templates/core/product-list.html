@@ -6,6 +6,7 @@
 {% block content %}
   <h1 class="text-2xl font-bold mb-4">Inventory List</h1>
   {{ user.get_username }}
+
   <form method="get" action="" class="mb-4">
     <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
     <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Search</button>
@@ -16,32 +17,42 @@
       <thead>
         <tr>
           <th class="py-2">
-            <a href="?sort=title{% if query %}
+            <a href="?sort=title{% if sort == 'title' %}
                 
                 
                 
-                
-                
-                
-                
-                
-                &q={{ query }}
+                _desc
+
+
+
+              {% else %}
+                {% if query %}
+                  
+                  
+                  
+                  &q={{ query }}
+                {% endif %}
               {% endif %}"
               class="text-blue-500 hover:underline">
               Title
             </a>
           </th>
           <th class="py-2">
-            <a href="?sort=inventory{% if query %}
+            <a href="?sort=inventory{% if sort == 'inventory' %}
                 
                 
                 
-                
-                
-                
-                
-                
-                &q={{ query }}
+                _desc
+
+
+
+              {% else %}
+                {% if query %}
+                  
+                  
+                  
+                  &q={{ query }}
+                {% endif %}
               {% endif %}"
               class="text-blue-500 hover:underline">
               Inventory
@@ -64,10 +75,14 @@
             <td class="py-2">{{ product.last_update }}</td>
             <td class="py-2">{{ product.collection }}</td>
             {% if not is_staff %}
-              <td><form method="post" action="{% url 'add_to_cart' product.id %}">
-                {% csrf_token %}
-                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
-              </form></td>
+              <td>
+                <form method="post" action="">
+                  {% csrf_token %}
+                  <label for="number">Quantity</label>
+                  <input id="number" type="number" value="0" />
+                  <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
+                </form>
+              </td>
             {% endif %}
           </tr>
         {% endfor %}
@@ -78,7 +93,8 @@
       {% if product_list.has_previous %}
         <a href="?page=1{% if query %}
             
-
+            
+            
             &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline">
@@ -87,8 +103,8 @@
         <a href="?page={{ product_list.previous_page_number }}{% if query %}
             
             
-
-   &q={{ query }}
+            
+            &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
           Previous
@@ -99,6 +115,7 @@
         <a href="?page={{ product_list.next_page_number }}{% if query %}
             
             
+            
             &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
@@ -106,7 +123,9 @@
         </a>
         <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
             
-             &q={{ query }}
+            
+            
+            &q={{ query }}
           {% endif %}"
           class="text-blue-500 hover:underline ml-2">
           Last
