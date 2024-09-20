@@ -5,7 +5,6 @@ from .views import (
     logout_view,
     product_list,
     index,
-    haploid,
     product_search,
     change_password,
     view_users,
@@ -14,7 +13,6 @@ from .views import (
     users_crud_view,
     add_user,
     add_product,
-    product_list_view,
 )
 from .views import dashboard, ProductDetailView, RestockProducts
 
@@ -28,7 +26,6 @@ urlpatterns = [
     path("dashboard/", dashboard, name="dashboard"),
     path("product/<int:pk>", ProductDetailView.as_view(), name="product-detail"),
     path("product-list/", product_list, name="product-list"),
-    path("haploid/", haploid, name="haploid"),
     path("restock-products/", RestockProducts.as_view(), name="restock-products"),
     path("product-search/", product_search, name="product-search"),
     path("change-password/", change_password, name="change-password"),

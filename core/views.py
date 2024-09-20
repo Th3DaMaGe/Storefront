@@ -69,27 +69,6 @@ def logout_view(request):
     return redirect("/")
 
 
-def fetch_all_products():
-    url = "http://127.0.0.1:8000/store/products/"
-    products = []
-    page = 1
-
-    while True:
-        response = requests.get(url, params={"page": page})
-        if response.status_code != 200:
-            break
-
-        data = response.json()
-        products.extend(data["results"])
-
-        if not data["next"]:
-            break
-
-        page += 1
-
-    return {"results": products, "count": len(products)}
-
-
 class ProductDetailView(generic.DetailView):
     model = Product
     template_name = "core/product-detail.html"
@@ -101,11 +80,6 @@ class ProductDetailView(generic.DetailView):
             raise Http404("Product not in warehouses/store rooms")
 
         return render(request, "core/product-detail.html", context={"product": product})
-
-
-def haploid(request):
-    return render(request, "core/haploid.html")
-
 
 def dashboard(request):
     user = request.user
@@ -140,16 +114,33 @@ def dashboard(request):
 
 
 def product_list(request):
+    valid_sort_fields = ["title", "inventory", "last_update"]
+    valid_orders = ["asc", "desc"]
+
     query = request.GET.get("q")
-    sort = request.GET.get("sort", "title")  # Default sort by title
+    sort_by = request.GET.get("sort_by", "title")  # Default sort by title
+    order = request.GET.get("order", "asc")  # Default order is ascending
 
+    # Validate sort_by and order parameters
+    if sort_by not in valid_sort_fields:
+        sort_by = 'title'
+    if order not in valid_orders:
+        order = 'asc'
+
+    # Filter products based on query
     if query:
-        products = Product.objects.filter(title__icontains=query).order_by(sort)
+        products = Product.objects.filter(title__icontains=query)
     else:
-        products = Product.objects.all().order_by(sort)
+        products = Product.objects.all()
 
+    # Apply sorting
+    if order == 'asc':
+        products = products.order_by(sort_by)
+    else:
+        products = products.order_by(f'-{sort_by}')
+
+    # Paginate the products
     paginator = Paginator(products, 10)  # Show 10 products per page
-
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
@@ -161,10 +152,10 @@ def product_list(request):
         "next": page_obj.has_next(),
         "previous": page_obj.has_previous(),
         "query": query,
-        "sort": sort,
+        "sort_by": sort_by,
+        "order": order,
     }
     return render(request, "core/product-list.html", context)
-
 
 def fetch_products(page=1):
     url = "http://127.0.0.1:8000/store/products/"

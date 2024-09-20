@@ -15747,3 +15747,1439 @@ Traceback (most recent call last):
   File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'add_to_cart' not found. 'add_to_cart' is not a valid view function or pattern name.
+2024-09-18 20:43:17,451 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-18 20:43:19,640 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-18 20:43:20,216 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-18 20:43:37,711 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-18 20:43:38,959 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-18 20:43:39,635 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-18 20:43:47,153 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-18 20:44:03,045 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-18 20:44:04,318 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-18 20:44:04,797 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 06:51:01,479 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 06:51:02,257 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 06:51:08,782 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-19 06:51:22,467 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'cart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 166, in product_list
+    return render(request, "core/product-list.html", context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'cart' is not a registered namespace
+2024-09-19 06:52:55,320 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'core'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 166, in product_list
+    return render(request, "core/product-list.html", context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'core' is not a registered namespace
+2024-09-19 06:54:36,893 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 149, in product_list
+    products = Product.objects.all().order_by(sort)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 2222, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'inventory_desc' into field. Choices are: barcode, cartitem, collection, collection_id, description, id, images, inventory, last_update, model_number, orderitems, promotions, restock_value, reviews, serial_number, slug, title, unit_price
+2024-09-19 06:55:17,409 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 06:55:24,579 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 06:55:26,157 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 06:56:56,925 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 06:57:05,776 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 06:57:07,105 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:01:25,420 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:01:27,536 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:01:28,486 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:01:34,226 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:01:37,018 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:01:37,535 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:02:01,578 (ERROR) - django.request - Internal Server Error: /add/284/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 331, in add_to_cart
+    cart_item, created = CartItem.objects.get_or_create(product=product,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: cart, cart_id, id, product, product_id, quantity
+2024-09-19 07:02:34,461 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:02:37,417 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:02:38,264 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:02:47,023 (ERROR) - django.request - Internal Server Error: /add/284/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'cart_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 331, in add_to_cart
+    cart_item, created = CartItem.objects.get_or_create(product=product)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1048, "Column 'cart_id' cannot be null")
+2024-09-19 07:03:37,412 (ERROR) - django.request - Internal Server Error: /add/423/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.CartItem.DoesNotExist: CartItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'cart_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 331, in add_to_cart
+    cart_item, created = CartItem.objects.get_or_create(product=product)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1048, "Column 'cart_id' cannot be null")
+2024-09-19 07:46:28,102 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:46:30,274 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:46:31,050 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:46:41,880 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:46:45,089 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:46:50,194 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:46:52,092 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:46:52,857 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:47:01,394 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:47:06,500 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:47:07,369 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 07:47:10,198 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:47:12,075 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:47:35,022 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:47:36,681 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:47:44,357 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 07:47:46,152 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 07:47:46,743 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:39:17,489 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:39:21,115 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:39:25,706 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:39:28,073 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:39:28,521 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:39:32,140 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:39:34,156 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:39:38,535 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:39:40,045 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:39:40,540 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:39:49,940 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:39:52,652 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:39:53,431 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:40:06,168 (ERROR) - django.request - Internal Server Error: /add/423/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 336, in add_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user, is_active=True)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: created_at, id, items
+2024-09-19 08:40:15,383 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:40:17,907 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:40:18,830 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:40:19,987 (ERROR) - django.request - Internal Server Error: /add/423/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 336, in add_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: created_at, id, items
+2024-09-19 08:40:27,950 (ERROR) - django.request - Internal Server Error: /add/423/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 336, in add_to_cart
+    cart, created = Cart.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: created_at, id, items
+2024-09-19 08:40:45,497 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:40:47,383 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:40:48,229 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:40:49,096 (ERROR) - django.request - Internal Server Error: /add/423/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 336, in add_to_cart
+    cart, created = Cart.objects.get_or_create()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+store.models.Cart.MultipleObjectsReturned: get() returned more than one Cart -- it returned 3!
+2024-09-19 08:41:45,251 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:41:48,559 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:41:53,847 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:41:56,428 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:41:57,192 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:42:01,952 (ERROR) - django.request - Internal Server Error: /add/284/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 336, in add_to_cart
+    cart, created = Cart.objects.get_or_create()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+store.models.Cart.MultipleObjectsReturned: get() returned more than one Cart -- it returned 3!
+2024-09-19 08:43:32,287 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:43:35,342 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:43:36,301 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:43:58,403 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 337, in add_to_cart
+    Cart.objects.filter(user=request.user, is_active=True).update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: created_at, id, items
+2024-09-19 08:44:07,674 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:44:09,922 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:44:10,684 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:44:11,812 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 337, in add_to_cart
+    Cart.objects.filter(user=request.user).update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: created_at, id, items
+2024-09-19 08:44:21,474 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:44:24,215 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:44:24,764 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:44:26,106 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'is_active'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 337, in add_to_cart
+    Cart.objects.filter().update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1188, in update
+    query.add_update_values(kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\subqueries.py", line 88, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Cart has no field named 'is_active'
+2024-09-19 08:44:32,390 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:44:35,196 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:44:36,160 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:44:44,809 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 339, in add_to_cart
+    cart, created = Cart.objects.get_or_create()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+store.models.Cart.MultipleObjectsReturned: get() returned more than one Cart -- it returned 3!
+2024-09-19 08:46:35,329 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:46:38,933 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:46:46,226 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:46:48,866 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:02,671 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:47:04,884 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:09,272 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:47:10,597 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:15,833 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:47:18,412 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:30,290 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:47:32,214 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:36,913 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:47:42,251 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:47:58,458 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:48:00,854 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:48:01,413 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:48:04,165 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 08:48:06,881 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:48:07,995 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:55:32,363 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:55:33,593 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:55:34,112 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:55:39,273 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:55:40,517 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:55:41,015 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:55:50,230 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:55:52,526 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:55:53,420 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:56:10,634 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:56:12,775 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:56:13,636 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:56:16,761 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:56:18,824 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:56:19,521 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:56:28,424 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:56:30,484 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:56:31,266 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:00,448 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:58:03,238 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:58:03,986 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:09,045 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:58:11,590 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:58:13,076 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:17,846 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:58:20,895 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:58:21,851 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:26,516 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:58:28,674 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:58:29,941 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:34,803 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:58:38,594 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:58:39,582 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:58:59,273 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:00,748 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:08,588 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:09,987 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:15,779 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:18,332 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:19,039 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:59:24,070 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:26,236 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:27,072 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:59:34,781 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:36,901 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:37,685 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 08:59:42,999 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 08:59:45,412 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 08:59:46,313 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:00:23,593 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 337, in add_to_order
+    Order.objects.filter(user=request.user, is_active=True).update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: customer, customer_id, id, items, payment_status, placed_at
+2024-09-19 09:00:42,978 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:00:45,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:00:46,234 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:00:57,796 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:01:00,237 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:01:01,169 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:01:27,020 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:01:29,659 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:01:30,406 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:01:39,762 (ERROR) - django.request - Internal Server Error: /add/905/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 337, in add_to_order
+    Order.objects.filter(customer=request.customer).update(is_active=False)
+AttributeError: 'WSGIRequest' object has no attribute 'customer'
+2024-09-19 09:01:48,940 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:01:51,406 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:01:52,443 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:02:54,991 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:03:01,853 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:03:04,077 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:03:32,452 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.OrderItem.DoesNotExist: OrderItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'quantity' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 344, in add_to_order
+    order_item, created = OrderItem.objects.get_or_create(order=order, product=product)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1048, "Column 'quantity' cannot be null")
+2024-09-19 09:05:49,743 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.OrderItem.DoesNotExist: OrderItem matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1048, "Column 'quantity' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 344, in add_to_order
+    order_item, created = OrderItem.objects.get_or_create(order=order, product=product)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 923, in get_or_create
+    return self.create(**params), True
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1048, "Column 'quantity' cannot be null")
+2024-09-19 09:06:25,368 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:06:28,321 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:06:30,209 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:07:03,588 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:07:06,976 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:07:07,668 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:07:34,933 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:07:38,473 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:07:39,530 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:07:50,587 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 340, in add_to_order
+    Order.objects.filter(customer=customer, is_active=True).update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "admin": Must be "Customer" instance.
+2024-09-19 09:08:20,302 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 340, in add_to_order
+    Order.objects.filter(customer=customer, is_active=True).update(is_active=False)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "customer1": Must be "Customer" instance.
+2024-09-19 09:09:42,723 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:09:53,986 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:09:55,628 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:10:18,653 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 343, in add_to_order
+    order, created = Order.objects.get_or_create(customer=customer, is_active=True)
+NameError: name 'customer' is not defined
+2024-09-19 09:10:31,560 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:10:35,378 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:10:36,340 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:10:37,690 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 343, in add_to_order
+    order, created = Order.objects.get_or_create(customer=customer, is_active=True)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "customer1": Must be "Customer" instance.
+2024-09-19 09:12:23,968 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:12:26,485 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:12:27,317 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:12:34,220 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:12:36,892 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:12:42,157 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:12:46,575 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:12:48,177 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:12:53,503 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:12:57,701 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:12:58,582 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:13:07,614 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 341, in add_to_order
+    raise ValueError("User is not a Customer instance")
+ValueError: User is not a Customer instance
+2024-09-19 09:15:47,324 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:15:51,379 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:15:52,359 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:15:59,367 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:01,440 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:10,771 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:12,604 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:19,478 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:22,156 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:23,508 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:16:30,189 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:33,879 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:38,475 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:42,796 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:44,529 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:16:51,589 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:16:54,258 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:16:54,952 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:17:03,635 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:17:05,739 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:17:07,214 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:32:37,838 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 340, in add_to_order
+    customer = Customer.objects.get(user=user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.Customer.DoesNotExist: Customer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 342, in add_to_order
+    raise ValueError(
+ValueError: User is not a customer instance
+2024-09-19 09:36:14,516 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:36:15,004 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:40:24,794 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:40:26,201 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:40:26,907 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:40:30,424 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:40:33,156 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:40:34,274 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:40:48,746 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:40:51,263 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:41:07,618 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:41:09,433 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:41:09,956 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:41:18,743 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 346, in add_to_order
+    customer = Customer.objects.get(user=user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.Customer.DoesNotExist: Customer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 348, in add_to_order
+    raise ValueError(
+ValueError: User is not a customer instance
+2024-09-19 09:43:03,478 (ERROR) - django.request - Internal Server Error: /add/648/
+Traceback (most recent call last):
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 346, in add_to_order
+    customer = Customer.objects.get(user=user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.Customer.DoesNotExist: Customer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 348, in add_to_order
+    raise ValueError(
+ValueError: User is not a customer instance
+2024-09-19 09:45:35,704 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:45:38,963 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:45:39,859 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:45:44,019 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:45:45,452 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:45:45,896 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:47:43,772 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:47:47,077 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:47:48,006 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:47:56,072 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:04,418 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:06,622 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:48:10,915 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:15,306 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:16,312 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:48:20,100 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:24,531 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:25,234 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:48:32,143 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:37,282 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:38,205 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:48:44,848 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:46,532 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:47,323 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:48:52,747 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:48:57,055 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:48:58,266 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:49:05,861 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 146, in product_list
+    customer = Customer.objects.get(user=user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+store.models.Customer.DoesNotExist: Customer matching query does not exist.
+2024-09-19 09:50:07,982 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:50:10,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:50:12,165 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:51:03,217 (WARNING) - django.request - Not Found: /product-list/
+2024-09-19 09:51:07,925 (WARNING) - django.request - Not Found: /product-list/
+2024-09-19 09:51:52,604 (WARNING) - django.request - Not Found: /product-list/
+2024-09-19 09:52:13,901 (WARNING) - django.request - Not Found: /product-list/
+2024-09-19 09:53:24,107 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 09:53:26,706 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:54:53,170 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 09:54:55,906 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:55:07,886 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 09:55:11,832 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:55:12,803 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:55:13,958 (WARNING) - django.request - Not Found: /customer-detail
+2024-09-19 09:55:32,439 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 09:55:35,394 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:55:36,413 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:55:37,540 (WARNING) - django.request - Not Found: /customer-detail
+2024-09-19 09:55:39,224 (WARNING) - django.request - Not Found: /customer-detail
+2024-09-19 09:55:49,874 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:55:51,455 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:55:51,964 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:55:52,738 (WARNING) - django.request - Not Found: /customer-detail
+2024-09-19 09:55:54,044 (WARNING) - django.request - Not Found: /customer-detail
+2024-09-19 09:56:25,550 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 09:56:39,171 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 09:56:40,940 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:56:41,614 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:57:09,433 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 09:58:10,286 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 09:58:12,660 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 09:58:13,414 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 09:58:23,678 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 11:42:39,428 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 11:42:41,777 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:42:46,414 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 11:42:48,110 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:43:04,308 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:43:05,698 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:43:06,315 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:43:06,862 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 11:43:09,120 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 11:43:22,875 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:43:24,517 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:43:25,134 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:43:26,190 (ERROR) - django.request - Internal Server Error: /customer/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 399, in customer
+    return render(request, "core/customer.html", context)
+NameError: name 'context' is not defined
+2024-09-19 11:43:32,613 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:43:34,689 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:43:35,391 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:43:55,297 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:43:57,556 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:43:58,154 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:44:03,210 (ERROR) - django.request - Internal Server Error: /customer/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 399, in customer
+    return render(request, "core/customer.html",context)
+NameError: name 'context' is not defined
+2024-09-19 11:44:13,067 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:44:14,232 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:44:14,686 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:45:00,445 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-09-19 11:45:03,145 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:45:04,001 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:45:05,163 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 11:49:05,214 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 11:49:35,321 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 11:49:39,419 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 11:49:45,378 (WARNING) - django.request - Not Found: /customer/
+2024-09-19 11:50:29,891 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:01:45,920 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:01:46,482 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:01:56,750 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-19 13:02:14,304 (WARNING) - django.request - Not Found: /product-list/
+2024-09-19 13:02:43,758 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:02:45,396 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:02:46,273 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:02:51,334 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:02:53,471 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:02:54,272 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:02:57,568 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:02:59,758 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:03:00,583 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:03:18,345 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:03:20,414 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:03:21,173 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:03:31,059 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:03:33,048 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:03:33,663 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:03:45,936 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:03:49,371 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:05:13,500 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:05:15,564 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:05:22,467 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:05:24,268 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:07:16,350 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:07:18,307 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:07:27,366 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:07:29,569 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:07:36,238 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:07:37,694 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:07:58,901 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-19 13:08:00,840 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:08:01,454 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:09:58,193 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 149, in product_list
+    products = Product.objects.all().order_by(sort)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 2222, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'inventory                                                                _desc' into field. Choices are: barcode, cartitem, collection, collection_id, description, id, images, inventory, last_update, model_number, orderitems, promotions, restock_value, reviews, serial_number, slug, title, unit_price
+2024-09-19 13:11:25,242 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:11:27,943 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:11:28,570 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:16:00,819 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:16:17,292 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:16:26,184 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:16:32,266 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:16:34,215 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:17:03,738 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:17:11,945 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:17:13,242 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:17:22,260 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:17:25,522 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:17:26,279 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:17:36,728 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:17:40,844 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:17:43,519 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:19:12,172 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:19:17,374 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:19:29,196 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:19:34,048 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:19:35,525 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:19:49,349 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:19:53,074 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:19:54,380 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:19:57,961 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:20:03,829 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:20:09,383 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:20:14,217 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:20:15,495 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:20:58,935 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:21:00,754 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:21:01,691 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:21:29,217 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:21:31,134 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:21:31,948 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:21:36,023 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:21:38,497 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:21:39,283 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:23:37,179 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:23:54,621 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:23:56,763 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:24:24,604 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:24:28,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:24:29,330 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:24:46,847 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:24:50,801 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:24:51,878 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:24:56,100 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 125, in product_list
+NameError: name 'order' is not defined
+2024-09-19 13:25:07,634 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:25:10,188 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:25:10,916 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 13:25:17,115 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 128, in product_list
+    products = Product.objects.all().order_by(sort)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 2222, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'inventory                                                                _desc' into field. Choices are: barcode, cartitem, collection, collection_id, description, id, images, inventory, last_update, model_number, orderitems, promotions, restock_value, reviews, serial_number, slug, title, unit_price
+2024-09-19 13:25:23,321 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 128, in product_list
+    products = Product.objects.all().order_by(sort)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 2222, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'inventory                                                                _desc' into field. Choices are: barcode, cartitem, collection, collection_id, description, id, images, inventory, last_update, model_number, orderitems, promotions, restock_value, reviews, serial_number, slug, title, unit_price
+2024-09-19 13:27:40,862 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-09-19 13:27:46,434 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 13:27:52,474 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 14:23:03,700 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 14:23:05,084 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 15:23:53,308 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-09-19 15:23:56,744 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 15:23:58,020 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 15:24:02,190 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-09-19 15:24:04,565 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 15:24:05,774 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 15:28:40,854 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 15:28:41,522 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-19 15:29:50,034 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-19 15:33:26,926 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-09-19 15:33:29,866 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-19 15:33:30,526 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-20 08:11:09,658 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-20 08:11:21,909 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-20 08:11:23,834 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-20 08:11:24,757 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-20 08:11:30,996 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-09-20 08:11:32,705 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-20 08:11:33,351 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-09-20 08:11:54,805 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-20 08:12:31,401 (WARNING) - django.request - Bad Request: /login/
+2024-09-20 08:12:42,366 (WARNING) - django.request - Bad Request: /login/
+2024-09-20 08:12:50,628 (WARNING) - django.request - Bad Request: /login/
+2024-09-20 08:12:56,296 (WARNING) - django.request - Bad Request: /login/
+2024-09-20 08:13:03,396 (WARNING) - django.request - Bad Request: /login/
+2024-09-20 08:13:10,236 (WARNING) - django.request - Bad Request: /login/

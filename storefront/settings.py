@@ -66,8 +66,17 @@ INSTALLED_APPS = [
     "tags",
     "likes",
     "core",
+    # "compressor",
     
 ]
+
+# This is for TailwindCSS 
+COMPRESS_ROOT = BASE_DIR / 'static'
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",

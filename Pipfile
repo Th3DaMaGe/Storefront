@@ -26,6 +26,7 @@ python-barcode = {extras = ["images"], version = "*"}
 django-imagekit = "*"
 fontawesomefree = "*"
 tailwind = "*"
+django-compressor = "*"
 
 [dev-packages]
 pytest = "*"
