@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from store.models import Product, Cart, CartItem
+from store.models import Product, Order, OrderItem, Collection
 from django.views import generic
 from django.http import Http404
 import requests
@@ -22,6 +22,10 @@ from datetime import datetime
 from core.models import (
     User,
 )
+from django.forms import inlineformset_factory
+from django.contrib.auth.forms import UserCreationForm
+from django import forms
+from .forms import OrderForm, OrderItemForm, AddProductForm, Order
 
 
 @csrf_exempt
@@ -39,7 +43,7 @@ def login_view(request):
                     "access": str(refresh.access_token),
                 }
             )
-            response["Location"] = "/dashboard/"  # Redirect to profile page
+            response["Location"] = "/dashboard/"  # Redirect to dashboard page
             response.status_code = 302
             return response
         else:
@@ -81,39 +85,20 @@ class ProductDetailView(generic.DetailView):
 
         return render(request, "core/product-detail.html", context={"product": product})
 
+
 def dashboard(request):
     user = request.user
-
-    query = request.GET.get("q")
-    sort = request.GET.get("sort", "title")  # Default sort by title
-
-    if query:
-        products = Product.objects.filter(title__icontains=query).order_by(sort)
-    else:
-        products = Product.objects.all().order_by(sort)
-
-    paginator = Paginator(products, 10)  # Show 10 products per page
-
-    page_number = request.GET.get("page")
-    page_obj = paginator.get_page(page_number)
 
     context = {
         "username": user.username,
         "is_staff": user.is_staff,
         "email": user.email,
-        "product_list": page_obj,
-        "count": paginator.count,
-        "num_pages": paginator.num_pages,
-        "current_page": page_obj.number,
-        "next": page_obj.has_next(),
-        "previous": page_obj.has_previous(),
-        "query": query,
-        "sort": sort,
     }
     return render(request, "core/dashboard.html", context)
 
 
 def product_list(request):
+    user = request.user
     valid_sort_fields = ["title", "inventory", "last_update"]
     valid_orders = ["asc", "desc"]
 
@@ -123,9 +108,9 @@ def product_list(request):
 
     # Validate sort_by and order parameters
     if sort_by not in valid_sort_fields:
-        sort_by = 'title'
+        sort_by = "title"
     if order not in valid_orders:
-        order = 'asc'
+        order = "asc"
 
     # Filter products based on query
     if query:
@@ -134,10 +119,10 @@ def product_list(request):
         products = Product.objects.all()
 
     # Apply sorting
-    if order == 'asc':
+    if order == "asc":
         products = products.order_by(sort_by)
     else:
-        products = products.order_by(f'-{sort_by}')
+        products = products.order_by(f"-{sort_by}")
 
     # Paginate the products
     paginator = Paginator(products, 10)  # Show 10 products per page
@@ -154,15 +139,11 @@ def product_list(request):
         "query": query,
         "sort_by": sort_by,
         "order": order,
+        "username": user.username,
+        "is_staff": user.is_staff,
+        "email": user.email,
     }
     return render(request, "core/product-list.html", context)
-
-def fetch_products(page=1):
-    url = "http://127.0.0.1:8000/store/products/"
-    response = requests.get(url, params={"page": page})
-    if response.status_code == 200:
-        return response.json()
-    return None
 
 
 def product_list_view(request):
@@ -194,8 +175,10 @@ def product_list_view(request):
         # If page is out of range (e.g. 9999), deliver last page of results.
         page_obj = paginator.page(paginator.num_pages)
 
+    context["products"] = page_obj
+
     # Render the template with the products and user context
-    return render(request, "core/product_list.html", {"products": page_obj}, context)
+    return render(request, "core/product_list.html", context)
 
 
 def index(request):
@@ -264,12 +247,19 @@ def is_superuser(user):
 
 @user_passes_test(is_superuser)
 def view_users(request):
+    user = request.user
+    user_details = {
+        "username": user.username,
+        "email": user.email,
+        "is_staff": user.is_staff,
+        "is_superuser": user.is_superuser,
+    }
+
     if request.method == "POST":
         action = request.POST.get("action")
         user_ids = request.POST.getlist("user_ids")
 
         if action == "delete":
-            # and request.user.is_superuser:
             User.objects.filter(id__in=user_ids).delete()
             return redirect("view-users")
         else:
@@ -285,7 +275,6 @@ def view_users(request):
     else:
         users = User.objects.all()
 
-    users = User.objects.all()
     now = datetime.now(pytz.utc)
     for user in users:
         if user.last_login:
@@ -298,7 +287,10 @@ def view_users(request):
             )
         else:
             user.duration_last_login = None
-    return render(request, "core/view-users.html", {"users": users})
+
+    return render(
+        request, "core/view-users.html", {"users": users, "user_details": user_details}
+    )
 
 
 def transactions_view(request):
@@ -306,26 +298,159 @@ def transactions_view(request):
 
 
 def notifications_view(request):
-    return render(request, "core/notifications.html")
+    user = request.user
 
-
-def users_crud_view(request):
-    return render(request, "core/users.html")
+    # Context dictionary to pass user information to the template
+    context = {
+        "username": user.username,
+        "is_staff": user.is_staff,
+        "email": user.email,
+    }
+    return render(request, "core/notifications.html", context)
 
 
 def add_user(request):
     return render(request, "core/admin/add-user.html")
 
 
-def add_product(request):
-    return render(request, "core/admin/add-product.html")
+class UserForm(UserCreationForm):
+    is_staff = forms.BooleanField(required=False, label="Staff Status")
+    is_superuser = forms.BooleanField(required=False, label="Admin Privileges")
 
+    class Meta:
+        model = User
+        fields = [
+            "username",
+            "password1",
+            "password2",
+            "email",
+            "first_name",
+            "last_name",
+            "is_staff",
+            "is_superuser",
+        ]
+
+
+def users_crud_view(request):
+    if request.method == "POST":
+        form = UserForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.is_staff = form.cleaned_data["is_staff"]
+            user.is_superuser = form.cleaned_data["is_superuser"]
+            user.save()
+            return redirect("view-users")
+    else:
+        form = UserForm()
+    return render(request, "core/admin/add-users.html", {"form": form})
+
+
+# class AddProductForm(ModelForm):
+#     class Meta:
+#         model = Product
+#         fields = [
+#             "title",
+#             "slug",
+#             "description",
+#             "unit_price",
+#             "inventory",
+#             "collection",
+#             "restock_value",
+#             "model_number",
+#             "serial_number",
+#             "image",
+#             "barcode",
+#         ]
+
+
+def add_product(request):
+    if request.method == "POST":
+        form = AddProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect("product-list")
+    else:
+        form = AddProductForm()
+    return render(request, "core/admin/add-product.html", {"form": form})
 
 def add_to_cart(request, product_id):
-    # product = get_object_or_404(Product, id=product_id)
-    # cart = Cart.objects.get_or_create(user=request.user, is_active=True)
-    # cart_item = CartItem.objects.get_or_create(cart=cart, product=product)
-    # cart_item.quantity += 1
-    # cart_item.save()
-    # return redirect("core:product_list")
-    pass
+    product = get_object_or_404(Product, id=product_id)
+    order = Order.objects.get_or_create(user=request.user, is_active=True)
+    order_item = OrderItem.objects.get_or_create(order=order, product=product)
+    order_item.quantity += 1
+    print(order_item.quantity)
+    order_item.save()
+    return redirect("core:product_list")
+
+
+def view_collections(request):
+    user = request.user
+    collections = Collection.objects.all()
+
+    paginator = Paginator(collections, 20)  # Show 10 products per page
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "collections": page_obj,
+        "username": user.username,
+        "is_staff": user.is_staff,
+        "email": user.email,
+        "count": paginator.count,
+        "num_pages": paginator.num_pages,
+        "current_page": page_obj.number,
+        "next": page_obj.has_next(),
+        "previous": page_obj.has_previous(),
+    }
+    return render(request, "core/view-collections.html", context)
+
+
+def view_collection_products(request, collection_id):
+    collection = get_object_or_404(Collection, id=collection_id)
+    products = collection.products.all()
+
+    paginator = Paginator(products, 20)  # Show 10 products per page
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        "collection": collection,
+        "products": page_obj,
+        "count": paginator.count,
+        "num_pages": paginator.num_pages,
+        "current_page": page_obj.number,
+        "next": page_obj.has_next(),
+        "previous": page_obj.has_previous(),
+    }
+    return render(request, "core/view-collection-products.html", context)
+
+
+def create_order(request):
+    OrderItemFormSet = inlineformset_factory(
+        Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
+    )
+
+    if request.method == "POST":
+        order_form = OrderForm(request.POST)
+        formset = OrderItemFormSet(request.POST)
+
+        if order_form.is_valid() and formset.is_valid():
+            order = order_form.save()
+            formset.instance = order
+            formset.save()
+            return redirect(
+                "order_success"
+            )  # Redirect to a success page or another view
+
+    else:
+        order_form = OrderForm()
+        formset = OrderItemFormSet()
+
+    return render(
+        request,
+        "core/create-order.html",
+        {
+            "order_form": order_form,
+            "formset": formset,
+        },
+    )

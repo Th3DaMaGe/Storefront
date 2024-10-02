@@ -59,6 +59,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "djoser",
     "silk",
+    "django_viewcomponent",  # new
+    "django_formify",  # new
     "corsheaders",
     "playground",
     "debug_toolbar",
@@ -67,15 +69,14 @@ INSTALLED_APPS = [
     "likes",
     "core",
     # "compressor",
-    
 ]
 
-# This is for TailwindCSS 
-COMPRESS_ROOT = BASE_DIR / 'static'
+# This is for TailwindCSS
+COMPRESS_ROOT = BASE_DIR / "static"
 
 COMPRESS_ENABLED = True
 
-STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)
 
 
 MIDDLEWARE = [
@@ -99,7 +100,8 @@ INTERNAL_IPS = [
     "127.0.0.1:8000",
     "192.168.0.114" "127.0.0.1",
     "http://localhost:8000",
-    "http://localhost:8089" "localhost:8089",
+    "http://localhost:8089",
+    "localhost:8089",
     # ...
 ]
 
@@ -118,13 +120,24 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [],
-        "APP_DIRS": True,
+        # "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
-                "django.contrib.messages.context_processors.messages", 
+                "django.contrib.messages.context_processors.messages",
+                "core.context_processors.user_context",
+            ],
+            "loaders": [
+                (
+                    "django.template.loaders.cached.Loader",
+                    [
+                        "django.template.loaders.filesystem.Loader",
+                        "django.template.loaders.app_directories.Loader",
+                        "django_viewcomponent.loaders.ComponentLoader",
+                    ],
+                )
             ],
         },
     },

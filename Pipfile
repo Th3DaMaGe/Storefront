@@ -27,6 +27,7 @@ django-imagekit = "*"
 fontawesomefree = "*"
 tailwind = "*"
 django-compressor = "*"
+django-formify = "*"
 
 [dev-packages]
 pytest = "*"

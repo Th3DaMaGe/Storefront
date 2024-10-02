@@ -12,10 +12,12 @@
     }
   </style>
 
-  <form method="get" action="" class="mb-4">
-    <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
-    <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Search</button>
-  </form>
+  <div class="text-center">
+    <form method="get" action="" class="mb-4">
+      <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
+      <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Search</button>
+    </form>
+  </div>
 
   {% if product_list %}
     <table class="min-w-full divide-y divide-gray-200">
@@ -25,16 +27,26 @@
             <a href="?sort_by=title&order={% if sort_by == 'title' and order == 'asc' %}
                 
                 
+                
+                
                 desc
+
+
 
 
               {% else %}
                 
                 
+                
+                
                 asc
 
 
+
+
               {% endif %}{% if query %}
+                
+                
                 
                 
                 &q={{ query }}
@@ -47,16 +59,26 @@
             <a href="?sort_by=inventory&order={% if sort_by == 'inventory' and order == 'asc' %}
                 
                 
+                
+                
                 desc
+
+
 
 
               {% else %}
                 
                 
+                
+                
                 asc
 
 
+
+
               {% endif %}{% if query %}
+                
+                
                 
                 
                 &q={{ query }}
@@ -84,9 +106,10 @@
             {% if not is_staff %}
               <td class="py-2 text-center">
                 <form method="post" action="">
+                  {% comment %} "{% url ""  product.id %}" {% endcomment %}
                   {% csrf_token %}
                   <label for="number"></label>
-                  <input id="number" type="number" value="0" />
+                  <input id="number" type="number" value="1" min="1" class="border text-center" />
                   <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
                 </form>
               </td>
@@ -102,12 +125,16 @@
           <a href="?page=1{% if query %}
               
               
+              
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline">
             First
           </a>
           <a href="?page={{ product_list.previous_page_number }}{% if query %}
+              
+              
               
               
               &q={{ query }}
@@ -121,12 +148,16 @@
           <a href="?page={{ product_list.next_page_number }}{% if query %}
               
               
+              
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline ml-2">
             Next
           </a>
           <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
+              
+              
               
               
               &q={{ query }}

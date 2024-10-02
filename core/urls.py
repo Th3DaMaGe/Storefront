@@ -11,8 +11,11 @@ from .views import (
     transactions_view,
     notifications_view,
     users_crud_view,
-    add_user,
     add_product,
+    view_collections,
+    view_collection_products,
+    add_to_cart,
+    create_order,
 )
 from .views import dashboard, ProductDetailView, RestockProducts
 
@@ -30,10 +33,17 @@ urlpatterns = [
     path("product-search/", product_search, name="product-search"),
     path("change-password/", change_password, name="change-password"),
     path("view-users/", view_users, name="view-users"),
+    path("view-collection/", view_collections, name="view-collection"),
+    path(
+        "view_collection/<int:collection_id>",
+        view_collection_products,
+        name="view-collection-products",
+    ),
+    path("create-order/", create_order, name="create-order"),
     path("transactions/", transactions_view, name="transactions"),
     path("notifications/", notifications_view, name="notifications"),
-    path("users/", users_crud_view, name="users-crud-view"),
-    path("zacl-admin/add-user/", add_user, name="add-user"),
-    path("zacl-admin/add-product/", add_product, name="add-product"),
+    path("ims-admin/add-users/", users_crud_view, name="users-crud-view"),
+    path("add-cart/<int:product_id>", add_to_cart, name="add-order"),
+    path("ims-admin/add-product/", add_product, name="add-product"),
     # Other URL patterns
 ]

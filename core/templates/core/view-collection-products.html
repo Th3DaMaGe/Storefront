@@ -1,0 +1,54 @@
+{% extends 'core/base_generic.html' %}
+{% block title %}
+  {{ collection.title }} Products
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-2xl font-bold mb-4">{{ collection.title }} Products</h1>
+  {{ user.get_username }}
+
+  {% if products %}
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead>
+        <tr>
+          <th class="py-2">Title</th>
+          <th class="py-2">Inventory</th>
+          <th class="py-2">Last Update</th>
+          <th class="py-2">Collection</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for product in products %}
+          <tr>
+            <td class="py-2">
+              <a href="{{ product.get_absolute_url }}" class="text-blue-500 hover:underline">{{ product.title }}</a>
+            </td>
+            <td class="py-2">{{ product.inventory }}</td>
+            <td class="py-2">{{ product.last_update }}</td>
+            <td class="py-2">{{ product.collection }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div id="pagination-controls" class="mt-4">
+      {% if products.has_previous %}
+        <a href="?page=1" class="text-blue-500 hover:underline">First</a>
+        <a href="?page={{ products.previous_page_number }}" class="text-blue-500 hover:underline ml-2">Previous</a>
+      {% endif %}
+      <span class="ml-2">Page {{ products.number }} of {{ products.paginator.num_pages }}</span>
+      {% if products.has_next %}
+        <a href="?page={{ products.next_page_number }}" class="text-blue-500 hover:underline ml-2">Next</a>
+        <a href="?page={{ products.paginator.num_pages }}" class="text-blue-500 hover:underline ml-2">Last</a>
+      {% endif %}
+    </div>
+
+    <form method="get" action="" class="mt-4">
+      <label for="page" class="mr-2">Go to page:</label>
+      <input type="number" id="page" name="page" min="1" max="{{ products.paginator.num_pages }}" required class="border rounded px-2 py-1" />
+      <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Go</button>
+    </form>
+  {% else %}
+    <p class="mt-4">There are no products in this collection.</p>
+  {% endif %}
+{% endblock %}

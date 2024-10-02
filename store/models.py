@@ -115,7 +115,7 @@ class Product(models.Model):
 
     def generate_barcode(self):
         barcode_value = str(self.id)  # Use the product ID or any unique value
-        barcode_filename = f"barcode_{self.id}"
+        barcode_filename = f"barcode_{self.id}.png"
         barcode_path = os.path.join(settings.MEDIA_ROOT, "barcodes", barcode_filename)
 
         if not os.path.exists(os.path.dirname(barcode_path)):
@@ -124,8 +124,8 @@ class Product(models.Model):
         barcode = Code128(barcode_value, writer=ImageWriter())
         barcode.save(barcode_path)
 
-        with open(f"{barcode_path}.png", "rb") as f:
-            self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
+        with open(barcode_path, "rb") as f:
+            self.barcode.save(barcode_filename, File(f), save=False)
         super().save(update_fields=["barcode"])
 
 

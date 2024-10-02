@@ -38,3 +38,4 @@ class Command(BaseCommand):
         self.stdout.write(
             self.style.SUCCESS("Successfully updated products and generated barcodes")
         )
+

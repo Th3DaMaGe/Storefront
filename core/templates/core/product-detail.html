@@ -1,130 +1,29 @@
 {% extends 'core/base_generic.html' %}
-{% block title %}Details for {{product.title}}{% endblock %}
+{% block title %}
+  Details for {{ product.title }}
+{% endblock %}
 
 {% block content %}
-  <a href="javascript:history.go(-1)">Back</a>
-  <h1>Title: {{ product.title }}</h1>
+  <div class="">
+    <a href="javascript:history.go(-1)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 
-  <p>
-    <strong>Quantity:</strong> {{ product.inventory }}
-  </p>
-  <p>
-    <strong>Unit Price:</strong> {{ product.unit_price }}
-  </p>
-  <p>
-    <strong>Last Update:</strong> {{ product.last_update }}
-  </p>
-  <p>
-    <strong>Description:</strong> {{ product.description }}
-  </p>
+    <h1>Title: {{ product.title }}</h1>
 
-  {% comment %} <div style="margin-left:20px;margin-top:20px">
-    <h4>Instances/Spares/Copies</h4>
-
-    {% for copy in book.bookinstance_set.all %}
-      <hr />
-      <p class="{% if copy.status == 'a' %}
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          text-success
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {% elif copy.status == 'm' %}
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          text-danger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {% else %}
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          text-warning
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {% endif %}">{{ copy.get_status_display }}</p>
-      {% if copy.status != 'a' %}
-        <p>
-          <strong>Due to be returned:</strong> {{ copy.due_back }}
-        </p>
-      {% endif %}
-      <p>
-        <strong>Imprint:</strong> {{ copy.imprint }}
-      </p>
-      <p class="text-muted">
-        <strong>Id:</strong> {{ copy.id }}
-      </p>
-    {% endfor %}
-  </div> {% endcomment %}
+    <p>
+      <strong>Quantity:</strong> {{ product.inventory }}
+    </p>
+    <p>
+      <strong>Unit Price:</strong> {{ product.unit_price }}
+    </p>
+    <p>
+      <strong>Last Update:</strong> {{ product.last_update }}
+    </p>
+    <p>
+      <strong>Collection:</strong> {{ product.collection }}
+    </p>
+    <p>
+      <strong>Description:</strong> {{ product.description }}
+    </p>
+    <img src="{{ product.barcode.url }}" alt="barcode" />
+  </div>
 {% endblock %}

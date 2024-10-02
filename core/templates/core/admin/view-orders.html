@@ -7,14 +7,14 @@
 
   <!-- Add button to add users -->
   <div class="flex justify-end">
-
-    <a href="{% url 'users-crud-view' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">Add User</button>
+    <a href="{% url 'add-user' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">
       <i class="bi bi-person"></i>Add User
     </a>
  
   </div>
 
-  <form class="align-right" method="get" action="{% url 'view-users' %}">
+  <form method="get" action="{% url 'view-users' %}">
     <label for="filter_by_staff">Filter by Staff Status:</label>
     <select name="filter_by_staff" id="filter_by_staff" class="form-select">
       <option value="">All Users</option>
@@ -23,7 +23,6 @@
     </select>
     <button type="submit" class="btn btn-primary">Filter</button>
   </form>
-  
   <!-- Form for actions -->
   <form method="post" action="{% url 'view-users' %}">
     {% csrf_token %}
@@ -44,13 +43,11 @@
             <input type="checkbox" id="selectAllUsers" class="form-checkbox" />
           </th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Username</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">First names</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last name</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Privileges</th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date Joined</th>
           <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Login</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Is Active</th>
-          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Is Staff</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Admin</th>
+          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Active</th>
         </tr>
       </thead>
       <tbody class="bg-white divide-y divide-gray-200">
@@ -60,8 +57,6 @@
               <input type="checkbox" name="user_ids" value="{{ user.id }}" class="form-checkbox" />
             </td>
             <td class="px-6 py-4 whitespace-nowrap">{{ user.username }}</td>
-            <td class="px-6 py-4 whitespace-nowrap">{{ user.first_name }}</td>
-            <td class="px-6 py-4 whitespace-nowrap">{{ user.last_name }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ user.is_staff|yesno:'Staff,Regular User' }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ user.date_joined }}</td>
             <td class="px-6 py-4 whitespace-nowrap">{{ user.last_login }}</td>
@@ -75,7 +70,20 @@
     </table>
   </form>
 
-
+  <!-- Sidebar for filtering -->
+  <div class="mt-8">
+    <h3 class="text-lg font-semibold mb-4">FILTER</h3>
+    <!-- Add filter options here (staff status, superuser status, active status, groups) -->
+    <!-- Example: -->
+    <label class="block mb-2">
+      is_Staff Status:<select class="border rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-500">
+        <option value="all">All</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <!-- ... (other filter options) ... -->
+  </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {

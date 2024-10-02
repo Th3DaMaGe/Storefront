@@ -1,0 +1,97 @@
+{% extends 'core/base_generic.html' %}
+{% block title %}
+  Collections
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-2xl font-bold mb-4">Collection Category List</h1>
+  {{ user.get_username }}
+  {{user.email}}
+  <style>
+    .table-cell-width {
+      width: 25%; /* Adjust as needed */
+    }
+  </style>
+
+  <div class="text-center">
+    <form method="get" action="" class="mb-4">
+      <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
+      <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Search</button>
+    </form>
+  </div>
+
+  {% if collections %}
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead>
+        <tr>
+          <th class="py-2 table-cell-width">
+            <a href="?sort_by=title&order={% if sort_by == 'title' and order == 'asc' %}
+                desc
+              {% else %}
+                asc
+              {% endif %}{% if query %}
+                &q={{ query }}
+              {% endif %}"
+              class="text-blue-500 hover:underline">
+              Title
+            </a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for collection in collections %}
+          <tr>
+            <td class="py-2 text-center">
+              <a href="{% url 'view-collection-products' collection.id %}" class="text-blue-500 hover:underline">{{ collection.title }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="flex justify-center mt-4">
+      <div id="pagination-controls" class="mt-4">
+        {% if collections.has_previous %}
+          <a href="?page=1{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline">
+            First
+          </a>
+          <a href="?page={{ collections.previous_page_number }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Previous
+          </a>
+        {% endif %}
+        <span class="ml-2">Page {{ collections.number }} of {{ collections.paginator.num_pages }}</span>
+        {% if collections.has_next %}
+          <a href="?page={{ collections.next_page_number }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Next
+          </a>
+          <a href="?page={{ collections.paginator.num_pages }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Last
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <form method="get" action="" class="mt-4">
+        <label for="page" class="mr-2">Go to page:</label>
+        <input type="number" id="page" name="page" min="1" max="{{ collections.paginator.num_pages }}" required class="border rounded px-2 py-1" />
+        <input type="hidden" name="q" value="{{ query|default:'' }}" />
+        <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Go</button>
+      </form>
+    </div>
+  {% else %}
+    <p class="mt-4">There are no collections available.</p>
+  {% endif %}
+{% endblock %}
