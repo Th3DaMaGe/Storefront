@@ -66,7 +66,10 @@ def say_hello(request):
 def attachments(request):
     try:
         message = EmailMessage(
-            "subject", "message", "perihelion@perihelion.com", ["bob@bobby.com"]
+            "subject",
+            "message",
+            "nameless.cleric@gmail.com",
+            ["nameless.cleric@gmail.com"],
         )
         message.attach_file("playground/static/images/5bean.jpg")
         message.send()

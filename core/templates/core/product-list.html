@@ -11,7 +11,14 @@
       width: 25%; /* Adjust as needed */
     }
   </style>
+  <!-- Add button to add users -->
+  <div class="flex justify-end">
 
+    <a href="{% url 'add-product' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">
+      <i class="bi bi-box"></i>Add Product
+    </a>
+ 
+  </div>
   <div class="text-center">
     <form method="get" action="" class="mb-4">
       <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
@@ -104,15 +111,15 @@
             <td class="py-2 text-center">{{ product.last_update }}</td>
             <td class="py-2 text-center">{{ product.collection }}</td>
             {% if not is_staff %}
-              <td class="py-2 text-center">
-                <form method="post" action="">
-                  {% comment %} "{% url ""  product.id %}" {% endcomment %}
+            <td class="py-2 text-center">
+              <form method="post" action="{% url 'add_to_cart1' product.id %}">
                   {% csrf_token %}
                   <label for="number"></label>
-                  <input id="number" type="number" value="1" min="1" class="border text-center" />
+                  <input id="number" name="quantity" type="number" value="1" min="1" class="border text-center" />
                   <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
-                </form>
-              </td>
+              </form>
+          </td>
+          
             {% endif %}
           </tr>
         {% endfor %}

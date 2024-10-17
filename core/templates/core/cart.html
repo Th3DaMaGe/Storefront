@@ -1,0 +1,37 @@
+{% extends 'core/base_generic.html' %}
+{% load custom_filters %}
+
+{% block title %}
+  Cart
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-2xl font-bold mb-4">Your Cart</h1>
+  {% if cart_items %}
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead>
+        <tr>
+          <th class="py-2">Product</th>
+          <th class="py-2">Quantity</th>
+          <th class="py-2">Price</th>
+          <th class="py-2">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in cart_items %}
+          <tr>
+            <td class="py-2">{{ item.product.title }}</td>
+            <td class="py-2">{{ item.quantity }}</td>
+            <td class="py-2">{{ item.product.unit_price }}</td>
+            <td class="py-2">{{ item.quantity|multiply:item.product.unit_price }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="mt-4">
+      <a href="" class="bg-blue-500 text-white px-3 py-1 rounded">Proceed to Checkout</a>
+    </div>
+  {% else %}
+    <p>Your cart is empty.</p>
+  {% endif %}
+{% endblock %}

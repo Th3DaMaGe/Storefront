@@ -1,14 +1,13 @@
 <!-- myapp/templates/myapp/image_grid.html -->
 {% extends 'core/base_generic.html' %}
-{% block title %}Dashboard for {{username }} {% endblock %}
+{% block title %}
+  Dashboard for {{ username }}
+{% endblock %}
 {% load static %}
 
 {% comment %} <link rel="stylesheet" href="{% static 'images/img-grid.css' %}" /> {% endcomment %}
 {% block content %}
-
-<div class="text-center pa-2 mt-2">
-  Welcome {{username}} to Perihelion IMS 
-</div>
+  <div class="text-center pa-2 mt-2">Welcome {{ username }} to Perihelion IMS</div>
   <div class="flex justify-center items-center h-screen">
     <div class="grid grid-cols-5 gap-4">
       <!-- Replace these placeholders with actual image URLs -->
@@ -49,7 +48,6 @@
         <img src="{% static 'images/5bean.jpg' %}" alt="Dashboard" class="w-full h-auto" />
         <div class="absolute inset-0 flex items-center justify-center text-white text-xl font-bold bg-black bg-opacity-50">TBD</div>
       </a>
-
-      
+    </div>
   </div>
 {% endblock %}

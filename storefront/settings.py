@@ -56,9 +56,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_filters",
+    "django_extensions",
     "rest_framework",
     "djoser",
-    "silk",
+    # "silk",
     "django_viewcomponent",  # new
     "django_formify",  # new
     "corsheaders",
@@ -272,4 +273,10 @@ LOGGING = {
             "style": "{",
         }
     },
+}
+
+
+GRAPH_MODELS = {
+    "all_applications": True,
+    "graph_models": True,
 }

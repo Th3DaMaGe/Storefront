@@ -16,6 +16,13 @@ from .views import (
     view_collection_products,
     add_to_cart,
     create_order,
+    order_success,
+    OrderListView,
+    order_detail,
+    add_to_cart1,
+    view_cart,
+    user_type_pie_chart,
+    
 )
 from .views import dashboard, ProductDetailView, RestockProducts
 
@@ -45,5 +52,11 @@ urlpatterns = [
     path("ims-admin/add-users/", users_crud_view, name="users-crud-view"),
     path("add-cart/<int:product_id>", add_to_cart, name="add-order"),
     path("ims-admin/add-product/", add_product, name="add-product"),
-    # Other URL patterns
+    path("order-success/<int:order_id>/", order_success, name="order_success"),
+    path("orders/", OrderListView.as_view(), name="order-list"),
+    path("order/<int:order_id>/", order_detail, name="order_detail"),
+    path("add-to-cart1/<int:product_id>/", add_to_cart1, name="add_to_cart1"),
+    path("view-cart/", view_cart, name="view-cart"),
+    path("user-type/", user_type_pie_chart, name="user_type_pie_chart"),
+
 ]

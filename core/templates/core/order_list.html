@@ -1,0 +1,84 @@
+{% extends 'core/base_generic.html' %}
+
+{% block content %}
+  <h2 class="text-2xl font-bold mb-4">Order List</h2>
+  <form method="post" action="">
+    {% csrf_token %}
+    <!-- Dropdown menu and Go button -->
+    <div class="flex align-right space-x-4 mb-4">
+        <span>Action:</span>
+        <select name="action" class="border rounded-md px-4 py-2 focus:outline-none focus:ring focus:border-blue-500">
+            <option value="">Select an option</option>
+            <option value="delete">Delete selected orders</option>
+        </select>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Go</button>
+    </div>
+    <table class="min-w-full bg-white border border-gray-200">
+        <thead>
+            <tr class="bg-gray-100">
+                <th class="py-2 px-4 border-b">
+                    <input type="checkbox" id="select-all" class="form-checkbox">
+                </th>
+                <th class="py-2 px-4 border-b">
+                    <a href="?sort_by=placed_at" class="text-blue-500 hover:underline">Placed At</a>
+                </th>
+                <th class="py-2 px-4 border-b">
+                    <a href="?sort_by=payment_status" class="text-blue-500 hover:underline">Payment Status</a>
+                </th>
+                <th class="py-2 px-4 border-b">
+                    <a href="?sort_by=delivery_status" class="text-blue-500 hover:underline">Delivery Status</a>
+                </th>
+                <th class="py-2 px-4 border-b">Customer</th>
+                <th class="py-2 px-4 border-b">Order ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+                <tr class="hover:bg-gray-50">
+                    <td class="py-2 px-4 border-b">
+                        <input type="checkbox" name="selected_orders" value="{{ order.id }}" class="form-checkbox">
+                    </td>
+                    <td class="py-2 px-4 border-b">{{ order.placed_at }}</td>
+                    <td class="py-2 px-4 border-b">{{ order.get_payment_status_display }}</td>
+                    <td class="py-2 px-4 border-b">{{ order.get_delivery_status_display }}</td>
+                    <td class="py-2 px-4 border-b">{{ order.customer }}</td>
+                    <td class="py-2 px-4 border-b">
+                        <a href="{% url 'order_detail' order.id %}" class="text-blue-500 hover:underline">{{ order.id }}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</form>
+
+
+
+
+  {% if is_paginated %}
+    <div class="pagination mt-4">
+      <span class="step-links flex justify-center space-x-2">
+        {% if page_obj.has_previous %}
+          <a href="?page=1&sort_by={{ request.GET.sort_by }}" class="text-blue-500 hover:underline">first</a>
+          <a href="?page={{ page_obj.previous_page_number }}&sort_by={{ request.GET.sort_by }}" class="text-blue-500 hover:underline">previous</a>
+        {% endif %}
+
+        <span class="current">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.</span>
+
+        {% if page_obj.has_next %}
+          <a href="?page={{ page_obj.next_page_number }}&sort_by={{ request.GET.sort_by }}" class="text-blue-500 hover:underline">next</a>
+          <a href="?page={{ page_obj.paginator.num_pages }}&sort_by={{ request.GET.sort_by }}" class="text-blue-500 hover:underline">last</a>
+        {% endif %}
+      </span>
+    </div>
+
+  {% endif %}
+
+  
+<script>
+  // JavaScript to handle "Select All" checkbox functionality
+  document.getElementById('select-all').addEventListener('change', function() {
+      const checkboxes = document.querySelectorAll('input[name="selected_orders"]');
+      checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+  });
+</script>
+{% endblock %}

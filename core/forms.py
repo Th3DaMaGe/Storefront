@@ -1,5 +1,6 @@
 from store.models import Order, OrderItem, Product, Collection
 from django import forms
+from django.forms import inlineformset_factory
 
 
 class LocationSearchForm(forms.Form):
@@ -15,9 +16,16 @@ class OrderForm(forms.ModelForm):
 
 
 class OrderItemForm(forms.ModelForm):
+    product = forms.ModelChoiceField(queryset=Product.objects.all(), required=True)
+
     class Meta:
         model = OrderItem
-        fields = ["product", "quantity", "unit_price"]
+        fields = ["product", "quantity"]
+
+
+OrderItemFormSet = inlineformset_factory(
+    Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
+)
 
 
 class AddProductForm(forms.ModelForm):
@@ -41,7 +49,9 @@ class AddProductForm(forms.ModelForm):
     description = forms.CharField(widget=forms.Textarea, label="Product Description")
     unit_price = forms.DecimalField(label="Unit Price")
     inventory = forms.IntegerField(label="Inventory")
-    collection = forms.ModelChoiceField(queryset=Collection.objects.all(), label="Collection")
+    collection = forms.ModelChoiceField(
+        queryset=Collection.objects.all(), label="Collection"
+    )
     restock_value = forms.IntegerField(label="Restock Value")
     # barcode = forms.CharField(label="Barcode")
     serial_number = forms.CharField(label="Serial Number")

@@ -78,9 +78,11 @@ class Product(models.Model):
     slug = models.SlugField()
     description = models.TextField(null=True, blank=True)
     unit_price = models.DecimalField(
-        max_digits=6, decimal_places=2, validators=[MinValueValidator(1)]
+        max_digits=9, decimal_places=2, validators=[MinValueValidator(1)]
     )
-    inventory = models.IntegerField(validators=[MinValueValidator(0)])
+    inventory = models.PositiveIntegerField(
+        default=1, validators=[MinValueValidator(1)]
+    )
     # serial_number = models.IntegerField(validators=[MinValueValidator(6)])
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(
@@ -116,10 +118,12 @@ class Product(models.Model):
     def generate_barcode(self):
         barcode_value = str(self.id)  # Use the product ID or any unique value
         barcode_filename = f"barcode_{self.id}.png"
-        barcode_path = os.path.join(settings.MEDIA_ROOT, "barcodes", barcode_filename)
+        barcode_dir = os.path.join(settings.MEDIA_ROOT, "barcodes")
+        barcode_path = os.path.join(barcode_dir, barcode_filename)
 
-        if not os.path.exists(os.path.dirname(barcode_path)):
-            os.makedirs(os.path.dirname(barcode_path))
+        # Ensure the directory exists
+        if not os.path.exists(barcode_dir):
+            os.makedirs(barcode_dir)
 
         barcode = Code128(barcode_value, writer=ImageWriter())
         barcode.save(barcode_path)
@@ -137,21 +141,7 @@ class ProductImage(models.Model):
 
 
 class Customer(models.Model):
-    MEMBERSHIP_BRONZE = "B"
-    MEMBERSHIP_SILVER = "S"
-    MEMBERSHIP_GOLD = "G"
-
-    MEMBERSHIP_CHOICES = [
-        (MEMBERSHIP_BRONZE, "Bronze"),
-        (MEMBERSHIP_SILVER, "Silver"),
-        (MEMBERSHIP_GOLD, "Gold"),
-    ]
     phone = models.CharField(max_length=255)
-    birth_date = models.DateField(null=True, blank=True)
-    # email = models.EmailField(null=True, blank=True)
-    membership = models.CharField(
-        max_length=1, choices=MEMBERSHIP_CHOICES, default=MEMBERSHIP_BRONZE
-    )
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -180,10 +170,23 @@ class Order(models.Model):
         (PAYMENT_STATUS_FAILED, "Failed"),
     ]
 
+    DELIVERY_STATUS_COMPLETE = "C"
+    DELIVERY_STATUS_PENDING = "P"
+    DELIVERY_STATUS_FAILED = "F"
+    DELIVERY_STATUS_CHOICES = [
+        (DELIVERY_STATUS_PENDING, "Pending"),
+        (DELIVERY_STATUS_COMPLETE, "Complete"),
+        (DELIVERY_STATUS_FAILED, "Failed"),
+    ]
+
     placed_at = models.DateTimeField(auto_now_add=True)
     payment_status = models.CharField(
         max_length=1, choices=PAYMENT_STATUS_CHOICES, default=PAYMENT_STATUS_PENDING
     )
+    delivery_status = models.CharField(
+        max_length=1, choices=DELIVERY_STATUS_CHOICES, default=DELIVERY_STATUS_PENDING
+    )
+
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
 
     class Meta:
@@ -196,7 +199,6 @@ class OrderItem(models.Model):
         Product, on_delete=models.PROTECT, related_name="orderitems"
     )
     quantity = models.PositiveSmallIntegerField()
-    unit_price = models.DecimalField(max_digits=6, decimal_places=2)
 
 
 class Address(models.Model):
@@ -209,12 +211,40 @@ class Address(models.Model):
 class Cart(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     created_at = models.DateTimeField(auto_now_add=True)
+    # user = models.OneToOneField(settings.AUTH_USER_USER_MODEL, on_delete=models.CASCADE)
+    PAYMENT_STATUS_PENDING = "P"
+    PAYMENT_STATUS_COMPLETE = "C"
+    PAYMENT_STATUS_FAILED = "F"
+    PAYMENT_STATUS_CHOICES = [
+        (PAYMENT_STATUS_PENDING, "Pending"),
+        (PAYMENT_STATUS_COMPLETE, "Complete"),
+        (PAYMENT_STATUS_FAILED, "Failed"),
+    ]
+
+    DELIVERY_STATUS_COMPLETE = "C"
+    DELIVERY_STATUS_PENDING = "P"
+    DELIVERY_STATUS_FAILED = "F"
+    DELIVERY_STATUS_CHOICES = [
+        (DELIVERY_STATUS_PENDING, "Pending"),
+        (DELIVERY_STATUS_COMPLETE, "Complete"),
+        (DELIVERY_STATUS_FAILED, "Failed"),
+    ]
+
+    placed_at = models.DateTimeField(auto_now_add=True)
+    payment_status = models.CharField(
+        max_length=1, choices=PAYMENT_STATUS_CHOICES, default=PAYMENT_STATUS_PENDING
+    )
+    delivery_status = models.CharField(
+        max_length=1, choices=DELIVERY_STATUS_CHOICES, default=DELIVERY_STATUS_PENDING
+    )
+
+    customer = models.ForeignKey(Customer, on_delete=models.PROTECT, default=1)
 
 
 class CartItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name="items")
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.PositiveSmallIntegerField(validators=[MinValueValidator(1)])
+    quantity = models.PositiveIntegerField(validators=[MinValueValidator(1)], default=1)
 
     class Meta:
         unique_together = [["cart", "product"]]
@@ -227,3 +257,6 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
+
+
+

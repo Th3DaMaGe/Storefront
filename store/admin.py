@@ -40,6 +40,7 @@ class ProductAdmin(admin.ModelAdmin):
         "inventory_status",
         "collection_title",
         "barcode",
+        "barcode_thumbnail_tag",
         "restock_value",
     ]
     list_editable = ["unit_price", "restock_value"]
@@ -54,7 +55,7 @@ class ProductAdmin(admin.ModelAdmin):
     def barcode_thumbnail_tag(self, obj):
         if obj.barcode:
             return format_html(
-                '<img src="{}" width="100" height="50" />', obj.barcode_thumbnail.url
+                '<img src="{}" width="100" height="100" />', obj.barcode.url
             )
         return "No barcode. 🥺"
 
@@ -104,8 +105,7 @@ class CollectionAdmin(admin.ModelAdmin):
 
 @admin.register(models.Customer)
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ["first_name", "last_name", "membership", "orders"]
-    list_editable = ["membership"]
+    list_display = ["first_name", "last_name", "orders"]
     list_per_page = 10
     ordering = ["user__first_name", "user__last_name"]
     list_select_related = ["user"]
@@ -127,7 +127,7 @@ class CustomerAdmin(admin.ModelAdmin):
 class OrderItemInline(admin.TabularInline):
     autocomplete_fields = ["product"]
     min_num = 1
-    max_num = 10
+    max_num = 100
     model = models.OrderItem
     extra = 0
 

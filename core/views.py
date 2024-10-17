@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from store.models import Product, Order, OrderItem, Collection
+from store.models import Product, Order, OrderItem, Collection, Cart, CartItem, Customer
 from django.views import generic
 from django.http import Http404
 import requests
@@ -26,7 +26,13 @@ from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from .forms import OrderForm, OrderItemForm, AddProductForm, Order
-
+from django.urls import reverse
+from django.core.mail import send_mail
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from django.http import HttpResponse
+from io import BytesIO
 
 @csrf_exempt
 def login_view(request):
@@ -76,6 +82,11 @@ def logout_view(request):
 class ProductDetailView(generic.DetailView):
     model = Product
     template_name = "core/product-detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["images"] = self.object.images.all()
+        return context
 
     def product_detail_view(request, primary_key):
         try:
@@ -345,24 +356,6 @@ def users_crud_view(request):
     return render(request, "core/admin/add-users.html", {"form": form})
 
 
-# class AddProductForm(ModelForm):
-#     class Meta:
-#         model = Product
-#         fields = [
-#             "title",
-#             "slug",
-#             "description",
-#             "unit_price",
-#             "inventory",
-#             "collection",
-#             "restock_value",
-#             "model_number",
-#             "serial_number",
-#             "image",
-#             "barcode",
-#         ]
-
-
 def add_product(request):
     if request.method == "POST":
         form = AddProductForm(request.POST, request.FILES)
@@ -372,6 +365,7 @@ def add_product(request):
     else:
         form = AddProductForm()
     return render(request, "core/admin/add-product.html", {"form": form})
+
 
 def add_to_cart(request, product_id):
     product = get_object_or_404(Product, id=product_id)
@@ -395,7 +389,6 @@ def view_collections(request):
         "collections": page_obj,
         "username": user.username,
         "is_staff": user.is_staff,
-        "email": user.email,
         "count": paginator.count,
         "num_pages": paginator.num_pages,
         "current_page": page_obj.number,
@@ -425,6 +418,40 @@ def view_collection_products(request, collection_id):
     return render(request, "core/view-collection-products.html", context)
 
 
+# def create_order(request):
+#     OrderItemFormSet = inlineformset_factory(
+#         Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
+#     )
+
+#     if request.method == "POST":
+#         order_form = OrderForm(request.POST)
+#         formset = OrderItemFormSet(request.POST)
+
+#         if order_form.is_valid() and formset.is_valid():
+#             order = order_form.save()
+#             formset.instance = order
+#             formset.save()
+#             return redirect(reverse("order_success", kwargs={"order_id": order.id}))
+
+#     else:
+#         order_form = OrderForm()
+#         formset = OrderItemFormSet()
+
+#     return render(
+#         request,
+#         "core/create-order.html",
+#         {
+#             "order_form": order_form,
+#             "formset": formset,
+#         },
+#     )
+
+
+def order_success(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    return render(request, "core/order-success.html", {"order": order})
+
+
 def create_order(request):
     OrderItemFormSet = inlineformset_factory(
         Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
@@ -438,9 +465,12 @@ def create_order(request):
             order = order_form.save()
             formset.instance = order
             formset.save()
-            return redirect(
-                "order_success"
-            )  # Redirect to a success page or another view
+
+            # Send email to the customer
+            customer = order.customer
+            send_order_email(customer, order)
+
+            return redirect(reverse("order_success", kwargs={"order_id": order.id}))
 
     else:
         order_form = OrderForm()
@@ -454,3 +484,115 @@ def create_order(request):
             "formset": formset,
         },
     )
+
+
+def send_order_email(customer, order):
+    subject = f"Order Confirmation - Order #{order.id}"
+    message = f"Dear {customer.first_name()},\n\nThank you for your order. Your order ID is {order.id}.\n\nBest regards,\nYour Company"
+    from_email = "nameless.cleric@gmail.com"
+    recipient_list = [customer.user.email]
+
+    send_mail(subject, message, from_email, recipient_list)
+
+
+class OrderListView(ListView):
+    model = Order
+    template_name = "core/order_list.html"
+    context_object_name = "orders"
+    paginate_by = 10
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        sort_by = self.request.GET.get("sort_by", "placed_at")
+        if sort_by in ["payment_status", "delivery_status"]:
+            queryset = queryset.order_by(sort_by)
+        return queryset
+
+    def post(self, request, *args, **kwargs):
+        action = request.POST.get("action")
+        selected_orders = request.POST.getlist("selected_orders")
+
+        if action == "delete" and selected_orders:
+            orders_to_delete = Order.objects.filter(id__in=selected_orders)
+            orders_to_delete.delete()
+            messages.success(
+                request, f"Deleted {orders_to_delete.count()} orders successfully."
+            )
+
+        return redirect("order-list")  # Redirect to the order list page
+
+
+def order_detail(request, order_id):
+    order = get_object_or_404(Order, id=order_id)
+    order_items = (
+        order.items.all()
+    )  # Assuming you have a related name 'items' for order items
+    total_cost = sum(item.product.unit_price * item.quantity for item in order_items)
+
+    return render(
+        request,
+        "core/order-detail.html",
+        {
+            "order": order,
+            "order_items": order_items,
+            "total_cost": total_cost,
+        },
+    )
+
+
+def view_cart(request):
+    customer, created = Customer.objects.get_or_create(user=request.user)
+    cart, created = Cart.objects.get_or_create(customer=customer)
+
+    context = {
+        "cart": cart,
+        "cart_items": cart.items.all(),
+    }
+    return render(request, "core/cart.html", context)
+
+
+@login_required
+def add_to_cart1(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+
+    # Get or create a Customer object for the user
+    customer, created = Customer.objects.get_or_create(user=request.user)
+
+    cart, created = Cart.objects.get_or_create(customer=customer)
+
+    # Get quantity from request, default to 1 if not provided
+    # Get quantity from POST data, default to 1 if not provided
+    quantity = int(request.POST.get("quantity", 1))
+
+    cart_item, created = CartItem.objects.get_or_create(cart=cart, product=product)
+    cart_item.quantity += quantity
+    cart_item.save()
+
+    return redirect("product-list")
+
+
+
+
+def user_type_pie_chart(request):
+    # Query the database to get the count of staff and non-staff users
+    staff_count = User.objects.filter(is_staff=True).count()
+    non_staff_count = User.objects.filter(is_staff=False).count()
+
+    # Data for the pie chart
+    labels = ['Staff', 'Non-Staff']
+    sizes = [staff_count, non_staff_count]
+    colors = ['red', 'blue']
+
+    # Create the pie chart
+    plt.figure(figsize=(6, 6))
+    plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+    plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+    # Save the pie chart to a BytesIO object
+    buffer = BytesIO()
+    plt.savefig(buffer, format='png')
+    plt.close()
+    buffer.seek(0)
+
+    # Return the pie chart as an HTTP response
+    return HttpResponse(buffer, content_type='image/png')

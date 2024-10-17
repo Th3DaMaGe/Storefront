@@ -28,6 +28,12 @@ fontawesomefree = "*"
 tailwind = "*"
 django-compressor = "*"
 django-formify = "*"
+faker = "*"
+graphviz = "*"
+pydot = "*"
+pyparsing = "*"
+django-extensions = "*"
+matplotlib = "*"
 
 [dev-packages]
 pytest = "*"

@@ -4,26 +4,41 @@
 {% endblock %}
 
 {% block content %}
-  <div class="">
-    <a href="javascript:history.go(-1)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
+  <main class="my-8">
+    <div class="container mx-auto px-6">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <a href="javascript:history.go(-1)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</a>
 
-    <h1>Title: {{ product.title }}</h1>
+        <h1 class="text-gray-700 text-center mt-4"><strong class="text-gray-700 uppercase">{{ product.title }}</strong></h1>
 
-    <p>
-      <strong>Quantity:</strong> {{ product.inventory }}
-    </p>
-    <p>
-      <strong>Unit Price:</strong> {{ product.unit_price }}
-    </p>
-    <p>
-      <strong>Last Update:</strong> {{ product.last_update }}
-    </p>
-    <p>
-      <strong>Collection:</strong> {{ product.collection }}
-    </p>
-    <p>
-      <strong>Description:</strong> {{ product.description }}
-    </p>
-    <img src="{{ product.barcode.url }}" alt="barcode" />
-  </div>
+        <p class="mt-2">
+          <strong class="text-gray-700">Quantity:</strong> <span class="text-gray-500">{{ product.inventory }}</span>
+        </p>
+        <p class="mt-2">
+          <strong class="text-gray-700">Unit Price:</strong> <span class="text-gray-500">{{ product.unit_price }}</span>
+        </p>
+        <p class="mt-2">
+          <strong class="text-gray-700">Last Update:</strong> <span class="text-gray-500">{{ product.last_update }}</span>
+        </p>
+        <p class="mt-2">
+          <strong class="text-gray-700">Collection:</strong> <span class="text-gray-500">{{ product.collection }}</span>
+        </p>
+        <p class="mt-2">
+          <strong class="text-gray-700">Description:</strong> <span class="text-gray-500">{{ product.description }}</span>
+        </p>
+        <div class="mt-4">
+        </div>
+        <div class="mt-4 flex flex-wrap gap-4">
+          <img class="h-64 w-full rounded-md object-cover max-w-lg mx-auto" src="{{ product.barcode.url }}" alt="barcode" />
+
+          {% for image in product.images.all %}
+              <img class="h-64 w-full rounded-md object-cover max-w-lg" src="{{ image.image.url }}" alt="{{ product.title }}" />
+          {% empty %}
+              <p>No images available for this product.</p>
+          {% endfor %}
+      </div>
+      
+      </div>
+    </div>
+  </main>
 {% endblock %}
