@@ -20780,3 +20780,19 @@ FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\
 2024-10-02 11:50:48,931 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
 2024-10-02 11:50:53,393 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-10-02 11:50:53,965 (WARNING) - silk.profiling.profiler - Cannot execute silk_profile as silk is not installed correctly.
+2024-10-02 11:52:57,427 (ERROR) - django.request - Internal Server Error: /ims-admin/add-product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 370, in add_product
+    form.save()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 114, in save
+    self.generate_barcode()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 127, in generate_barcode
+    with open(barcode_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\namel\\Code\\Storefront2\\media\\barcodes\\barcode_1003.png'
+2024-10-02 11:53:27,356 (WARNING) - django.request - Not Found: /media/4718017045391
