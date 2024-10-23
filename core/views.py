@@ -152,7 +152,6 @@ def product_list(request):
         "order": order,
         "username": user.username,
         "is_staff": user.is_staff,
-        "email": user.email,
     }
     return render(request, "core/product-list.html", context)
 

@@ -91,6 +91,9 @@ class Product(models.Model):
     restock_value = models.IntegerField(default=20)
     promotions = models.ManyToManyField(Promotion, blank=True)
     barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
+    numerical_barcode = models.CharField(
+        max_length=100, null=True, blank=True
+    )  # New field for numerical barcode
     barcode_thumbnail = ImageSpecField(
         source="barcode",
         processors=[ResizeToFill],
@@ -125,12 +128,17 @@ class Product(models.Model):
         if not os.path.exists(barcode_dir):
             os.makedirs(barcode_dir)
 
+        # Create the barcode with text
         barcode = Code128(barcode_value, writer=ImageWriter())
+        barcode.writer.text = barcode_value  # Add the numerical representation
         barcode.save(barcode_path)
 
         with open(barcode_path, "rb") as f:
             self.barcode.save(barcode_filename, File(f), save=False)
-        super().save(update_fields=["barcode"])
+
+        # Save the numerical representation to the new field
+        self.numerical_barcode = barcode_value
+        super().save(update_fields=["barcode", "numerical_barcode"])
 
 
 class ProductImage(models.Model):
@@ -257,6 +265,3 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
-
-
-

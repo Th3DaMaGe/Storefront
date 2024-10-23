@@ -2,7 +2,7 @@ from store.models import Product, ProductImage
 from model_bakery.recipe import Recipe
 from faker import factory, Faker
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Musical.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "storefront.settings")
 import django
 django.setup()
 
@@ -24,7 +24,3 @@ for k in range(50):
                      )
 
 
-	singers = Recipe(Singers,
-		name = myfake.name(),
-		address = myfake.address(),
-	created_prof = myfake.future_datetime(end_date="-30d", tzinfo=None),)

@@ -16,6 +16,9 @@ from datetime import timedelta
 from decouple import config
 from ip_address import get_ip_address
 import sys
+# from .tailwind_watcher import (
+#     run_tailwind_watch,
+# )  # You'll need to change this to point to your tailwind_watcher file.
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,10 +43,6 @@ ALLOWED_HOSTS = [
     "192.168.0.114",
 ]
 CSRF_TRUSTED_ORIGINS = ["http://192.168.0.114:8000"]
-
-sys.stdout.write(
-    f"http://{get_ip_address()}\n"
-)  # get the ip address from the command lin
 
 
 # Application definition
@@ -280,3 +279,7 @@ GRAPH_MODELS = {
     "all_applications": True,
     "graph_models": True,
 }
+
+
+# if DEBUG:  # We only need to run the watcher in development (given reasons mentioned in the guide).
+#     run_tailwind_watch()

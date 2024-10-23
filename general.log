@@ -24810,3 +24810,1227 @@ AttributeError: 'AnonymousUser' object has no attribute 'email'
 2024-10-14 15:16:02,236 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-10-14 15:16:19,595 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
 2024-10-14 15:16:22,333 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 11:40:28,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 11:40:42,685 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-18 11:42:20,571 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\settings.py changed, reloading.
+2024-10-18 16:52:54,441 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 16:55:57,656 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\tailwind_watcher.py changed, reloading.
+2024-10-18 16:56:54,496 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 16:57:10,774 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\storefront\tailwind_watcher.py changed, reloading.
+2024-10-18 17:01:12,278 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:01:18,208 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-18 17:01:41,074 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 17:01:43,414 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 17:23:29,005 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 17:23:31,540 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 17:23:50,325 (ERROR) - django.request - Internal Server Error: /create-order/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 471, in create_order
+    send_order_email(customer, order)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 495, in send_order_email
+    send_mail(subject, message, from_email, recipient_list)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\mail\message.py", line 299, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\mail\backends\smtp.py", line 85, in open
+    self.connection = self.connection_class(
+  File "C:\Users\namel\anaconda3\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\namel\anaconda3\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\namel\anaconda3\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\namel\anaconda3\lib\socket.py", line 844, in create_connection
+    raise err
+  File "C:\Users\namel\anaconda3\lib\socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-10-18 17:47:50,302 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:47:53,733 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:47:57,835 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:48:02,824 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:48:09,607 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:48:12,000 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:48:13,701 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:48:17,416 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:48:30,599 (ERROR) - django.request - Internal Server Error: /order/16/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 218, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'product'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 530, in order_detail
+    total_cost = sum(item.product.unit_price * item.quantity for item in order_items)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 530, in <genexpr>
+    total_cost = sum(item.product.unit_price * item.quantity for item in order_items)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 236, in __get__
+    rel_obj = self.get_object(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 199, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:48:31,020 (ERROR) - django.request - Internal Server Error: /order/16/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 218, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'product'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 530, in order_detail
+    total_cost = sum(item.product.unit_price * item.quantity for item in order_items)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 530, in <genexpr>
+    total_cost = sum(item.product.unit_price * item.quantity for item in order_items)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 236, in __get__
+    rel_obj = self.get_object(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_descriptors.py", line 199, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:48:42,363 (ERROR) - django.request - Internal Server Error: /restock-products/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 320, in render
+    if match:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 412, in __bool__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:48:43,316 (ERROR) - django.request - Internal Server Error: /restock-products/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 320, in render
+    if match:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 412, in __bool__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:48:46,669 (ERROR) - django.request - Internal Server Error: /restock-products/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 320, in render
+    if match:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 412, in __bool__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:48:49,144 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 157, in product_list
+    return render(request, "core/product-list.html", context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 320, in render
+    if match:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\paginator.py", line 174, in __len__
+    return len(self.object_list)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:49:11,332 (ERROR) - django.request - Internal Server Error: /admin/store/product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 2046, in changelist_view
+    media = self.media + formset.media
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 685, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:49:20,361 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:49:26,328 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:49:31,115 (ERROR) - django.request - Internal Server Error: /admin/store/product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 2046, in changelist_view
+    media = self.media + formset.media
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 685, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:49:35,431 (ERROR) - django.request - Internal Server Error: /admin/store/product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 2046, in changelist_view
+    media = self.media + formset.media
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\forms\models.py", line 685, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_product.numerical_barcode' in 'field list'")
+2024-10-18 17:49:58,192 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-10-18 17:50:01,829 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 17:50:27,758 (ERROR) - django.request - Internal Server Error: /view-cart/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 544, in view_cart
+    customer, created = Customer.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000022D459F62B0>>.
+2024-10-18 17:50:29,271 (ERROR) - django.request - Internal Server Error: /view-cart/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 544, in view_cart
+    customer, created = Customer.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000022D456F5700>>.
+2024-10-18 17:50:31,542 (ERROR) - django.request - Internal Server Error: /view-cart/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 544, in view_cart
+    customer, created = Customer.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000022D45602100>>.
+2024-10-18 17:50:33,081 (ERROR) - django.request - Internal Server Error: /view-cart/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 544, in view_cart
+    customer, created = Customer.objects.get_or_create(user=request.user)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000022D45A5D0A0>>.
+2024-10-18 18:07:39,194 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 18:12:15,259 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:17,607 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:18,996 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:21,940 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:23,146 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:24,871 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:26,805 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:28,842 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:30,797 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:32,888 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:34,761 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:53,894 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:55,824 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:56,715 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:12:57,281 (WARNING) - django.request - Not Found: /media/https:/www.vecteezy.com/free-photos/desktop
+2024-10-18 18:13:06,852 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:13:08,973 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:13:19,469 (ERROR) - django.request - Internal Server Error: /product-list/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 155, in product_list
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:13:20,541 (WARNING) - django.request - Not Found: /media/https:/www.vecteezy.com/free-photos/desktop
+2024-10-18 18:14:19,082 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-10-18 18:14:21,839 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 18:21:13,088 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:21:15,881 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:23:03,350 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 18:26:13,291 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:26:15,884 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 106, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-10-18 18:26:21,574 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:26,441 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:28,447 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:31,330 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:32,731 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:34,711 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:36,865 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:26:43,683 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:27:03,381 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 18:27:04,738 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 19:25:11,495 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-18 19:25:17,128 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-18 19:28:07,340 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-18 19:28:16,865 (WARNING) - django.request - Not Found: /media/https:/picsum.photos/seed/picsum/200/300
+2024-10-19 12:39:56,836 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-19 12:40:13,920 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-22 14:07:36,882 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
