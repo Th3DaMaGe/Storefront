@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from datetime import timedelta
-from decouple import config
+# from decouple import config
 from ip_address import get_ip_address
 import sys
 # from .tailwind_watcher import (
@@ -152,7 +152,7 @@ WSGI_APPLICATION = "storefront.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "storefront2",
+        "NAME": "aqualine",
         "HOST": "localhost",
         "USER": "root",
         "PASSWORD": "",
@@ -246,8 +246,8 @@ ADMINS = [
     ("perihelion", "periphelion@perihelion.com"),
 ]
 
-TWILIO_ACCOUNT_SID = config("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = config("TWILIO_AUTH_TOKEN")
+# TWILIO_ACCOUNT_SID = config("TWILIO_ACCOUNT_SID")
+# TWILIO_AUTH_TOKEN = config("TWILIO_AUTH_TOKEN")
 
 LOGGING = {
     "version": 1,

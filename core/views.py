@@ -6,7 +6,16 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from store.models import Product, Order, OrderItem, Collection, Cart, CartItem, Customer
+from store.models import (
+    Product,
+    Order,
+    OrderItem,
+    Collection,
+    Cart,
+    CartItem,
+    Customer,
+    ProductInstance,
+)
 from django.views import generic
 from django.http import Http404
 import requests
@@ -29,10 +38,12 @@ from .forms import OrderForm, OrderItemForm, AddProductForm, Order
 from django.urls import reverse
 from django.core.mail import send_mail
 import matplotlib
-matplotlib.use('Agg')
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from django.http import HttpResponse
 from io import BytesIO
+
 
 @csrf_exempt
 def login_view(request):
@@ -123,6 +134,13 @@ def product_list(request):
     if order not in valid_orders:
         order = "asc"
 
+    num_instances_available = ProductInstance.objects.filter(status__exact="a").count()
+    num_instances_reserved = ProductInstance.objects.filter(status__exact="r").count()
+    num_instances_on_loan = ProductInstance.objects.filter(status__exact="o").count()
+    num_instances_maintainance = ProductInstance.objects.filter(
+        status__exact="m"
+    ).count()
+
     # Filter products based on query
     if query:
         products = Product.objects.filter(title__icontains=query)
@@ -143,6 +161,10 @@ def product_list(request):
     context = {
         "product_list": page_obj,
         "count": paginator.count,
+        "num_instances_available": num_instances_available,
+        "num_instances_reserved": num_instances_reserved,
+        "num_instances_on_loan": num_instances_on_loan,
+        "num_instances_maintainance": num_instances_maintainance,
         "num_pages": paginator.num_pages,
         "current_page": page_obj.number,
         "next": page_obj.has_next(),
@@ -168,6 +190,7 @@ def product_list_view(request):
 
     # Fetch all products from the database
     products = Product.objects.all()
+    num_instances_available = ProductInstance.objects.filter(status__exact="a").count()
 
     # Paginate the products list, showing 20 products per page
     paginator = Paginator(products, 20)
@@ -200,8 +223,8 @@ class RestockProducts(ListView):
     template_name = "core/restock-products.html"
     context_object_name = "products"
 
-    def get_queryset(self):
-        return Product.objects.filter(inventory__lt=F("restock_value"))
+    # def get_queryset(self):
+    #     return Product.objects.filter(inventory__lt=F("restock_value"))
 
 
 def product_search(request):
@@ -570,28 +593,26 @@ def add_to_cart1(request, product_id):
     return redirect("product-list")
 
 
-
-
 def user_type_pie_chart(request):
     # Query the database to get the count of staff and non-staff users
     staff_count = User.objects.filter(is_staff=True).count()
     non_staff_count = User.objects.filter(is_staff=False).count()
 
     # Data for the pie chart
-    labels = ['Staff', 'Non-Staff']
+    labels = ["Staff", "Non-Staff"]
     sizes = [staff_count, non_staff_count]
-    colors = ['red', 'blue']
+    colors = ["red", "blue"]
 
     # Create the pie chart
     plt.figure(figsize=(6, 6))
-    plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
-    plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    plt.pie(sizes, labels=labels, colors=colors, autopct="%1.1f%%", startangle=140)
+    plt.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
 
     # Save the pie chart to a BytesIO object
     buffer = BytesIO()
-    plt.savefig(buffer, format='png')
+    plt.savefig(buffer, format="png")
     plt.close()
     buffer.seek(0)
 
     # Return the pie chart as an HTTP response
-    return HttpResponse(buffer, content_type='image/png')
+    return HttpResponse(buffer, content_type="image/png")

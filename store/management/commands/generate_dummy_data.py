@@ -3,8 +3,7 @@ from faker import Faker
 from django.core.management.base import BaseCommand
 from django.utils import timezone
 from datetime import timedelta
-from store.models import Product, Collection, ProductImage
-
+from store.models import Product, Collection, ProductImage, ProductInstance
 
 class Command(BaseCommand):
     help = "Generate dummy data for Products and Collections"
@@ -71,35 +70,25 @@ class Command(BaseCommand):
                 slug=fake.slug(),
                 description=fake.text(),
                 unit_price=random.uniform(100, 1000),
-                inventory=random.randint(1, 100),
                 last_update=last_update,
                 collection=collection,
                 restock_value=random.randint(10, 50),
-                serial_number=fake.unique.uuid4(),
                 model_number=fake.unique.uuid4(),
             )
 
-            # Add product images
-            image_url = ""
-            if collection.title == "Computers - Laptops":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Computers - Servers":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Computers - AIO":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Computers - Desktops":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Monitors":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Networking Equipment":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Accessories":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Tools":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
-            elif collection.title == "Electrical Equipment":
-                image_url = "https://picsum.photos/seed/picsum/200/300"
+            # Create ProductInstance objects
+            for _ in range(random.randint(1, 20)):  # Random number of instances
+                ProductInstance.objects.create(
+                    product=product,
+                    serial_number=fake.unique.uuid4(),
+                    sku=fake.unique.uuid4(),
+                    status=random.choice(['m', 'o', 'a', 'r']),  # Randomly select a status
+                )
 
+            # Add product images
+            image_url = "https://picsum.photos/seed/picsum/200/300"
             ProductImage.objects.create(product=product, image=image_url)
 
         self.stdout.write(self.style.SUCCESS("Successfully generated dummy data"))
+
+

@@ -32,19 +32,19 @@ class ProductImageInline(admin.TabularInline):
 class ProductAdmin(admin.ModelAdmin):
     autocomplete_fields = ["collection"]
     prepopulated_fields = {"slug": ["title"]}
-    actions = ["clear_inventory"]
+    # actions = ["clear_inventory"]
     inlines = [ProductImageInline]
     list_display = [
         "title",
         "unit_price",
-        "inventory_status",
+        # "inventory_status",
         "collection_title",
         "barcode",
         "barcode_thumbnail_tag",
         "restock_value",
     ]
     list_editable = ["unit_price", "restock_value"]
-    list_filter = ["collection", "last_update", InventoryFilter]
+    list_filter = ["collection", "last_update"]
     list_per_page = 20
     list_select_related = ["collection"]
     search_fields = ["title"]
@@ -61,22 +61,22 @@ class ProductAdmin(admin.ModelAdmin):
 
     barcode_thumbnail_tag.short_description = "Bar Code Thumbnail"
 
-    @admin.display(ordering="inventory")
-    def inventory_status(self, product):
-        if product.inventory < 10:
-            return "Less Than 10 Units Left"
-        elif product.inventory < 50:
-            return product.inventory
-        return "OK Inventory > 50 Units Left"
+    # @admin.display(ordering="inventory")
+    # def inventory_status(self, product):
+    #     if product.inventory < 10:
+    #         return "Less Than 10 Units Left"
+    #     elif product.inventory < 50:
+    #         return product.inventory
+    #     return "OK Inventory > 50 Units Left"
 
-    @admin.action(description="Clear inventory")
-    def clear_inventory(self, request, queryset):
-        updated_count = queryset.update(inventory=0)
-        self.message_user(
-            request,
-            f"{updated_count} products were successfully updated.",
-            messages.ERROR,
-        )
+    # @admin.action(description="Clear inventory")
+    # def clear_inventory(self, request, queryset):
+    #     updated_count = queryset.update(inventory=0)
+    #     self.message_user(
+    #         request,
+    #         f"{updated_count} products were successfully updated.",
+    #         messages.ERROR,
+    #     )
 
     class Media:
         css = {"all": ["store/styles.css"]}

@@ -28,7 +28,7 @@
         </p>
         <div class="mt-4">
         </div>
-        <div class="mt-4 flex flex-wrap gap-4">
+        {% comment %} <div class="mt-4 flex flex-wrap gap-4">
           <img class="h-64 w-full rounded-md object-cover max-w-lg mx-auto" src="{{ product.barcode.url }}" alt="barcode" />
 
           {% for image in product.images.all %}
@@ -36,7 +36,7 @@
           {% empty %}
               <p>No images available for this product.</p>
           {% endfor %}
-      </div>
+      </div> {% endcomment %}
       
       </div>
     </div>

@@ -80,16 +80,12 @@ class Product(models.Model):
     unit_price = models.DecimalField(
         max_digits=9, decimal_places=2, validators=[MinValueValidator(1)]
     )
-    inventory = models.PositiveIntegerField(
-        default=1, validators=[MinValueValidator(1)]
-    )
-    # serial_number = models.IntegerField(validators=[MinValueValidator(6)])
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(
         Collection, on_delete=models.PROTECT, related_name="products"
     )
     restock_value = models.IntegerField(default=20)
-    promotions = models.ManyToManyField(Promotion, blank=True)
+    # promotions = models.ManyToManyField(Promotion, blank=True)
     barcode = models.ImageField(upload_to="barcodes/", null=True, blank=True)
     numerical_barcode = models.CharField(
         max_length=100, null=True, blank=True
@@ -100,13 +96,10 @@ class Product(models.Model):
         format="PNG",
         options={"quality": 60},
     )
-    serial_number = models.CharField(max_length=30, unique=True, null=True, blank=True)
     model_number = models.CharField(max_length=30, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
-
-    # args=[str(self.id)]
 
     def __str__(self) -> str:
         return self.title
@@ -120,9 +113,9 @@ class Product(models.Model):
 
     def generate_barcode(self):
         barcode_value = str(self.id)  # Use the product ID or any unique value
-        barcode_filename = f"barcode_{self.id}.png"
+        barcode_filename = f"barcode_{self.id}"  # Remove the .png extension here
         barcode_dir = os.path.join(settings.MEDIA_ROOT, "barcodes")
-        barcode_path = os.path.join(barcode_dir, barcode_filename)
+        barcode_path = os.path.join(barcode_dir, f"{barcode_filename}.png")
 
         # Ensure the directory exists
         if not os.path.exists(barcode_dir):
@@ -130,15 +123,41 @@ class Product(models.Model):
 
         # Create the barcode with text
         barcode = Code128(barcode_value, writer=ImageWriter())
-        barcode.writer.text = barcode_value  # Add the numerical representation
         barcode.save(barcode_path)
 
-        with open(barcode_path, "rb") as f:
-            self.barcode.save(barcode_filename, File(f), save=False)
+        # Ensure the barcode is saved before opening it
+        if os.path.exists(barcode_path):
+            with open(barcode_path, "rb") as f:
+                self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
+            # Save the numerical representation to the new field
+            self.numerical_barcode = barcode_value
+            super().save(update_fields=["barcode", "numerical_barcode"])
 
-        # Save the numerical representation to the new field
-        self.numerical_barcode = barcode_value
-        super().save(update_fields=["barcode", "numerical_barcode"])
+
+class ProductInstance(models.Model):
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="instances"
+    )
+    serial_number = models.CharField(max_length=30, unique=True)
+    sku = models.CharField(max_length=30)
+
+    LOAN_STATUS = (
+        ("m", "Maintenance"),
+        ("o", "Out on Loan"),
+        ("a", "Available"),
+        ("r", "Reserved"),
+    )
+
+    status = models.CharField(
+        max_length=1,
+        choices=LOAN_STATUS,
+        blank=True,
+        default="a",
+        help_text="Product Availability",
+    )
+
+    def __str__(self):
+        return f"{self.product.title} - {self.serial_number}"
 
 
 class ProductImage(models.Model):

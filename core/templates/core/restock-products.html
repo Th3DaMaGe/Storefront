@@ -1,5 +1,7 @@
 {% extends 'core/base_generic.html' %}
-{% block title %}Products to Restock{% endblock %}
+{% block title %}
+  Products to Restock
+{% endblock %}
 {% block content %}
   <h1 class="text-2xl font-bold mb-4">Products to Restock</h1>
 
@@ -8,7 +10,7 @@
       <thead>
         <tr>
           <th class="border border-slate-600 py-2">Title</th>
-          <th class="border border-slate-600 py-2">Inventory</th>
+
           <th class="border border-slate-600 py-2">Restock Value</th>
           <th class="border border-slate-600 py-2">Unit Price</th>
           <th class="border border-slate-600 py-2">Barcode</th>
@@ -17,8 +19,10 @@
       <tbody>
         {% for product in products %}
           <tr>
-            <td class="py-2"><a href="{{ product.get_absolute_url }}" class="text-blue-500 hover:underline">{{ product.title }}</a></td>
-            <td class="py-2">{{ product.inventory }}</td>
+            <td class="py-2">
+              <a href="{{ product.get_absolute_url }}" class="text-blue-500 hover:underline">{{ product.title }}</a>
+            </td>
+
             <td class="py-2">{{ product.restock_value }}</td>
             <td class="py-2">{{ product.unit_price }}</td>
             <td class="py-2">

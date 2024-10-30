@@ -13,11 +13,7 @@
   </style>
   <!-- Add button to add users -->
   <div class="flex justify-end">
-
-    <a href="{% url 'add-product' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4">
-      <i class="bi bi-box"></i>Add Product
-    </a>
- 
+    <a href="{% url 'add-product' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md mb-4"><i class="bi bi-box"></i>Add Product</a>
   </div>
   <div class="text-center">
     <form method="get" action="" class="mb-4">
@@ -27,6 +23,18 @@
   </div>
 
   {% if product_list %}
+    <li>
+      <strong>Products available:</strong> {{ num_instances_available }}
+    </li>
+    <li>
+      <strong>Products reserved:</strong> {{ num_instances_available }}
+    </li>
+    <li>
+      <strong>Products on loanm:</strong> {{ num_instances_available }}
+    </li>
+    <li>
+      <strong>Products being maintained:</strong> {{ num_instances_maintainance }}
+    </li>
     <table class="min-w-full divide-y divide-gray-200">
       <thead>
         <tr>
@@ -36,7 +44,9 @@
                 
                 
                 
+                
                 desc
+
 
 
 
@@ -46,12 +56,15 @@
                 
                 
                 
+                
                 asc
 
 
 
 
+
               {% endif %}{% if query %}
+                
                 
                 
                 
@@ -62,38 +75,7 @@
               Title
             </a>
           </th>
-          <th class="py-2 table-cell-width">
-            <a href="?sort_by=inventory&order={% if sort_by == 'inventory' and order == 'asc' %}
-                
-                
-                
-                
-                desc
 
-
-
-
-              {% else %}
-                
-                
-                
-                
-                asc
-
-
-
-
-              {% endif %}{% if query %}
-                
-                
-                
-                
-                &q={{ query }}
-              {% endif %}"
-              class="text-blue-500 hover:underline">
-              Inventory
-            </a>
-          </th>
           <th class="py-2 table-cell-width">Last Update</th>
           <th class="py-2 table-cell-width">Collection</th>
           {% if not is_staff %}
@@ -107,19 +89,18 @@
             <td class="py-2">
               <a href="{{ product.get_absolute_url }}" class="text-blue-500 hover:underline">{{ product.title }}</a>
             </td>
-            <td class="py-2 text-center">{{ product.inventory }}</td>
+        
             <td class="py-2 text-center">{{ product.last_update }}</td>
             <td class="py-2 text-center">{{ product.collection }}</td>
             {% if not is_staff %}
-            <td class="py-2 text-center">
-              <form method="post" action="{% url 'add_to_cart1' product.id %}">
+              <td class="py-2 text-center">
+                <form method="post" action="{% url 'add_to_cart1' product.id %}">
                   {% csrf_token %}
                   <label for="number"></label>
                   <input id="number" name="quantity" type="number" value="1" min="1" class="border text-center" />
                   <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add to Cart</button>
-              </form>
-          </td>
-          
+                </form>
+              </td>
             {% endif %}
           </tr>
         {% endfor %}
@@ -134,12 +115,14 @@
               
               
               
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline">
             First
           </a>
           <a href="?page={{ product_list.previous_page_number }}{% if query %}
+              
               
               
               
@@ -157,12 +140,14 @@
               
               
               
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline ml-2">
             Next
           </a>
           <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
+              
               
               
               
