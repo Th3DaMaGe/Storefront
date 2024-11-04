@@ -11,6 +11,8 @@ from barcode.writer import ImageWriter
 import os
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from io import BytesIO
+import barcode
 
 
 class Promotion(models.Model):
@@ -77,6 +79,8 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
     description = models.TextField(null=True, blank=True)
+    country_code = models.CharField(max_length=1, null=True)
+    manufacturer_id = models.CharField(max_length=6, null=True)
     unit_price = models.DecimalField(
         max_digits=9, decimal_places=2, validators=[MinValueValidator(1)]
     )
@@ -96,7 +100,7 @@ class Product(models.Model):
         format="PNG",
         options={"quality": 60},
     )
-    model_number = models.CharField(max_length=30, null=True, blank=True)
+    model_number = models.CharField(max_length=5, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
@@ -107,31 +111,44 @@ class Product(models.Model):
     class Meta:
         ordering = ["title"]
 
+    # def save(self, *args, **kwargs):
+    #     super().save(*args, **kwargs)
+    #     self.generate_barcode()
+
+    # def generate_barcode(self):
+    #     barcode_value = str(self.id)  # Use the product ID or any unique value
+    #     barcode_filename = f"barcode_{self.id}"  # Remove the .png extension here
+    #     barcode_dir = os.path.join(settings.MEDIA_ROOT, "barcodes")
+    #     barcode_path = os.path.join(barcode_dir, f"{barcode_filename}.png")
+
+    #     # Ensure the directory exists
+    #     if not os.path.exists(barcode_dir):
+    #         os.makedirs(barcode_dir)
+
+    #     # Create the barcode with text
+    #     barcode = Code128(barcode_value, writer=ImageWriter())
+    #     barcode.save(barcode_path)
+
+    #     # Ensure the barcode is saved before opening it
+    #     if os.path.exists(barcode_path):
+    #         with open(barcode_path, "rb") as f:
+    #             self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
+    #         # Save the numerical representation to the new field
+    #         self.numerical_barcode = barcode_value
+    #         super().save(update_fields=["barcode", "numerical_barcode"])
+
+    
     def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-        self.generate_barcode()
+        EAN = barcode.get_barcode_class("ean13")
+        ean = EAN(f"{self.country_code}{self.manufacturer_id}{self.model_number}",writer=ImageWriter())
+        buffer = BytesIO()
+        ean.write(buffer)
+        self.barcode.save(f"{self.country_code}{self.manufacturer_id}{self.model_number}.png",File(buffer),save=False)
+        return super().save(*args, **kwargs)
 
-    def generate_barcode(self):
-        barcode_value = str(self.id)  # Use the product ID or any unique value
-        barcode_filename = f"barcode_{self.id}"  # Remove the .png extension here
-        barcode_dir = os.path.join(settings.MEDIA_ROOT, "barcodes")
-        barcode_path = os.path.join(barcode_dir, f"{barcode_filename}.png")
 
-        # Ensure the directory exists
-        if not os.path.exists(barcode_dir):
-            os.makedirs(barcode_dir)
 
-        # Create the barcode with text
-        barcode = Code128(barcode_value, writer=ImageWriter())
-        barcode.save(barcode_path)
 
-        # Ensure the barcode is saved before opening it
-        if os.path.exists(barcode_path):
-            with open(barcode_path, "rb") as f:
-                self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
-            # Save the numerical representation to the new field
-            self.numerical_barcode = barcode_value
-            super().save(update_fields=["barcode", "numerical_barcode"])
 
 
 class ProductInstance(models.Model):

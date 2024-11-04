@@ -1,0 +1,54 @@
+<!-- product_lookup.html -->
+{% extends 'core/base_generic.html' %}
+{% block title %}
+  Product Lookup
+{% endblock %}
+{% load static %}
+
+{% comment %} <link rel="stylesheet" href="{% static 'images/img-grid.css' %}" /> {% endcomment %}
+{% block content %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
+  <h1>Lookup Product by Barcode</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="barcode_image">Upload Barcode Image:</label>
+    <input type="file" name="barcode_image" accept="image/*" required />
+    <button type="submit">Lookup Product</button>
+  </form>
+  <button id="start-camera">Start Camera</button>
+  <div id="interactive" class="viewport"></div>
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+
+  <script>
+    document.getElementById('start-camera').addEventListener('click', function () {
+      Quagga.init(
+        {
+          inputStream: {
+            type: 'LiveStream',
+            target: document.querySelector('#interactive') // Or '#yourElement' (optional)
+          },
+          decoder: {
+            readers: ['ean_reader'] // List of active readers
+          }
+        },
+        function (err) {
+          if (err) {
+            console.log(err)
+            return
+          }
+          console.log('Initialization finished. Ready to start')
+          Quagga.start()
+        }
+      )
+    
+      Quagga.onDetected(function (data) {
+        alert('Barcode detected and processed : [' + data.codeResult.code + ']', data)
+        // You can send the detected barcode to your server here
+        // For example, using AJAX to submit the barcode data
+      })
+    })
+  </script>
+{% endblock %}

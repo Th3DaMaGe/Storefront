@@ -44,6 +44,10 @@ import matplotlib.pyplot as plt
 from django.http import HttpResponse
 from io import BytesIO
 
+from pyzbar.pyzbar import decode
+from PIL import ImageFile
+from .utils import scan_barcode  # Assuming the function is in utils.py
+
 
 @csrf_exempt
 def login_view(request):
@@ -616,3 +620,35 @@ def user_type_pie_chart(request):
 
     # Return the pie chart as an HTTP response
     return HttpResponse(buffer, content_type="image/png")
+from pyzbar.pyzbar import decode
+from PIL import Image
+
+def scan_barcode(image_path):
+    """
+    Scans the barcode from the given image path and returns the decoded data.
+    """
+    image = Image.open(image_path)
+    decoded_objects = decode(image)
+    for obj in decoded_objects:
+        return obj.data.decode('utf-8')
+    return None
+
+
+
+def scan_product_barcode(request, product_id):
+    product = Product.objects.get(pk=product_id)
+    barcode_data = scan_barcode(product.barcode.path)
+    return render(request, 'product_detail.html', {'product': product, 'barcode_data': barcode_data})
+
+
+def lookup_product_by_barcode(request):
+    if request.method == 'POST':
+        barcode_image = request.FILES.get('barcode_image')
+        if barcode_image:
+            barcode_data = scan_barcode(barcode_image)
+            if barcode_data:
+                product = get_object_or_404(Product, numerical_barcode=barcode_data)
+                return render(request, 'product_detail.html', {'product': product})
+            else:
+                return render(request, 'product_lookup.html', {'error': 'Barcode could not be read.'})
+    return render(request, 'core/product_lookup.html')

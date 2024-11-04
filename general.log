@@ -43190,3 +43190,343 @@ Traceback (most recent call last):
   File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
     raise ValueError(
 ValueError: The 'barcode' attribute has no file associated with it.
+2024-11-04 16:08:31,033 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:09:00,913 (WARNING) - django.request - Not Found: /favicon.ico
+2024-11-04 16:09:12,005 (WARNING) - django.request - Bad Request: /login/
+2024-11-04 16:09:19,467 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 117, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-11-04 16:09:21,783 (ERROR) - django.request - Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 117, in dashboard
+    "email": user.email,
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'email'
+2024-11-04 16:09:38,142 (WARNING) - django.request - Not Found: /iadm
+2024-11-04 16:09:38,559 (WARNING) - django.request - Not Found: /iadmin
+2024-11-04 16:09:40,327 (WARNING) - django.request - Not Found: /iadmin
+2024-11-04 16:09:41,309 (WARNING) - django.request - Not Found: /iadmin
+2024-11-04 16:10:41,816 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:11:08,362 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:11:22,185 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    f"{self.country_code}{self.manufacturer_code}{self.model_code}",
+AttributeError: 'Product' object has no attribute 'manufacturer_code'
+2024-11-04 16:11:44,753 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:12:00,334 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:12:14,858 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    f"{self.country_code}{self.manufacturer_code}{self.model_code}",
+AttributeError: 'Product' object has no attribute 'manufacturer_code'
+2024-11-04 16:13:03,888 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:13:13,332 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    f"{self.country_code}{self.manufacturer_code}{self.model_code}",
+AttributeError: 'Product' object has no attribute 'manufacturer_code'
+2024-11-04 16:13:22,722 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:13:30,305 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:13:50,122 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:14:02,471 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:14:12,125 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    f"{self.country_code}{self.manufacturer_id}{self.model_code}",
+AttributeError: 'Product' object has no attribute 'model_code'
+2024-11-04 16:14:27,221 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:14:33,804 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:14:48,641 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 142, in save
+    ean = EAN(
+TypeError: __init__() got an unexpected keyword argument 'write'
+2024-11-04 16:16:52,437 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:16:58,351 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:17:07,640 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:17:17,599 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:18:25,841 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 142, in save
+    ean = EAN(
+TypeError: __init__() got an unexpected keyword argument 'write'
+2024-11-04 16:21:45,786 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:22:20,199 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    ean = EAN(f"{self.country_code}{self.manufacturer_id}{self.model_number}",write=ImageWriter,)
+TypeError: __init__() got an unexpected keyword argument 'write'
+2024-11-04 16:22:41,673 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:22:50,180 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:23:27,887 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 143, in save
+    ean = EAN(f"{self.country_code}{self.manufacturer_id}{self.model_number}",write=ImageWriter)
+TypeError: __init__() got an unexpected keyword argument 'write'
+2024-11-04 16:24:09,714 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:24:20,895 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:25:04,839 (ERROR) - django.request - Internal Server Error: /admin/store/product/add/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\namel\Code\Storefront2\store\models.py", line 145, in save
+    ean.write(buffer)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\barcode\base.py", line 80, in write
+    output = self.render(options, text)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\barcode\ean.py", line 126, in render
+    return super().render(options, text)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\barcode\base.py", line 98, in render
+    self.writer.set_options(options)
+TypeError: set_options() missing 1 required positional argument: 'options'
+2024-11-04 16:25:26,439 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-04 16:25:34,013 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:36:56,686 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\views.py changed, reloading.
+2024-11-04 16:37:50,387 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:38:29,266 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:38:42,143 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:38:52,125 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:39:06,438 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:42:10,179 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:42:40,379 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:42:46,538 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:42:53,483 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:51:18,893 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-04 16:52:11,554 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:52:42,379 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-04 16:53:02,686 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:55:32,484 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-04 16:56:33,501 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:57:07,899 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:57:15,821 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:57:34,940 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-04 16:57:51,499 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-04 16:58:02,780 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-04 16:58:08,536 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

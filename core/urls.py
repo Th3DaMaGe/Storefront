@@ -21,7 +21,8 @@ from .views import (
     order_detail,
     add_to_cart1,
     view_cart,
-    user_type_pie_chart,
+    user_type_pie_chart,scan_product_barcode,
+    lookup_product_by_barcode
     
 )
 from .views import dashboard, ProductDetailView, RestockProducts
@@ -58,5 +59,6 @@ urlpatterns = [
     path("add-to-cart1/<int:product_id>/", add_to_cart1, name="add_to_cart1"),
     path("view-cart/", view_cart, name="view-cart"),
     path("user-type/", user_type_pie_chart, name="user_type_pie_chart"),
-
+    path('product/lookup/', lookup_product_by_barcode, name='lookup-product-by-barcode'),
+    path('product/<int:product_id>/scan/', scan_product_barcode, name='scan-product-barcode'),
 ]
