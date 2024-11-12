@@ -35,6 +35,11 @@ pyparsing = "*"
 django-extensions = "*"
 matplotlib = "*"
 tqdm = "*"
+putz = "*"
+pytz = "*"
+django-tailwind = {extras = ["reload"], version = "*"}
+zbar = "*"
+libzbar0 = "*"
 
 [dev-packages]
 pytest = "*"

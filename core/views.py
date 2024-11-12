@@ -18,10 +18,7 @@ from store.models import (
 )
 from django.views import generic
 from django.http import Http404
-import requests
 from django.views.generic import ListView
-from django.db.models import F
-from store.models import Location
 from .forms import LocationSearchForm
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -34,7 +31,7 @@ from core.models import (
 from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from .forms import OrderForm, OrderItemForm, AddProductForm, Order
+from .forms import OrderForm, OrderItemForm, AddProductForm
 from django.urls import reverse
 from django.core.mail import send_mail
 import matplotlib
@@ -43,10 +40,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from django.http import HttpResponse
 from io import BytesIO
-
-from pyzbar.pyzbar import decode
-from PIL import ImageFile
-from .utils import scan_barcode  # Assuming the function is in utils.py
+from core.utils import scan_barcode
 
 
 @csrf_exempt
@@ -444,35 +438,6 @@ def view_collection_products(request, collection_id):
     return render(request, "core/view-collection-products.html", context)
 
 
-# def create_order(request):
-#     OrderItemFormSet = inlineformset_factory(
-#         Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
-#     )
-
-#     if request.method == "POST":
-#         order_form = OrderForm(request.POST)
-#         formset = OrderItemFormSet(request.POST)
-
-#         if order_form.is_valid() and formset.is_valid():
-#             order = order_form.save()
-#             formset.instance = order
-#             formset.save()
-#             return redirect(reverse("order_success", kwargs={"order_id": order.id}))
-
-#     else:
-#         order_form = OrderForm()
-#         formset = OrderItemFormSet()
-
-#     return render(
-#         request,
-#         "core/create-order.html",
-#         {
-#             "order_form": order_form,
-#             "formset": formset,
-#         },
-#     )
-
-
 def order_success(request, order_id):
     order = get_object_or_404(Order, id=order_id)
     return render(request, "core/order-success.html", {"order": order})
@@ -480,7 +445,7 @@ def order_success(request, order_id):
 
 def create_order(request):
     OrderItemFormSet = inlineformset_factory(
-        Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
+        Order, OrderItem, form=OrderItemForm, extra=1
     )
 
     if request.method == "POST":
@@ -620,35 +585,30 @@ def user_type_pie_chart(request):
 
     # Return the pie chart as an HTTP response
     return HttpResponse(buffer, content_type="image/png")
-from pyzbar.pyzbar import decode
-from PIL import Image
-
-def scan_barcode(image_path):
-    """
-    Scans the barcode from the given image path and returns the decoded data.
-    """
-    image = Image.open(image_path)
-    decoded_objects = decode(image)
-    for obj in decoded_objects:
-        return obj.data.decode('utf-8')
-    return None
-
 
 
 def scan_product_barcode(request, product_id):
     product = Product.objects.get(pk=product_id)
     barcode_data = scan_barcode(product.barcode.path)
-    return render(request, 'product_detail.html', {'product': product, 'barcode_data': barcode_data})
+    return render(
+        request,
+        "product_detail.html",
+        {"product": product, "barcode_data": barcode_data},
+    )
 
 
 def lookup_product_by_barcode(request):
-    if request.method == 'POST':
-        barcode_image = request.FILES.get('barcode_image')
+    if request.method == "POST":
+        barcode_image = request.FILES.get("barcode_image")
         if barcode_image:
             barcode_data = scan_barcode(barcode_image)
             if barcode_data:
                 product = get_object_or_404(Product, numerical_barcode=barcode_data)
-                return render(request, 'product_detail.html', {'product': product})
+                return render(request, "product_detail.html", {"product": product})
             else:
-                return render(request, 'product_lookup.html', {'error': 'Barcode could not be read.'})
-    return render(request, 'core/product_lookup.html')
+                return render(
+                    request,
+                    "product_lookup.html",
+                    {"error": "Barcode could not be read."},
+                )
+    return render(request, "core/product_lookup.html")

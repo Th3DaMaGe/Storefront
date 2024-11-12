@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import (
+from core.views import (
     login_view,
     profile_view,
     logout_view,
@@ -25,7 +25,7 @@ from .views import (
     lookup_product_by_barcode
     
 )
-from .views import dashboard, ProductDetailView, RestockProducts
+from core.views import dashboard, ProductDetailView, RestockProducts
 
 # URLConf
 # This code defines views and functions for a Django web application, handling user authentication, product browsing, cart management, and administrative tasks.
@@ -59,6 +59,6 @@ urlpatterns = [
     path("add-to-cart1/<int:product_id>/", add_to_cart1, name="add_to_cart1"),
     path("view-cart/", view_cart, name="view-cart"),
     path("user-type/", user_type_pie_chart, name="user_type_pie_chart"),
-    path('product/lookup/', lookup_product_by_barcode, name='lookup-product-by-barcode'),
+    path('product-lookup/', lookup_product_by_barcode, name='lookup-product-by-barcode'),
     path('product/<int:product_id>/scan/', scan_product_barcode, name='scan-product-barcode'),
 ]

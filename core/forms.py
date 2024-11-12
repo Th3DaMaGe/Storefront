@@ -24,7 +24,7 @@ class OrderItemForm(forms.ModelForm):
 
 
 OrderItemFormSet = inlineformset_factory(
-    Order, OrderItem, form=OrderItemForm, extra=1, can_delete=True
+    Order, OrderItem, form=OrderItemForm, extra=1,
 )
 
 

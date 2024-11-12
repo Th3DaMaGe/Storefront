@@ -79,8 +79,8 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
     description = models.TextField(null=True, blank=True)
-    country_code = models.CharField(max_length=1, null=True)
-    manufacturer_id = models.CharField(max_length=6, null=True)
+    # country_code = models.CharField(max_length=1, null=True)
+    # manufacturer_id = models.CharField(max_length=6, null=True)
     unit_price = models.DecimalField(
         max_digits=9, decimal_places=2, validators=[MinValueValidator(1)]
     )
