@@ -46374,3 +46374,352 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'product_lookup' not found. '
 2024-11-12 10:50:28,469 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
 2024-11-12 10:50:30,877 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-11-12 11:04:36,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 11:04:41,521 (ERROR) - django.request - Internal Server Error: /create-order/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 470, in create_order
+    return render(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static'. Did you forget to register or load this tag?
+2024-11-12 14:56:18,266 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 14:57:29,638 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 14:59:46,443 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:09:28,971 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:09:49,315 (WARNING) - django.request - Not Found: /favicon.ico
+2024-11-12 15:13:25,546 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:13:28,562 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:17:48,667 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:17:50,756 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:17:54,586 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:17:56,405 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:18:02,117 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:18:03,999 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:18:27,487 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:18:29,140 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:18:36,984 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:18:39,565 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:18:46,782 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:18:48,507 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:18:53,961 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:18:55,645 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:21:00,152 (ERROR) - django.request - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 67, in login_view
+    return render(request, "core/login.html", {"error_message": error_message})
+UnboundLocalError: local variable 'error_message' referenced before assignment
+2024-11-12 15:21:49,778 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:21:52,948 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:21:56,810 (ERROR) - django.request - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 48, in login_view
+    error_message = None
+NameError: name 'e' is not defined
+2024-11-12 15:22:11,347 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:22:13,019 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:25:47,355 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-12 15:25:49,351 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:25:52,488 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\store\models.py changed, reloading.
+2024-11-12 15:25:54,373 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:28:35,787 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:28:37,686 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:28:40,913 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:28:42,824 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:29:15,235 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:29:16,925 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:29:21,227 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:29:22,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:29:26,827 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:29:28,919 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:29:34,804 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:29:36,881 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:29:44,120 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:29:45,956 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:02,745 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:04,592 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:07,590 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:09,769 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:14,117 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:15,934 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:23,483 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:25,343 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:31,853 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:33,482 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:44,989 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:31:46,790 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:31:58,241 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:32:00,048 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:32:06,442 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:32:08,156 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:32:17,255 (ERROR) - django.request - Internal Server Error: /inventory-intake
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 634, in product_intake_view
+    return render(request, 'inventory_intake.html', {'formset': formset})
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: inventory_intake.html
+2024-11-12 15:32:29,022 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:32:30,862 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:32:34,051 (ERROR) - django.request - Internal Server Error: /inventory-intake
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 635, in product_intake_view
+    return render(request, "core/inventory_intake.html", {"formset": formset})
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: core/inventory_intake.html
+2024-11-12 15:32:44,818 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:32:46,697 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:33:44,565 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\utils.py changed, reloading.
+2024-11-12 15:33:48,111 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:39:18,948 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:39:20,686 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:42:52,352 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:42:54,397 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:42:57,555 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:42:59,416 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:43:11,493 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:43:13,632 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:43:19,963 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:43:21,630 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:43:27,963 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:43:30,145 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:43:36,663 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:43:38,265 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:43:43,302 (WARNING) - django.request - Not Found: /inventory-intake
+2024-11-12 15:44:25,125 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:44:27,173 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:44:44,381 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:44:46,201 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:44:55,599 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:44:57,788 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:45:00,852 (WARNING) - django.request - Not Found: /inventory-intake
+2024-11-12 15:45:07,002 (ERROR) - django.request - Internal Server Error: /ims-admin/add-product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 391, in add_product
+    return render(request, "core/admin/add-product.html", {"form": form})
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'receiving-goods' not found. 'receiving-goods' is not a valid view function or pattern name.
+2024-11-12 15:45:50,893 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:45:52,899 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:45:56,333 (ERROR) - django.request - Internal Server Error: /ims-admin/add-product/
+Traceback (most recent call last):
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\namel\Code\Storefront2\core\views.py", line 391, in add_product
+    return render(request, "core/admin/add-product.html", {"form": form})
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\namel\.virtualenvs\Storefront2-Kl01iuor\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'receiving-goods' not found. 'receiving-goods' is not a valid view function or pattern name.
+2024-11-12 15:46:13,129 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\urls.py changed, reloading.
+2024-11-12 15:46:14,786 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:49:46,991 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:49:49,422 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:49:54,251 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:49:55,978 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:50:01,395 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:50:03,163 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:50:23,642 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\views.py changed, reloading.
+2024-11-12 15:50:25,376 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:57:14,212 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:57:15,876 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:57:25,004 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:57:26,584 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:58:02,116 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:58:04,067 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:59:46,068 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:59:48,238 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 15:59:52,711 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 15:59:54,197 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:00:41,485 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:00:43,037 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:11:05,245 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:11:07,185 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:11:38,671 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:11:40,772 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:11:54,567 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:11:56,446 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:12:02,635 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:12:04,379 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:12:11,676 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:12:13,422 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:12:31,320 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:12:33,106 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:12:47,076 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:12:48,627 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:13:03,108 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:13:04,819 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:13:18,530 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:13:20,239 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:13:25,574 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:13:27,518 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:13:43,824 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:13:45,690 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:13:51,206 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:13:52,914 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:16,439 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:18,371 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:25,132 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:26,715 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:38,372 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:39,991 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:43,588 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:45,408 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:50,109 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:52,006 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-11-12 16:14:57,927 (INFO) - django.utils.autoreload - C:\Users\namel\Code\Storefront2\core\forms.py changed, reloading.
+2024-11-12 16:14:59,752 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

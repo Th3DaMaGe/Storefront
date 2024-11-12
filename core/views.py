@@ -41,10 +41,13 @@ import matplotlib.pyplot as plt
 from django.http import HttpResponse
 from io import BytesIO
 from core.utils import scan_barcode
+from django.forms import modelformset_factory
+from core.forms import ProductForm
 
 
 @csrf_exempt
 def login_view(request):
+    error_message = None
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
@@ -62,8 +65,9 @@ def login_view(request):
             response.status_code = 302
             return response
         else:
-            return JsonResponse({"error": "Invalid credentials"}, status=400)
-    return render(request, "core/login.html")
+            error_message = "Invalid credentials. Please try again."
+
+    return render(request, "core/login.html", {"error_message": error_message})
 
 
 @login_required
@@ -612,3 +616,16 @@ def lookup_product_by_barcode(request):
                     {"error": "Barcode could not be read."},
                 )
     return render(request, "core/product_lookup.html")
+
+
+def receiving_view(request, extra_forms=5):  # Default to 5 extra forms
+    ProductFormSet = modelformset_factory(Product, form=ProductForm, extra=extra_forms)
+    if request.method == "POST":
+        formset = ProductFormSet(request.POST, request.FILES)
+        if formset.is_valid():
+            formset.save()
+            return redirect("product-list")  # Replace with your success URL
+    else:
+        formset = ProductFormSet(queryset=Product.objects.none())
+
+    return render(request, "core/receiving.html", {"formset": formset})

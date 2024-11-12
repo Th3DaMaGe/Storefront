@@ -24,7 +24,10 @@ class OrderItemForm(forms.ModelForm):
 
 
 OrderItemFormSet = inlineformset_factory(
-    Order, OrderItem, form=OrderItemForm, extra=1,
+    Order,
+    OrderItem,
+    form=OrderItemForm,
+    extra=1,
 )
 
 
@@ -56,3 +59,36 @@ class AddProductForm(forms.ModelForm):
     # barcode = forms.CharField(label="Barcode")
     serial_number = forms.CharField(label="Serial Number")
     model_number = forms.CharField(label="Model Number")
+
+
+class ProductForm(forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = [
+            "title",
+            "slug",
+            "description",
+            "unit_price",
+            "collection",
+            "restock_value",
+            "model_number",
+        ]
+        widgets = {
+            "title": forms.TextInput(attrs={"class": "form-input w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}),
+            "slug": forms.TextInput(attrs={"class": "form-input w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}),
+            "description": forms.Textarea(
+                attrs={"class": "form-textarea w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}
+            ),
+            "unit_price": forms.NumberInput(
+                attrs={"class": "form-input w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}
+            ),
+            "collection": forms.Select(
+                attrs={"class": "form-select w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}
+            ),
+            "restock_value": forms.NumberInput(
+                attrs={"class": "form-input w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}
+            ),
+            "model_number": forms.TextInput(
+                attrs={"class": "form-input w-full text-gray-700 bg-gray-100 border border-gray-300 p-2 rounded"}
+            ),
+        }

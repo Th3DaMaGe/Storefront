@@ -9,18 +9,21 @@
 {% block content %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
 
-  <h1>Lookup Product by Barcode</h1>
-  <form method="post" enctype="multipart/form-data">
+  <h1 class="text-2xl font-bold mb-4">Lookup Product by Barcode</h1>
+  <form method="post" enctype="multipart/form-data" class="space-y-4">
     {% csrf_token %}
-    <label for="barcode_image">Upload Barcode Image:</label>
-    <input type="file" name="barcode_image" accept="image/*" required />
-    <button type="submit">Lookup Product</button>
+    <div class="flex flex-col space-y-2">
+      <label for="barcode_image" class="font-medium text-gray-700">Upload Barcode Image:</label>
+      <input type="file" name="barcode_image" accept="image/*" required class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    </div>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Lookup Product</button>
   </form>
-  <button id="start-camera">Start Camera</button>
-  <div id="interactive" class="viewport"></div>
+  <button id="start-camera" class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Start Camera</button>
+  <div id="interactive" class="viewport mt-4 border border-gray-300 rounded-md p-4"></div>
   {% if error %}
-    <p style="color: red;">{{ error }}</p>
+    <p class="text-red-500 mt-2">{{ error }}</p>
   {% endif %}
+  
 
   <script>
     document.getElementById('start-camera').addEventListener('click', function () {

@@ -111,33 +111,7 @@ class Product(models.Model):
     class Meta:
         ordering = ["title"]
 
-    # def save(self, *args, **kwargs):
-    #     super().save(*args, **kwargs)
-    #     self.generate_barcode()
-
-    # def generate_barcode(self):
-    #     barcode_value = str(self.id)  # Use the product ID or any unique value
-    #     barcode_filename = f"barcode_{self.id}"  # Remove the .png extension here
-    #     barcode_dir = os.path.join(settings.MEDIA_ROOT, "barcodes")
-    #     barcode_path = os.path.join(barcode_dir, f"{barcode_filename}.png")
-
-    #     # Ensure the directory exists
-    #     if not os.path.exists(barcode_dir):
-    #         os.makedirs(barcode_dir)
-
-    #     # Create the barcode with text
-    #     barcode = Code128(barcode_value, writer=ImageWriter())
-    #     barcode.save(barcode_path)
-
-    #     # Ensure the barcode is saved before opening it
-    #     if os.path.exists(barcode_path):
-    #         with open(barcode_path, "rb") as f:
-    #             self.barcode.save(f"{barcode_filename}.png", File(f), save=False)
-    #         # Save the numerical representation to the new field
-    #         self.numerical_barcode = barcode_value
-    #         super().save(update_fields=["barcode", "numerical_barcode"])
-
-    
+  
     def save(self, *args, **kwargs):
         EAN = barcode.get_barcode_class("ean13")
         ean = EAN(f"{self.country_code}{self.manufacturer_id}{self.model_number}",writer=ImageWriter())
@@ -145,9 +119,6 @@ class Product(models.Model):
         ean.write(buffer)
         self.barcode.save(f"{self.country_code}{self.manufacturer_id}{self.model_number}.png",File(buffer),save=False)
         return super().save(*args, **kwargs)
-
-
-
 
 
 

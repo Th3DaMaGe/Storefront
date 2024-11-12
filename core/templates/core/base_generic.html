@@ -65,6 +65,12 @@
           </li>
           {% if is_staff %}
           <li>
+            <a href="{% url 'receiving-goods' %}" class="flex items-center space-x-2" :title="!isOpen ? 'Receiving' : ''">
+              <i class="bi bi-boxes" style="font-size: 1.5em; color: #007bff;"></i>
+              <span x-show="isOpen" class="hidden md:inline">Receiving</span>
+            </a>
+          </li>
+          <li>
             <a href="{% url 'create-order' %}" class="flex items-center space-x-2" :title="!isOpen ? 'Create Dispatch' : ''">
               <i class="bi bi-brush" style="font-size: 1.5em; color: #007bff;"></i>
               <span x-show="isOpen" class="hidden md:inline">Create Dispatch</span>

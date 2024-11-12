@@ -40,9 +40,10 @@ ALLOWED_HOSTS = [
     "http://127.0.0.1:8000",
     "http://127.0.0.1",
     "127.0.0.1",
-    "192.168.0.114",
+    "192.168.0.114:8002",
     "localhost",
 ]
+
 CSRF_TRUSTED_ORIGINS = ["http://192.168.0.114:8000"]
 
 
@@ -103,6 +104,7 @@ INTERNAL_IPS = [
     "http://localhost:8000",
     "http://localhost:8089",
     "localhost:8089",
+    "192.168.0.114",
     # ...
 ]
 

@@ -3,3 +3,4 @@ ERROR_CODES.md
 /static/
 *.pyc
 /media/
+secret_key.txt
