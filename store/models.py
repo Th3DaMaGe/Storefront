@@ -79,8 +79,8 @@ class Product(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
     description = models.TextField(null=True, blank=True)
-    # country_code = models.CharField(max_length=1, null=True)
-    # manufacturer_id = models.CharField(max_length=6, null=True)
+    country_code = models.CharField(max_length=1, null=True)
+    manufacturer_id = models.CharField(max_length=6, null=True)
     unit_price = models.DecimalField(
         max_digits=9, decimal_places=2, validators=[MinValueValidator(1)]
     )
@@ -111,15 +111,20 @@ class Product(models.Model):
     class Meta:
         ordering = ["title"]
 
-  
     def save(self, *args, **kwargs):
         EAN = barcode.get_barcode_class("ean13")
-        ean = EAN(f"{self.country_code}{self.manufacturer_id}{self.model_number}",writer=ImageWriter())
+        ean = EAN(
+            f"{self.country_code}{self.manufacturer_id}{self.model_number}",
+            writer=ImageWriter(),
+        )
         buffer = BytesIO()
         ean.write(buffer)
-        self.barcode.save(f"{self.country_code}{self.manufacturer_id}{self.model_number}.png",File(buffer),save=False)
+        self.barcode.save(
+            f"{self.country_code}{self.manufacturer_id}{self.model_number}.png",
+            File(buffer),
+            save=False,
+        )
         return super().save(*args, **kwargs)
-
 
 
 class ProductInstance(models.Model):
@@ -152,7 +157,8 @@ class ProductImage(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="images"
     )
-    image = models.ImageField(upload_to="store/images", validators=[validate_file_size])
+    # image = models.ImageField(upload_to="store/images", validators=[validate_file_size])
+    image = models.CharField(max_length=255, null=True)
 
 
 class Customer(models.Model):
@@ -272,3 +278,36 @@ class Review(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
+
+
+class OrderStatusTextChoices(models.TextChoices):
+    PROCESSING = "Processing"
+    SHIPPED = "Shipped"
+    DELIVERED = "Delivered"
+
+
+class VendorStatusTextChoices(models.TextChoices):
+    HIGH = "high", "High Priority"
+    MEDIUM = "medium", "Medium Priority"
+    LOW = "low", "Low Priority"
+
+
+class VendorSpecialityTextChoices(models.TextChoices):
+    COMPUTERS = "computers", "Computers"
+    NETWORKING = "networking", "Networking"
+    ELECTRICAL = "electrical", "Electrical"
+
+
+class Vendor(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    address = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    phone = models.CharField(max_length=18)
+    preference = models.CharField(
+        max_length=18, choices=VendorStatusTextChoices.choices
+    )
+    speciality = models.CharField(
+        max_length=18,
+        choices=VendorSpecialityTextChoices.choices,
+        default=VendorSpecialityTextChoices.COMPUTERS,
+    )

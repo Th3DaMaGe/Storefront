@@ -61,23 +61,6 @@ class ProductAdmin(admin.ModelAdmin):
 
     barcode_thumbnail_tag.short_description = "Bar Code Thumbnail"
 
-    # @admin.display(ordering="inventory")
-    # def inventory_status(self, product):
-    #     if product.inventory < 10:
-    #         return "Less Than 10 Units Left"
-    #     elif product.inventory < 50:
-    #         return product.inventory
-    #     return "OK Inventory > 50 Units Left"
-
-    # @admin.action(description="Clear inventory")
-    # def clear_inventory(self, request, queryset):
-    #     updated_count = queryset.update(inventory=0)
-    #     self.message_user(
-    #         request,
-    #         f"{updated_count} products were successfully updated.",
-    #         messages.ERROR,
-    #     )
-
     class Media:
         css = {"all": ["store/styles.css"]}
 
@@ -137,3 +120,15 @@ class OrderAdmin(admin.ModelAdmin):
     autocomplete_fields = ["customer"]
     inlines = [OrderItemInline]
     list_display = ["id", "placed_at", "customer"]
+
+
+@admin.register(models.Vendor)
+class VendorAdmin(admin.ModelAdmin):
+    list_per_page = 10
+    list_display = [
+        "name",
+        "address",
+        "preference",
+        "phone",
+        "email",
+    ]

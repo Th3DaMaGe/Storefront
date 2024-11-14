@@ -25,6 +25,7 @@ from core.views import (
     scan_product_barcode,
     lookup_product_by_barcode,
     receiving_view,
+    view_vendors,
 )
 from core.views import dashboard, ProductDetailView, RestockProducts
 
@@ -69,4 +70,5 @@ urlpatterns = [
         name="scan-product-barcode",
     ),
     path("receiving-goods", receiving_view, name="receiving-goods"),
+    path("view-vendors", view_vendors, name="view-vendors"),
 ]

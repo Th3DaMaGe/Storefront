@@ -15,6 +15,7 @@ from store.models import (
     CartItem,
     Customer,
     ProductInstance,
+    Vendor,
 )
 from django.views import generic
 from django.http import Http404
@@ -43,6 +44,7 @@ from io import BytesIO
 from core.utils import scan_barcode
 from django.forms import modelformset_factory
 from core.forms import ProductForm
+from django.db.models import Q
 
 
 @csrf_exempt
@@ -629,3 +631,30 @@ def receiving_view(request, extra_forms=5):  # Default to 5 extra forms
         formset = ProductFormSet(queryset=Product.objects.none())
 
     return render(request, "core/receiving.html", {"formset": formset})
+
+
+def view_vendors(request):
+    query = request.GET.get("q", "")
+    sort_by = request.GET.get("sort_by", "name")
+    order = request.GET.get("order", "asc")
+
+    vendors_qs = Vendor.objects.filter(
+        Q(name__icontains=query) | Q(address__icontains=query)
+    )
+
+    if sort_by == "name":
+        vendors_qs = vendors_qs.order_by(f"{'-' if order == 'desc' else ''}{sort_by}")
+    elif sort_by == "address":
+        vendors_qs = vendors_qs.order_by(f"{'-' if order == 'desc' else ''}{sort_by}")
+
+    paginator = Paginator(vendors_qs, 10)
+    page_number = request.GET.get("page", 1)
+    vendors = paginator.get_page(page_number)
+
+    context = {
+        "vendors": vendors,
+        "query": query,
+        "sort_by": sort_by,
+        "order": order,
+    }
+    return render(request, "core/view-vendors.html", context)

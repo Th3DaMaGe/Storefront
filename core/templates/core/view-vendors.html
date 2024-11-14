@@ -1,0 +1,103 @@
+{% extends 'core/base_generic.html' %}
+{% block title %}
+  Vendors
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-2xl font-bold mb-4">Vendor List</h1>
+  {{ user.get_username }}
+  {{ user.email }}
+  <style>
+    .table-cell-width {
+      width: 25%; /* Adjust as needed */
+    }
+  </style>
+
+  <div class="text-center">
+    <form method="get" action="" class="mb-4">
+      <input type="text" name="q" placeholder="Search by name" value="{{ query|default:'' }}" class="border rounded px-2 py-1" />
+      <input type="hidden" name="sort_by" x-model="sortBy">
+      <input type="hidden" name="order" x-model="sortOrder">
+      <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Search</button>
+    </form>
+    
+  </div>
+
+  {% if vendors %}
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead x-data="{ sortBy: '{{ sort_by }}', sortOrder: '{{ order }}' }">
+        <tr>
+          <th class="py-2 table-cell-width">
+            <a href="#" @click.prevent="sortBy = 'name'; sortOrder = (sortBy === 'name' && sortOrder === 'asc') ? 'desc' : 'asc'; $el.closest('form').submit();"
+              :class="{ 'text-blue-500 hover:underline': sortBy === 'name' }">
+              Name
+            </a>
+          </th>
+          <th class="py-2 table-cell-width">
+            <a href="#" @click.prevent="sortBy = 'address'; sortOrder = (sortBy === 'address' && sortOrder === 'asc') ? 'desc' : 'asc'; $el.closest('form').submit();"
+              :class="{ 'text-blue-500 hover:underline': sortBy === 'address' }">
+              Address
+            </a>
+          </th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for vendor in vendors %}
+          <tr>
+            <td>{{ vendor.name }}</td>
+            <td>{{ vendor.address }}</td>
+            <td>{{ vendor.phone }}</td>
+            <td>{{ vendor.email }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="flex justify-center mt-4">
+      <div id="pagination-controls" class="mt-4">
+        {% if vendors.has_previous %}
+          <a href="?page=1{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline">
+            First
+          </a>
+          <a href="?page={{ vendors.previous_page_number }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Previous
+          </a>
+        {% endif %}
+        <span class="ml-2">Page {{ vendors.number }} of {{ vendors.paginator.num_pages }}</span>
+        {% if vendors.has_next %}
+          <a href="?page={{ vendors.next_page_number }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Next
+          </a>
+          <a href="?page={{ vendors.paginator.num_pages }}{% if query %}
+              &q={{ query }}
+            {% endif %}"
+            class="text-blue-500 hover:underline ml-2">
+            Last
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-4">
+      <form method="get" action="" class="mt-4">
+        <label for="page" class="mr-2">Go to page:</label>
+        <input type="number" id="page" name="page" min="1" max="{{ vendors.paginator.num_pages }}" required class="border rounded px-2 py-1" />
+        <input type="hidden" name="q" value="{{ query|default:'' }}" />
+        <button type="submit" class="bg-blue-500 text-white px-3 py-1 rounded ml-2">Go</button>
+      </form>
+    </div>
+  {% else %}
+    <p class="mt-4">There are no vendors available.</p>
+  {% endif %}
+{% endblock %}
