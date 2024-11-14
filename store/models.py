@@ -100,7 +100,7 @@ class Product(models.Model):
         format="PNG",
         options={"quality": 60},
     )
-    model_number = models.CharField(max_length=5, null=True, blank=True)
+    model_number = models.CharField(max_length=16, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("product-detail", kwargs={"pk": self.pk})
@@ -158,7 +158,7 @@ class ProductImage(models.Model):
         Product, on_delete=models.CASCADE, related_name="images"
     )
     # image = models.ImageField(upload_to="store/images", validators=[validate_file_size])
-    image = models.CharField(max_length=255, null=True)
+    image = models.CharField(max_length=30, null=True, blank=True)
 
 
 class Customer(models.Model):

@@ -88,7 +88,9 @@ class Command(BaseCommand):
                 last_update=last_update,
                 collection=collection,
                 restock_value=random.randint(10, 50),
-                model_number=fake.unique.uuid4(),
+                manufacturer_id=f"{random.randint(0, 999999):06}",  # Ensures 6 digits,
+                country_code=f"{random.randint(0, 9):01}",  # Ensures 1 digit,
+                model_number=f"{random.randint(0, 99999):05}",  # Ensures 5 digits
             )
 
             # Create ProductInstance objects

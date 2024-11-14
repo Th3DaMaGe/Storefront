@@ -27,10 +27,10 @@
       <strong>Products available:</strong> {{ num_instances_available }}
     </li>
     <li>
-      <strong>Products reserved:</strong> {{ num_instances_available }}
+      <strong>Products reserved:</strong> {{ num_instances_reserved }}
     </li>
     <li>
-      <strong>Products on loanm:</strong> {{ num_instances_available }}
+      <strong>Products on loanm:</strong> {{ num_instances_on_loan }}
     </li>
     <li>
       <strong>Products being maintained:</strong> {{ num_instances_maintainance }}
@@ -45,7 +45,9 @@
                 
                 
                 
+                
                 desc
+
 
 
 
@@ -57,13 +59,16 @@
                 
                 
                 
+                
                 asc
 
 
 
 
 
+
               {% endif %}{% if query %}
+                
                 
                 
                 
@@ -89,7 +94,7 @@
             <td class="py-2">
               <a href="{{ product.get_absolute_url }}" class="text-blue-500 hover:underline">{{ product.title }}</a>
             </td>
-        
+
             <td class="py-2 text-center">{{ product.last_update }}</td>
             <td class="py-2 text-center">{{ product.collection }}</td>
             {% if not is_staff %}
@@ -116,12 +121,14 @@
               
               
               
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline">
             First
           </a>
           <a href="?page={{ product_list.previous_page_number }}{% if query %}
+              
               
               
               
@@ -141,12 +148,14 @@
               
               
               
+              
               &q={{ query }}
             {% endif %}"
             class="text-blue-500 hover:underline ml-2">
             Next
           </a>
           <a href="?page={{ product_list.paginator.num_pages }}{% if query %}
+              
               
               
               
